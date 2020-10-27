@@ -3,6 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SlimGym.App">
     <Application.Resources>
-
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="PaleGreen"></Setter>
+            <Setter Property="BarTextColor" Value="Black"></Setter>
+        </Style>
     </Application.Resources>
 </Application>
