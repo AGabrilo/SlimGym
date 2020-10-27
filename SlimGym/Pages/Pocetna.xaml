@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SlimGym.Pocetna"
+             Title="Početna">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="PaleGreen">
+            <Grid HeightRequest="250" BackgroundColor="Aqua">
+                <Image Source="/images/teretana.jpg" Aspect="AspectFill"/>
+            </Grid>
+            <Label Text="Dobrodošli!"
+                VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large" TextColor="Red"  />
+            
+                <Label Text="Mobilna aplikacija za članove SlimGym teretane." FontSize="Medium" TextColor="Black" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"/>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

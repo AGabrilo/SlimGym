@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SlimGym.MenuFeature"
+             xmlns:pages="clr-namespace:SlimGym"
+                  Title="SlimGym"
+		MasterBehavior="Popover"
+                  >
+    <MasterDetailPage.Master >
+
+        <ContentPage Padding="10" BackgroundColor="Gray" Title="Master" >
+            <ContentPage.Content>
+                <StackLayout x:Name="listInMenu" Margin="5,30,5,5">
+
+                    <Button x:Name="b1" Text="Početna" BackgroundColor="PaleGreen"  Clicked="Handle_Clicked"></Button>
+
+                    <Button x:Name="b2" Text="Programi" BackgroundColor="PaleGreen" Clicked="Handle_Clicked2"></Button>
+
+                    <Button x:Name="b3" Text="Plaćanje" BackgroundColor="PaleGreen" Clicked="Handle_Clicked3"></Button>
+
+                    <Button x:Name="b4" Text="Raspored" BackgroundColor="PaleGreen" Clicked="Handle_Clicked4"></Button>
+                    <Button x:Name="b5" Text="O nama" BackgroundColor="PaleGreen" Clicked="Handle_Clicked5"></Button>
+                    
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+
+        <ContentPage Padding="10">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Detail  Page">
+                    </Label>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
