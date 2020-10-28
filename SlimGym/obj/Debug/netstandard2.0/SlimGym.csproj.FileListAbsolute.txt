@@ -4,7 +4,6 @@ C:\Users\agabr\Desktop\SlimGym\SlimGym\bin\Debug\netstandard2.0\ref\SlimGym.dll
 C:\Users\agabr\Desktop\SlimGym\SlimGym\bin\Debug\netstandard2.0\SlimGym.pdb
 C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\SlimGym.csprojAssemblyReference.cache
 C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
 C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\SlimGym.AssemblyInfoInputs.cache
 C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\SlimGym.AssemblyInfo.cs
