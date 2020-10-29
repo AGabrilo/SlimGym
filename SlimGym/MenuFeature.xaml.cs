@@ -24,47 +24,60 @@ namespace SlimGym
 			NavigationPage.SetHasNavigationBar(this, false);
 			Detail = new NavigationPage(new Pocetna());
 
-            IsPresented = false;
-
-			//menuList = new List<MenuFeatureMasterMenuItem>();
-			//// Adding menu items to menuList and you can define title ,page and icon  
-			//menuList.Add(new MenuFeatureMasterMenuItem()
-			//{
-			//	Title = "Pocetna",
-			//	Icon = "pocetna.png",
-			//	TargetType = typeof(Page1)
-			//});
+            
+			menuList = new List<MenuFeatureMasterMenuItem>();
+			// Adding menu items to menuList and you can define title ,page and icon  
+			menuList.Add(new MenuFeatureMasterMenuItem()
+			{
+				Title = "Home",
+                Icon = "/images/home.png",
+				TargetType = typeof(Pocetna)
+			});
+			menuList.Add(new MenuFeatureMasterMenuItem()
+			{
+				Title = "Programs",
+				Icon = "/images/programs.png",
+				TargetType = typeof(Programs)
+			});
+			menuList.Add(new MenuFeatureMasterMenuItem()
+			{
+				Title = "Activity",
+				Icon = "/images/activity.png",
+				TargetType = typeof(Placanje)
+			});
+			menuList.Add(new MenuFeatureMasterMenuItem()
+			{
+				Title = "Schedule",
+				Icon = "/images/calendar.png",
+				TargetType = typeof(SchedulePage)
+			});
+			menuList.Add(new MenuFeatureMasterMenuItem()
+			{
+				Title = "Logout",
+				Icon = "/images/logout.png",
+				TargetType = typeof(MainPage)
+			});
+			// Setting our list to be ItemSource for ListView in MainPage.xaml  
+			navigationDrawerList.ItemsSource = menuList;
+			// Initial navigation, this can be used for our home page  
+			Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Pocetna)));
 			
-		}
-
-		void Handle_Clicked(object sender, System.EventArgs e)
-		{
-			Detail = new NavigationPage(new Pocetna());
-			IsPresented = false;
 
 		}
+		private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
+		{
+			var item = (MenuFeatureMasterMenuItem)e.SelectedItem;
+			Type page = item.TargetType;
+			Detail = new NavigationPage((Page)Activator.CreateInstance(page));
+			IsPresented = false;
+		}
+		//void Handle_Clicked(object sender, System.EventArgs e)
+		//{
+		//	Detail = new NavigationPage(new Pocetna());
+		//	IsPresented = false;
 
-		void Handle_Clicked2(object sender, System.EventArgs e)
-		{
-			Detail = new NavigationPage(new Programs());
-			IsPresented = false;
-		}
+		//}
 
-		void Handle_Clicked3(object sender, System.EventArgs e)
-		{
-			Detail = new NavigationPage(new Placanje());
-			IsPresented = false;
-		}
-
-		void Handle_Clicked4(object sender, System.EventArgs e)
-		{
-			Detail = new NavigationPage(new SchedulePage());
-			IsPresented = false;
-		}
-		void Handle_Clicked5(object sender, System.EventArgs e)
-		{
-			Detail = new NavigationPage(new AboutUs());
-			IsPresented = false;
-		}
+	
 	}
 }

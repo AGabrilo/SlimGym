@@ -83,7 +83,7 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
 
-    <EmbeddedResource Update="SignUp.xaml">
+    <EmbeddedResource Update="Pages\SignUp.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     
