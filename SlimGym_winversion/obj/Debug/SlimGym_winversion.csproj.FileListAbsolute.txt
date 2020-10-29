@@ -10,3 +10,15 @@ C:\Users\Toni\Desktop\FESB\treca godina\PROGRAMSKO INZENJERSTVO\SlimGym_winversi
 C:\Users\Toni\Desktop\FESB\treca godina\PROGRAMSKO INZENJERSTVO\SlimGym_winversion\obj\Debug\SlimGym_winversion.csproj.CopyComplete
 C:\Users\Toni\Desktop\FESB\treca godina\PROGRAMSKO INZENJERSTVO\SlimGym_winversion\obj\Debug\SlimGym_winversion.exe
 C:\Users\Toni\Desktop\FESB\treca godina\PROGRAMSKO INZENJERSTVO\SlimGym_winversion\obj\Debug\SlimGym_winversion.pdb
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\bin\Debug\SlimGym_winversion.exe.config
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\bin\Debug\SlimGym_winversion.exe
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\bin\Debug\SlimGym_winversion.pdb
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.csprojAssemblyReference.cache
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.Form1.resources
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.LogIn.resources
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.Properties.Resources.resources
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.csproj.GenerateResource.cache
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.csproj.CoreCompileInputs.cache
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.csproj.CopyComplete
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.exe
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.pdb
