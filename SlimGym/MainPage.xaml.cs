@@ -5,16 +5,19 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace SlimGym
 {
     public partial class MainPage : ContentPage
     {
+       
         public MainPage()
         {
             InitializeComponent();
         }
+        
         public async void Clicked_ButtonAsync(object sender, EventArgs e)
         {
             User user = new User(Entry_username.Text, Entry_password.Text);
@@ -24,5 +27,13 @@ namespace SlimGym
             else
                 await DisplayAlert("Login", "Login unsuccessful,wrong username or password", "Oke");
         }
+        public async void Clicked_ButtonAsync2(object sender, EventArgs e)
+        {
+            
+
+                await Navigation.PushAsync(new SignUp());
+           
+        }
+
     }
 }

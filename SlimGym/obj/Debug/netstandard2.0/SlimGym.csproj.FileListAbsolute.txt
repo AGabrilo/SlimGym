@@ -20,3 +20,4 @@ C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\PagesOfPro
 C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Placanje.xaml.g.cs
 C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Programs.xaml.g.cs
 C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\SchedulePage.xaml.g.cs
+C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\SignUp.xaml.g.cs

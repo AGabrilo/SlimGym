@@ -545,3 +545,10 @@ C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\android\src\crc64eeb
 C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\android\src\crc64f3c04da23e275e70\SfScheduleRenderer.java
 C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\android\src\crc64f606ab658bf2774f\SfShimmerRenderer.java
 C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\android\src\crc64f606ab658bf2774f\ShimmerViewRenderer.java
+C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\activity.png
+C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\calendar.png
+C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\password.png
+C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\programs.png
+C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\user.png
+C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\logo.png
+C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\gym3.png

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SlimGym.SignUp">
+    <StackLayout >
+
+        <Grid>
+            
+                <Frame BackgroundColor="DarkSeaGreen" HeightRequest="120" HorizontalOptions="FillAndExpand" Padding="22" CornerRadius="0">
+                    <StackLayout  HorizontalOptions="CenterAndExpand">
+                            <Label Text="Sign in" FontAttributes="Bold" FontSize="Medium"/>
+                        </StackLayout>
+                </Frame>
+            
+            <StackLayout Margin="15,80,15,0">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="450" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        
+                        <StackLayout Margin="0,0,0,0">
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Entry x:Name="Entry_username" Placeholder="Username" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,5,0"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,0,0,0"  HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="Entry_Name" Placeholder="Name"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,5,0"/>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,0,0,0"  HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="Entry_Surname" Placeholder="Surname"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,5,0"/>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,0,0,0"  HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="Entry_Email" Placeholder="Email"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,5,0"/>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,0,0,0"  HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="Entry_Passw"   Placeholder="Password"  IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,5,0"/>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        
+                        <Button x:Name="Btn_signup2" Text="Sign un" BackgroundColor="#77B777" TextColor="DarkSlateGray" FontAttributes="Bold" CornerRadius="20" />
+                        
+
+
+                    </StackLayout>
+
+                </Frame>
+            </StackLayout>
+
+
+
+        </Grid>
+    </StackLayout>
+</ContentPage>

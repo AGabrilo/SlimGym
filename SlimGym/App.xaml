@@ -4,8 +4,9 @@
              x:Class="SlimGym.App">
     <Application.Resources>
         <Style TargetType="NavigationPage">
-            <Setter Property="BarBackgroundColor" Value="PaleGreen"></Setter>
-            <Setter Property="BarTextColor" Value="Black"></Setter>
+            <Setter Property="BarBackgroundColor" Value="DarkSeaGreen"></Setter>
+            <Setter Property="BarTextColor" Value="DarkSlateGray"></Setter>
+            
         </Style>
     </Application.Resources>
 </Application>

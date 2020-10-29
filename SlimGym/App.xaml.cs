@@ -13,6 +13,7 @@ namespace SlimGym
             InitializeComponent();
             
             MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
