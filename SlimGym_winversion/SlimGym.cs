@@ -80,6 +80,74 @@ namespace SlimGym_winversion
 
 
         //
+        // Maximizing from panelHeader, labelTitle and panelDumbellIcon and dragign form
+        //
+        private static bool mouseDown;
+        private static Point lastLocation;
+        
+
+        // On panelHeader
+        private void panelHeader_MouseDown(object sender, MouseEventArgs e)
+        {
+            check_MouseDown(sender, e);
+        }
+        private void panelHeader_MouseMove(object sender, MouseEventArgs e)
+        {
+            check_MouseMove(sender, e);
+        }
+        private void panelHeader_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        // On labelTitle
+        private void labelTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            check_MouseDown(sender, e);
+        }
+        private void labelTitle_MouseMove(object sender, MouseEventArgs e)
+        {
+            check_MouseMove(sender, e);
+        }
+        private void labelTitle_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        // On panelDumbarellIcon
+        private void panelDumbellIcon_MouseDown(object sender, MouseEventArgs e)
+        {
+            check_MouseDown(sender, e);
+        }
+        private void panelDumbellIcon_MouseMove(object sender, MouseEventArgs e)
+        {
+            check_MouseMove(sender, e);
+        }
+        private void panelDumbellIcon_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        // Maximize from panelHeader
+        private void panelHeader_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            maximize_Slimgym_DoubleMouseClick(sender, e);
+        }
+
+        // Maximize from labelTitle
+        private void labelTitle_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            maximize_Slimgym_DoubleMouseClick(sender, e);
+        }
+
+        // Maximize from panelDumbarellIcon
+        private void panelDumbellIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            maximize_Slimgym_DoubleMouseClick(sender, e);
+        }
+
+
+        //
         // Minimize Button
         //
         private void buttonMinimize_Click(object sender, EventArgs e)
@@ -92,17 +160,7 @@ namespace SlimGym_winversion
         //
         private void buttonMaximize_Click(object sender, EventArgs e)
         {
-            if (this.WindowState != FormWindowState.Maximized)
-            {
-                this.WindowState = FormWindowState.Maximized;
-                this.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 0, 0));    //set normal corners when maximized
-            }
-
-            else
-            {
-                this.WindowState = FormWindowState.Normal;
-                this.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));  //apply round corners when form size is normal
-            }
+            maximize_SlimGym();
         }
         
         //
@@ -111,6 +169,52 @@ namespace SlimGym_winversion
         private void buttonExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+
+
+
+
+
+        //
+        // CUSTOM FUNCTIONS
+        //
+
+        private void check_MouseDown(object sender, MouseEventArgs e)   // Calling this in every MouseDown check to set form drag
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void check_MouseMove(object sender, MouseEventArgs e)   // Calling this in every MouseMove check to set form drag
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point((this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+                this.Update();
+            }
+        }
+
+        private void maximize_SlimGym()
+        {
+                if (this.WindowState != FormWindowState.Maximized)
+                {
+                    this.WindowState = FormWindowState.Maximized;
+                    this.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 0, 0));    //set normal corners when maximized
+                }
+                else
+                {
+                    this.WindowState = FormWindowState.Normal;
+                    this.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));  //apply round corners when form size is normal
+                }
+        }
+
+        private void maximize_Slimgym_DoubleMouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                maximize_SlimGym();
+            }
         }
     }
 }

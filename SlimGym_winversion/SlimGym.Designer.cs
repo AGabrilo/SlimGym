@@ -58,6 +58,10 @@
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(1280, 50);
             this.panelHeader.TabIndex = 0;
+            this.panelHeader.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseDoubleClick);
+            this.panelHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseDown);
+            this.panelHeader.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseMove);
+            this.panelHeader.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseUp);
             // 
             // buttonMinimize
             // 
@@ -121,6 +125,10 @@
             this.panelDumbellIcon.Name = "panelDumbellIcon";
             this.panelDumbellIcon.Size = new System.Drawing.Size(85, 50);
             this.panelDumbellIcon.TabIndex = 2;
+            this.panelDumbellIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelDumbellIcon_MouseDoubleClick);
+            this.panelDumbellIcon.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelDumbellIcon_MouseDown);
+            this.panelDumbellIcon.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelDumbellIcon_MouseMove);
+            this.panelDumbellIcon.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelDumbellIcon_MouseUp);
             // 
             // labelTitle
             // 
@@ -135,6 +143,10 @@
             this.labelTitle.TabIndex = 1;
             this.labelTitle.Text = "SlimGym";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelTitle.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.labelTitle_MouseDoubleClick);
+            this.labelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelTitle_MouseDown);
+            this.labelTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelTitle_MouseMove);
+            this.labelTitle.MouseUp += new System.Windows.Forms.MouseEventHandler(this.labelTitle_MouseUp);
             // 
             // panelBody
             // 
@@ -183,7 +195,7 @@
             this.labelDate.Text = "Date: 21.10.2020.";
             this.labelDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Form1
+            // SlimGym
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -192,8 +204,9 @@
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.panelHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form1";
+            this.Name = "SlimGym";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SlimGym";
             this.panelHeader.ResumeLayout(false);

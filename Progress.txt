@@ -1,7 +1,14 @@
 Commit base-user-control:
 	Dovrsavanje logina
+	Napravljeni zaobljeni kantuni
 	Dodan base user control u njemu dva botuna, label user, label user value i logout botun
-	u loginu napravljeno otvaranje base user controla na klik logina
-	napravljeni anchori
-	dodane funkcionalnosti minimize maximize close
-	
+	U loginu napravljeno otvaranje base user controla na klik logina
+	Napravljeni anchori
+	Dodane funkcionalnosti minimize maximize close
+	(ne moze se odma debugirat jer je ostalo neizbrisano iz login designra !!!)
+
+Commit maximize-drag
+	Dodano da se forma moze dragat iz panelHeadera i sa itema na njoj
+	Dodano da se moze resizeat double clickon na panelHeader
+	Napravljene neke funkcije koje se koriste vise puta radi preglednosti
+	Dodana icona na formu (vidi se u taskbaru)
