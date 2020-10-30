@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
 namespace ePOSOne.btnProduct
@@ -36,6 +37,12 @@ namespace ePOSOne.btnProduct
 
         protected override void OnPaint(PaintEventArgs e)
         {
+            GraphicsPath grPath = new GraphicsPath();
+            Rectangle rtg = new Rectangle(Height / 2, 0, Width - Height, Height);
+            grPath.AddEllipse(0, 0, Height, Height);
+            grPath.AddEllipse(Width - Height, 0, Height, Height);
+            grPath.AddRectangle(rtg);
+            this.Region = new Region(grPath);
             base.OnPaint(e);
             Graphics g = e.Graphics;
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
@@ -45,7 +52,6 @@ namespace ePOSOne.btnProduct
             g.FillEllipse(brush, 0, 0, Height, Height);
             g.FillEllipse(brush, Width - Height, 0, Height, Height);
             g.FillRectangle(brush, Height / 2, 0, Width - Height, Height);
-
             brush.Dispose();
             brush = new SolidBrush(_isHovering ? _onHoverButtonColor : _buttonColor);
 

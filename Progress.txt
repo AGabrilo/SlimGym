@@ -15,3 +15,9 @@ Commit maximize-drag: 4h
 
 commit slicice: 20min
 	Prominjena boja na iconama u baseu i icona forme
+
+commit new-button-elliptic 4h
+	dodan boutn sa zaobljenin rubon
+	sjebali se login i logout botuni
+	napravia users user control
+	doda par botuna

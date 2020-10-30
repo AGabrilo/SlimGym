@@ -51,11 +51,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base.cs">
+    <Compile Include="Objects\button-elliptic.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Base.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Base.Designer.cs">
+    <Compile Include="UserControls\Base.Designer.cs">
       <DependentUpon>Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Users.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
     </Compile>
     <Compile Include="SlimGym.cs">
       <SubType>Form</SubType>
@@ -63,10 +72,10 @@
     <Compile Include="SlimGym.Designer.cs">
       <DependentUpon>SlimGym.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogIn.cs">
+    <Compile Include="UserControls\LogIn.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LogIn.Designer.cs">
+    <Compile Include="UserControls\LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
     <Compile Include="Objects\Round-Button.cs">
@@ -74,13 +83,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Base.resx">
+    <EmbeddedResource Include="UserControls\Base.resx">
       <DependentUpon>Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SlimGym.resx">
       <DependentUpon>SlimGym.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogIn.resx">
+    <EmbeddedResource Include="UserControls\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Objects\Round-Button.resx">
@@ -114,6 +126,7 @@
     <Content Include="Pictures\dumbell-icon.png" />
     <Content Include="Pictures\maximize-icon.png" />
     <Content Include="Pictures\minus-icon.png" />
+    <Content Include="Pictures\paper-money-icon-green.png" />
     <Content Include="Pictures\schedule-icon-green.png" />
     <Content Include="Pictures\schedule-icon.png" />
     <Content Include="Pictures\user-icon-green.png" />
