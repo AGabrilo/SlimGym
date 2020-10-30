@@ -109,11 +109,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pictures\dumbbell-icon-green.png" />
     <Content Include="Pictures\dumbell-icon-green.png" />
     <Content Include="Pictures\dumbell-icon.png" />
     <Content Include="Pictures\maximize-icon.png" />
     <Content Include="Pictures\minus-icon.png" />
+    <Content Include="Pictures\schedule-icon-green.png" />
     <Content Include="Pictures\schedule-icon.png" />
+    <Content Include="Pictures\user-icon-green.png" />
     <Content Include="Pictures\user-icon.png" />
     <Content Include="Pictures\x-icon.png" />
   </ItemGroup>
