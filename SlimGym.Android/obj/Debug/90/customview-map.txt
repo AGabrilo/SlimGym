@@ -22,6 +22,7 @@ background;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
 background;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
 cache-path;C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 color;obj\Debug\90\res\values\colors.xml
+color;obj\Debug\90\res\values\styles.xml
 declare-styleable;C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\lp\2\jl\res\values\attrs.xml
 enum;C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\lp\2\jl\res\values\attrs.xml
 external-cache-path;C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
@@ -30,6 +31,7 @@ foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\lp\41\jl\res\layout\bottomtablayout.xml
 item;C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\lp\41\jl\res\values\styles.xml
+item;obj\Debug\90\res\values\styles.xml
 LinearLayout;C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\lp\41\jl\res\layout\bottomtablayout.xml
 paths;C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\lp\2\jl\res\values\attrs.xml

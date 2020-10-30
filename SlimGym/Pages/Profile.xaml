@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SlimGym.Profile">
+    <ContentPage.Content>
+        <ListView x:Name="PLV" ItemsSource="{Binding ProfileCollector}" ItemTapped="Handle_ItemTapped" RowHeight="70">
+            <ListView.ItemTemplate >
+                <DataTemplate >
+                    
+                    <ImageCell Text="{Binding ProfileData}" TextColor="Black" Detail="{Binding UserDetail}" DetailColor="DarkSlateGray" ImageSource="{Binding Image}">
+                          
+                  
+                    </ImageCell>
+                    
+                   
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

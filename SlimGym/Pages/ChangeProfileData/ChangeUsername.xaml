@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SlimGym.Pages.ChangeProfileData.ChangeUsername">
+    <ContentPage.Content>
+        <StackLayout >
+
+            <Grid>
+                <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                    <Frame BackgroundColor="DarkSeaGreen" HeightRequest="120" HorizontalOptions="FillAndExpand" Padding="22" CornerRadius="0">
+
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="15,110,15,0">
+                    <Frame BackgroundColor="White" HasShadow="True" HeightRequest="420" HorizontalOptions="FillAndExpand">
+                        <StackLayout>
+                            <StackLayout  HorizontalOptions="CenterAndExpand">
+                                <Label Text="Change your username:" FontAttributes="Bold" FontSize="Medium"/>
+                            </StackLayout>
+                            <StackLayout Margin="0,25,0,0">
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0"  HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Entry x:Name="What_username" Placeholder="Enter your new username"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+
+
+                                    </StackLayout>
+                                </Frame>
+
+
+                            </StackLayout>
+                            <Button x:Name="Btn_changePassw" Text="Change" BackgroundColor="#77B777" TextColor="DarkSlateGray" FontAttributes="Bold" CornerRadius="20" />
+
+
+                        </StackLayout>
+
+                    </Frame>
+                </StackLayout>
+
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

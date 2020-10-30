@@ -66,18 +66,20 @@ namespace SlimGym
 		}
 		private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
 		{
+			//add try-catch
 			var item = (MenuFeatureMasterMenuItem)e.SelectedItem;
 			Type page = item.TargetType;
 			Detail = new NavigationPage((Page)Activator.CreateInstance(page));
 			IsPresented = false;
 		}
-		//void Handle_Clicked(object sender, System.EventArgs e)
-		//{
-		//	Detail = new NavigationPage(new Pocetna());
-		//	IsPresented = false;
+        void OnImageTapped(object sender, System.EventArgs e)
+        {
+			//add try-catch
+			Detail = new NavigationPage(new Profile());
+            IsPresented = false;
 
-		//}
+        }
 
-	
-	}
+
+    }
 }

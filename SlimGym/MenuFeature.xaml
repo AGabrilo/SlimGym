@@ -7,8 +7,8 @@
 		MasterBehavior="Popover"
                   >
     <MasterDetailPage.Master>
-        <ContentPage Title="Menu" BackgroundColor="DarkSeaGreen">
-            <Grid BackgroundColor="#77B777">
+        <ContentPage Title="Menu" BackgroundColor="White">
+            <Grid BackgroundColor="White">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="200" />
                     <RowDefinition Height="*" />
@@ -16,27 +16,33 @@
                 <Grid>
                     <Image Source="bg.png" Aspect="AspectFill" />
                     <StackLayout Padding="0,20,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                        <Image Source="/images/user.png" Aspect="AspectFit" WidthRequest="60" HeightRequest="60" />
-                        <Label Text="Profil" TextColor="White" FontSize="Large" />
+                        <Image Source="/images/user.png" Aspect="AspectFit" WidthRequest="60" HeightRequest="60" >
+                            <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                             Tapped="OnImageTapped"
+                             NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                            </Image>
+                        <Label Text="Profil" TextColor="DarkSlateGray" FontSize="Large" />
                     </StackLayout>
                 </Grid>
                 <StackLayout Grid.Row="1" Spacing="15">
                     <ListView x:Name="navigationDrawerList"
                   RowHeight="60"
                   SeparatorVisibility="None"
-                  BackgroundColor="#e8e8e8"
+                  BackgroundColor="#B6DCAF"
                   ItemSelected="OnMenuItemSelected">
 
                         <ListView.ItemTemplate >
                             <DataTemplate >
                                 <ViewCell >
-                                    <StackLayout BackgroundColor="#77B777">
+                                    <StackLayout BackgroundColor="#E0FDC6">
                                         <!-- Main design for our menu items -->
                                         <StackLayout VerticalOptions="FillAndExpand"
                              Orientation="Horizontal"
                              Padding="20,10,0,10"
-                             Spacing="0"
-                             BackgroundColor="White">
+                             Spacing="3"
+                             BackgroundColor="DarkSeaGreen">
 
                                             <Image Source="{Binding Icon}"
                          WidthRequest="30"

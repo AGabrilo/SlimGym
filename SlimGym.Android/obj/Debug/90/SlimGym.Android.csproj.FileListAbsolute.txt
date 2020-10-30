@@ -555,3 +555,4 @@ C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\gym3.pn
 C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\profile1.png
 C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\home.png
 C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\logout.jpg
+C:\Users\agabr\Desktop\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\edit.png

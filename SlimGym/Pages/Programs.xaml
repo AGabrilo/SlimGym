@@ -6,7 +6,7 @@
         <ListView x:Name="flowlistview" ItemsSource="{Binding MyListCollector}" ItemTapped="Handle_ItemTapped" >
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Detail="{Binding ProgramDetail}" Text="{Binding ProgramName}"/>
+                    <TextCell Detail="{Binding ProgramDetail}" Text="{Binding ProgramName}" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

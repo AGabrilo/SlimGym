@@ -21,3 +21,6 @@ C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Placanje.x
 C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Programs.xaml.g.cs
 C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\SchedulePage.xaml.g.cs
 C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\SignUp.xaml.g.cs
+C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Profile.xaml.g.cs
+C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\ChangeProfileData\ChangeUsername.xaml.g.cs
+C:\Users\agabr\Desktop\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\ChangeProfileData\ChangePassword.xaml.g.cs

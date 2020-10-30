@@ -8,7 +8,7 @@
             
                 <Frame BackgroundColor="DarkSeaGreen" HeightRequest="120" HorizontalOptions="FillAndExpand" Padding="22" CornerRadius="0">
                     <StackLayout  HorizontalOptions="CenterAndExpand">
-                            <Label Text="Sign in" FontAttributes="Bold" FontSize="Medium"/>
+                            <Label Text="Sign up" FontAttributes="Bold" FontSize="Medium"/>
                         </StackLayout>
                 </Frame>
             
@@ -44,10 +44,15 @@
                                     <Entry x:Name="Entry_Passw"   Placeholder="Password"  IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,5,0"/>
                                 </StackLayout>
                             </Frame>
+                            <Label Text="Day of birth" TextColor="DarkSlateGray"/>
+                            <StackLayout HorizontalOptions="Start" VerticalOptions="Start">
+                                <DatePicker x:Name="MainDatePicker" MinimumDate="1/1/2018" MaximumDate="12/31/2020" DateSelected="MainDatePicker_DateSelected" />
+                                <Label x:Name="MainLabel" FontSize="20" TextColor="DarkSlateGray" />
+                            </StackLayout>
                         </StackLayout>
 
                         
-                        <Button x:Name="Btn_signup2" Text="Sign un" BackgroundColor="#77B777" TextColor="DarkSlateGray" FontAttributes="Bold" CornerRadius="20" />
+                        <Button x:Name="Btn_signup2" Text="Sign up" BackgroundColor="#77B777" TextColor="DarkSlateGray" FontAttributes="Bold" CornerRadius="20" />
                         
 
 
