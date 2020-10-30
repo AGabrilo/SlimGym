@@ -51,11 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Base.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base.Designer.cs">
+      <DependentUpon>Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SlimGym.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SlimGym.Designer.cs">
+      <DependentUpon>SlimGym.cs</DependentUpon>
     </Compile>
     <Compile Include="LogIn.cs">
       <SubType>UserControl</SubType>
@@ -68,11 +74,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Base.resx">
+      <DependentUpon>Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlimGym.resx">
+      <DependentUpon>SlimGym.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objects\Round-Button.resx">
+      <DependentUpon>Round-Button.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,6 +111,11 @@
   <ItemGroup>
     <Content Include="Pictures\dumbell-icon-green.png" />
     <Content Include="Pictures\dumbell-icon.png" />
+    <Content Include="Pictures\maximize-icon.png" />
+    <Content Include="Pictures\minus-icon.png" />
+    <Content Include="Pictures\schedule-icon.png" />
+    <Content Include="Pictures\user-icon.png" />
+    <Content Include="Pictures\x-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

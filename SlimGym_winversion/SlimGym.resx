@@ -118,6 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonMinimize.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAE1JREFUeF7t0MENgCAQBMBrQJpAy4Ma6Bwh0QIMD2OcSTb3un1sAAAAAAAAAACs
+        ymVrR019H5n3ae6/2XNVfosB/j4AAAAAAAAAwPsiTux+WYkSMY2yAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonExit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAUZJREFUeF7t2FFOwzAMgOG+t+US6+6xo/BOuyvBLdj7dotxF0g1O6iJGQtFGg7/
+        J1Xb6qaaHaeK2gAAAAAAAAAAgF+1HftH+foja8ff1TB1L9v9w3v4fJZTRdaOv6t55uY/r0dpEpp8PDx2
+        QprEMLZHCV01TO1pMS7cR0L+5EXoXiVkCvHD4nrPyas4o1OvSZnLIRYrXteeJOSfMbOLIhidcpBQPbIk
+        pQjGef9t/xUj2XPyu97klRZh2F/W+r9KXm3G7i1J/iyh+mkHxOSlE8J5fzu+UmnyRifUW4Rs5mXNG+fr
+        K8Iw9Ve3t1kRxv6mbbMLIbnLJuhzJ2g+7bUI8ZnwzbbZhWxmQydIyGR0it/lkCd/2/Z2vi4Z568Im6d2
+        lyRRtMlJizffT0J+6EuR0uRVLILn12JrZ87lzAMAAAAAAAD4g5rmA5XF/OdRwjjjAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonMaximize.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAANRJREFUeF7tz0EKwzAQQ1GfILfo9Xr/XQpmFoPwqlZTGf4DLQaCIg8AAAAAAAAA
+        wI+83tftTNWeY/WInVTtOVaP2EnVnsMx3tHxmD7WEe2cP0nWxzqinfMnyfpYR7Rz/iSZY6x26B3NMVY7
+        9I7mGKsdekdzjNUOvaM5xmqH3tEcY7VD72iOsdqhdzTHWO3QO5pjrHboHc0xVjv0juYY2zs09Ukux9je
+        oalPcjnG9g5NfZLLMdbR8Td9vCNVe47VI3ZStedYPWInVQsAAAAAAADgW2N8AOMvCb8DK0OaAAAAAElF
+        TkSuQmCC
+</value>
+  </data>
   <data name="panelDumbellIcon.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA4QAAAJxCAYAAAAaZnwlAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO

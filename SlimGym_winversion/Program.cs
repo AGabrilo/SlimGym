@@ -16,7 +16,7 @@ namespace SlimGym_winversion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new SlimGym());
         }
     }
 }
