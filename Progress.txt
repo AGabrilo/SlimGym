@@ -21,3 +21,8 @@ commit new-button-elliptic 4h
 	sjebali se login i logout botuni
 	napravia users user control
 	doda par botuna
+
+commit edited-buttonEllip
+	dodana jos neka svojstva na buttonEllip
+	u baseu se promini boja selektiranog botuna/onoga ciji se user control postavlja u window panelu
+	popravljeni login i logout

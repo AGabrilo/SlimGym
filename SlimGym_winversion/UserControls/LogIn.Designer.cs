@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.panelLogIn = new System.Windows.Forms.Panel();
+            this.buttonLogIn = new SlimGym_winversion.Objects.buttonEllip();
             this.linkLabelForgotPassword = new System.Windows.Forms.LinkLabel();
-            this.buttonLogin = new ePOSOne.btnProduct.Button_WOC();
             this.panelDumbellIcon = new System.Windows.Forms.Panel();
             this.textBoxPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.labelPassword = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -45,8 +45,8 @@
             // 
             this.panelLogIn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelLogIn.BackColor = System.Drawing.Color.White;
+            this.panelLogIn.Controls.Add(this.buttonLogIn);
             this.panelLogIn.Controls.Add(this.linkLabelForgotPassword);
-            this.panelLogIn.Controls.Add(this.buttonLogin);
             this.panelLogIn.Controls.Add(this.panelDumbellIcon);
             this.panelLogIn.Controls.Add(this.textBoxPassword);
             this.panelLogIn.Controls.Add(this.labelPassword);
@@ -59,6 +59,28 @@
             this.panelLogIn.Size = new System.Drawing.Size(400, 475);
             this.panelLogIn.TabIndex = 0;
             // 
+            // buttonLogIn
+            // 
+            this.buttonLogIn.BackColor = System.Drawing.Color.Transparent;
+            this.buttonLogIn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.buttonLogIn.BorderThickness = 6;
+            this.buttonLogIn.ButtonRoundness = 1;
+            this.buttonLogIn.FlatAppearance.BorderSize = 0;
+            this.buttonLogIn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.buttonLogIn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.buttonLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.buttonLogIn.Location = new System.Drawing.Point(210, 373);
+            this.buttonLogIn.Name = "buttonLogIn";
+            this.buttonLogIn.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.buttonLogIn.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonLogIn.Size = new System.Drawing.Size(149, 54);
+            this.buttonLogIn.TabIndex = 6;
+            this.buttonLogIn.Text = "Log In";
+            this.buttonLogIn.UseVisualStyleBackColor = false;
+            this.buttonLogIn.Click += new System.EventHandler(this.buttonLogIn_Click);
+            // 
             // linkLabelForgotPassword
             // 
             this.linkLabelForgotPassword.AutoSize = true;
@@ -70,29 +92,6 @@
             this.linkLabelForgotPassword.TabIndex = 5;
             this.linkLabelForgotPassword.TabStop = true;
             this.linkLabelForgotPassword.Text = "Forgot password";
-            // 
-            // buttonLogin
-            // 
-            this.buttonLogin.BackColor = System.Drawing.Color.Transparent;
-            this.buttonLogin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonLogin.ButtonColor = System.Drawing.Color.White;
-            this.buttonLogin.FlatAppearance.BorderSize = 0;
-            this.buttonLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.buttonLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.Location = new System.Drawing.Point(195, 372);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonLogin.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonLogin.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonLogin.Size = new System.Drawing.Size(164, 57);
-            this.buttonLogin.TabIndex = 1;
-            this.buttonLogin.Text = "Log In";
-            this.buttonLogin.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonLogin.UseVisualStyleBackColor = false;
-            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // panelDumbellIcon
             // 
@@ -210,7 +209,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox textboxUsername;
         private Bunifu.Framework.UI.BunifuCustomLabel labelUsername;
         private System.Windows.Forms.Panel panelDumbellIcon;
-        private ePOSOne.btnProduct.Button_WOC buttonLogin;
         private System.Windows.Forms.LinkLabel linkLabelForgotPassword;
+        private Objects.buttonEllip buttonLogIn;
     }
 }

@@ -19,7 +19,7 @@ namespace SlimGym_winversion
         //
         //==================================
         Users usersUserControl = new Users();
-
+        List<Button> buttonList = new List<Button>();
 
         //==================================
         //
@@ -33,8 +33,52 @@ namespace SlimGym_winversion
 
         private void buttonUsers_Click(object sender, EventArgs e)
         {
+            ChangeBackColor(buttonUsers);
             usersUserControl.Dock = DockStyle.Fill;
             panelWindow.Controls.Add(usersUserControl);
+        }
+
+        private void buttonGroupsScheduel_Click(object sender, EventArgs e)
+        {
+            ChangeBackColor(buttonGroupsScheduel);
+        }
+
+        private void buttonRecords_Click(object sender, EventArgs e)
+        {
+            ChangeBackColor(buttonRecords);
+        }
+
+        private void buttonMembership_Click(object sender, EventArgs e)
+        {
+            ChangeBackColor(buttonMembership);
+        }
+
+        private void buttonChanges_Click(object sender, EventArgs e)
+        {
+            ChangeBackColor(buttonChanges);
+        }
+
+
+
+        //=======================================================//
+        //                                                       //
+        // ------------------CUSTOM FUNCTIONS------------------- //
+        //                                                       //
+        //=======================================================//
+
+        //==================================
+        //
+        // Change back color of selcted section
+        //
+        //==================================
+        private void ChangeBackColor(Button thisbutton)
+        {
+            thisbutton.BackColor = Color.FromArgb(105,105,105);
+            foreach (var button in this.panelButtons.Controls.OfType<Button>())
+            {
+                if (button != thisbutton)
+                    button.BackColor = Color.Gray;
+            }
         }
     }
 }

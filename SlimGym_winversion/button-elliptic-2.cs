@@ -1,29 +1,67 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Drawing;
-using System.Runtime.CompilerServices;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 
-namespace SlimGym_winversion.Objects
+
+namespace ePOSOne.btnProduct
 {
-    class Elliptic_Button : Button
+    public class Elliptic_Button_2 : Button
     {
-        private static Color _borderColor = Color.Transparent;
-        private static int _borderThickness = 0;
-        private static int _buttonRoundness = 3;
-        Pen pen = new Pen(_borderColor, _borderThickness);
+        private Color _onHoverTextColor = Color.Transparent;
+        private Color _offHoverTextColor = Color.Transparent;
+        private Color _borderColor = Color.Transparent;
+        private int _borderThickness = 0;
+        private int _buttonRoundness = 3;
         
-        
+
+        private bool _isHovering;
+
+        /*public Elliptic_Button_2()
+        {
+            DoubleBuffered = true;
+            MouseEnter += (sender, e) =>
+            {
+                _isHovering = true;
+                Invalidate();
+            };
+            MouseLeave += (sender, e) =>
+            {
+                _isHovering = false;
+                Invalidate();
+            };
+        }
+
+        private void MouseOnHover()
+        {
+            _offHoverTextColor = ForeColor;
+
+            ForeColor = _isHovering ? _onHoverTextColor : _offHoverTextColor;
+        }*/
+
+        protected override void OnMouseEnter(System.EventArgs e)
+        {
+            _offHoverTextColor = ForeColor;
+            ForeColor = _onHoverTextColor;
+            
+            base.OnMouseHover(e);
+        }
+
+        protected override void OnMouseLeave(System.EventArgs e)
+        {
+            ForeColor = _offHoverTextColor;
+
+            base.OnMouseHover(e);
+        }
+
         protected override void OnPaint(PaintEventArgs pevent)
         {
             base.OnPaint(pevent);
+
             Graphics g = pevent.Graphics;
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             GraphicsPath grPath = new GraphicsPath();
+            Pen pen = new Pen(_borderColor, _borderThickness);
 
             Rectangle rtgLU = new Rectangle(0, 0, Height / _buttonRoundness, Height / _buttonRoundness);
             Rectangle rtgLD = new Rectangle(0, Height * (_buttonRoundness - 1) / _buttonRoundness, Height / _buttonRoundness, Height / _buttonRoundness);
@@ -47,7 +85,6 @@ namespace SlimGym_winversion.Objects
             set
             {
                 _borderColor = value;
-                pen = new Pen(_borderColor, _borderThickness);
                 Invalidate();
             }
         }
@@ -58,8 +95,6 @@ namespace SlimGym_winversion.Objects
             set
             {
                 _borderThickness = value;
-                pen.Dispose();
-                pen = new Pen(_borderColor, _borderThickness);
                 Invalidate();
             }
         }
@@ -74,12 +109,14 @@ namespace SlimGym_winversion.Objects
             }
         }
 
-        private void InitializeComponent()
+        public Color OnHoverTextColor
         {
-            this.SuspendLayout();
-            this.ResumeLayout(false);
-
+            get { return _onHoverTextColor; }
+            set
+            {
+                _onHoverTextColor = value;
+                Invalidate();
+            }
         }
     }
 }
-

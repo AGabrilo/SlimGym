@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Objects\button-elliptic.cs">
+    <Compile Include="Objects\buttonEllip.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="UserControls\Base.cs">

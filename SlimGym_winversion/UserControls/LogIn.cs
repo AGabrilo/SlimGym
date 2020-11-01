@@ -30,7 +30,8 @@ namespace SlimGym_winversion
         // Button LogIn
         //
         //==================================
-        private void buttonLogin_Click(object sender, EventArgs e)
+
+        private void buttonLogIn_Click(object sender, EventArgs e)
         {
             //
             // Validates data from textboxses

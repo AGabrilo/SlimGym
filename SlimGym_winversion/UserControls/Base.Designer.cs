@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Base));
             this.panelButtons = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonLogOut = new SlimGym_winversion.Objects.buttonEllip();
+            this.buttonChanges = new System.Windows.Forms.Button();
+            this.buttonRecords = new System.Windows.Forms.Button();
+            this.buttonMembership = new System.Windows.Forms.Button();
             this.labelUsernameValue = new System.Windows.Forms.Label();
             this.labelUser = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonGroupsScheduel = new System.Windows.Forms.Button();
             this.buttonUsers = new System.Windows.Forms.Button();
             this.panelWindow = new System.Windows.Forms.Panel();
-            this.buttonLogOut = new ePOSOne.btnProduct.Button_WOC();
             this.panelButtons.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,66 +47,93 @@
             this.panelButtons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelButtons.BackColor = System.Drawing.Color.Gray;
-            this.panelButtons.Controls.Add(this.button5);
-            this.panelButtons.Controls.Add(this.button4);
-            this.panelButtons.Controls.Add(this.button3);
+            this.panelButtons.Controls.Add(this.buttonLogOut);
+            this.panelButtons.Controls.Add(this.buttonChanges);
+            this.panelButtons.Controls.Add(this.buttonRecords);
+            this.panelButtons.Controls.Add(this.buttonMembership);
             this.panelButtons.Controls.Add(this.labelUsernameValue);
             this.panelButtons.Controls.Add(this.labelUser);
-            this.panelButtons.Controls.Add(this.buttonLogOut);
-            this.panelButtons.Controls.Add(this.button2);
+            this.panelButtons.Controls.Add(this.buttonGroupsScheduel);
             this.panelButtons.Controls.Add(this.buttonUsers);
             this.panelButtons.Location = new System.Drawing.Point(0, 0);
             this.panelButtons.Name = "panelButtons";
             this.panelButtons.Size = new System.Drawing.Size(250, 645);
             this.panelButtons.TabIndex = 0;
             // 
-            // button5
+            // buttonLogOut
             // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.button5.Location = new System.Drawing.Point(0, 280);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(250, 70);
-            this.button5.TabIndex = 8;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
+            this.buttonLogOut.BackColor = System.Drawing.Color.Transparent;
+            this.buttonLogOut.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.buttonLogOut.BorderThickness = 6;
+            this.buttonLogOut.ButtonRoundness = 1;
+            this.buttonLogOut.FlatAppearance.BorderSize = 0;
+            this.buttonLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.buttonLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.buttonLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.buttonLogOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.buttonLogOut.Location = new System.Drawing.Point(131, 590);
+            this.buttonLogOut.Name = "buttonLogOut";
+            this.buttonLogOut.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.buttonLogOut.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonLogOut.Size = new System.Drawing.Size(110, 45);
+            this.buttonLogOut.TabIndex = 9;
+            this.buttonLogOut.Text = "Log Out";
+            this.buttonLogOut.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // buttonChanges
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.button4.Location = new System.Drawing.Point(0, 210);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(250, 70);
-            this.button4.TabIndex = 7;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonChanges.BackColor = System.Drawing.Color.Transparent;
+            this.buttonChanges.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonChanges.BackgroundImage")));
+            this.buttonChanges.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonChanges.FlatAppearance.BorderSize = 0;
+            this.buttonChanges.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.buttonChanges.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonChanges.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChanges.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.buttonChanges.Location = new System.Drawing.Point(0, 280);
+            this.buttonChanges.Name = "buttonChanges";
+            this.buttonChanges.Size = new System.Drawing.Size(250, 70);
+            this.buttonChanges.TabIndex = 8;
+            this.buttonChanges.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonChanges.UseVisualStyleBackColor = false;
+            this.buttonChanges.Click += new System.EventHandler(this.buttonChanges_Click);
             // 
-            // button3
+            // buttonRecords
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.button3.Location = new System.Drawing.Point(0, 140);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(250, 70);
-            this.button3.TabIndex = 6;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonRecords.BackColor = System.Drawing.Color.Transparent;
+            this.buttonRecords.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRecords.BackgroundImage")));
+            this.buttonRecords.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonRecords.FlatAppearance.BorderSize = 0;
+            this.buttonRecords.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.buttonRecords.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.buttonRecords.Location = new System.Drawing.Point(0, 140);
+            this.buttonRecords.Name = "buttonRecords";
+            this.buttonRecords.Size = new System.Drawing.Size(250, 70);
+            this.buttonRecords.TabIndex = 7;
+            this.buttonRecords.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonRecords.UseVisualStyleBackColor = false;
+            this.buttonRecords.Click += new System.EventHandler(this.buttonRecords_Click);
+            // 
+            // buttonMembership
+            // 
+            this.buttonMembership.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMembership.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonMembership.BackgroundImage")));
+            this.buttonMembership.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonMembership.FlatAppearance.BorderSize = 0;
+            this.buttonMembership.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.buttonMembership.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonMembership.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMembership.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.buttonMembership.Location = new System.Drawing.Point(0, 210);
+            this.buttonMembership.Name = "buttonMembership";
+            this.buttonMembership.Size = new System.Drawing.Size(250, 70);
+            this.buttonMembership.TabIndex = 6;
+            this.buttonMembership.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonMembership.UseVisualStyleBackColor = false;
+            this.buttonMembership.Click += new System.EventHandler(this.buttonMembership_Click);
             // 
             // labelUsernameValue
             // 
@@ -132,29 +159,32 @@
             this.labelUser.TabIndex = 4;
             this.labelUser.Text = "Usrename:";
             // 
-            // button2
+            // buttonGroupsScheduel
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.button2.Location = new System.Drawing.Point(0, 70);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 70);
-            this.button2.TabIndex = 1;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonGroupsScheduel.BackColor = System.Drawing.Color.Transparent;
+            this.buttonGroupsScheduel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGroupsScheduel.BackgroundImage")));
+            this.buttonGroupsScheduel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonGroupsScheduel.FlatAppearance.BorderSize = 0;
+            this.buttonGroupsScheduel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.buttonGroupsScheduel.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonGroupsScheduel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGroupsScheduel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.buttonGroupsScheduel.Location = new System.Drawing.Point(0, 70);
+            this.buttonGroupsScheduel.Name = "buttonGroupsScheduel";
+            this.buttonGroupsScheduel.Size = new System.Drawing.Size(250, 70);
+            this.buttonGroupsScheduel.TabIndex = 1;
+            this.buttonGroupsScheduel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonGroupsScheduel.UseVisualStyleBackColor = false;
+            this.buttonGroupsScheduel.Click += new System.EventHandler(this.buttonGroupsScheduel_Click);
             // 
             // buttonUsers
             // 
+            this.buttonUsers.BackColor = System.Drawing.Color.Transparent;
             this.buttonUsers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonUsers.BackgroundImage")));
             this.buttonUsers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.buttonUsers.FlatAppearance.BorderSize = 0;
             this.buttonUsers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.buttonUsers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.buttonUsers.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.buttonUsers.Location = new System.Drawing.Point(0, 0);
@@ -162,7 +192,7 @@
             this.buttonUsers.Size = new System.Drawing.Size(250, 70);
             this.buttonUsers.TabIndex = 0;
             this.buttonUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonUsers.UseVisualStyleBackColor = true;
+            this.buttonUsers.UseVisualStyleBackColor = false;
             this.buttonUsers.Click += new System.EventHandler(this.buttonUsers_Click);
             // 
             // panelWindow
@@ -175,29 +205,6 @@
             this.panelWindow.Name = "panelWindow";
             this.panelWindow.Size = new System.Drawing.Size(1030, 645);
             this.panelWindow.TabIndex = 1;
-            // 
-            // buttonLogOut
-            // 
-            this.buttonLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonLogOut.BackColor = System.Drawing.Color.Transparent;
-            this.buttonLogOut.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonLogOut.ButtonColor = System.Drawing.Color.Gray;
-            this.buttonLogOut.FlatAppearance.BorderSize = 0;
-            this.buttonLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.buttonLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.buttonLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.buttonLogOut.Location = new System.Drawing.Point(130, 590);
-            this.buttonLogOut.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonLogOut.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonLogOut.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonLogOut.Size = new System.Drawing.Size(110, 45);
-            this.buttonLogOut.TabIndex = 2;
-            this.buttonLogOut.Text = "Log Out";
-            this.buttonLogOut.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonLogOut.UseVisualStyleBackColor = false;
             // 
             // Base
             // 
@@ -217,13 +224,13 @@
 
         private System.Windows.Forms.Panel panelButtons;
         private System.Windows.Forms.Panel panelWindow;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonGroupsScheduel;
         private System.Windows.Forms.Button buttonUsers;
-        private ePOSOne.btnProduct.Button_WOC buttonLogOut;
         private System.Windows.Forms.Label labelUsernameValue;
         private System.Windows.Forms.Label labelUser;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonChanges;
+        private System.Windows.Forms.Button buttonRecords;
+        private System.Windows.Forms.Button buttonMembership;
+        private Objects.buttonEllip buttonLogOut;
     }
 }

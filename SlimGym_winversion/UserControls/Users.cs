@@ -17,9 +17,24 @@ namespace SlimGym_winversion.Pictures
         public Users()
         {
             InitializeComponent();
-            //this.buttonUserInfo = Region.FromHrgn(CreateRoundRectRgn(0, 0, buttonUserInfo.Width, buttonUserInfo.Height, 50, 50));
         }
-        
+
+
+        private void buttonNewUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonInTheGym_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSignToGroup_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //=======================================================//
         //                                                       //
         // ------------------CUSTOM FUNCTIONS------------------- //
@@ -31,15 +46,5 @@ namespace SlimGym_winversion.Pictures
         // Make form rounded function
         //
         //==================================
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        public static extern IntPtr CreateRoundRectRgn
-        (
-            int nLeftRect,     // x-coordinate of upper-left corner
-            int nTopRect,      // y-coordinate of upper-left corner
-            int nRightRect,    // x-coordinate of lower-right corner
-            int nBottomRect,   // y-coordinate of lower-right corner
-            int nWidthEllipse, // height of ellipse
-            int nHeightEllipse // width of ellipse
-        );
     }
 }
