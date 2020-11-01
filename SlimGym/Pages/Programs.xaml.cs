@@ -1,5 +1,6 @@
 ﻿using SlimGym.Models;
 using SlimGym.Pages;
+using SlimGym.Pages.PagesOfPrograms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,7 +35,16 @@ namespace SlimGym
                     await Navigation.PushAsync(new Crossfit());
                     break;
                 case 2:
-                    await Navigation.PushAsync(new FlowFit());
+                    await Navigation.PushAsync(new Boks());
+                    break;
+                case 3:
+                    await Navigation.PushAsync(new Zumba());
+                    break;
+                case 4:
+                    await Navigation.PushAsync(new Spinning());
+                    break;
+                case 5:
+                    await Navigation.PushAsync(new TotalBody());
                     break;
 
 

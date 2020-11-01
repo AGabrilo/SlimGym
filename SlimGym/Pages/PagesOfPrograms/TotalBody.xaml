@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SlimGym.Pages.PagesOfPrograms.TotalBody">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Grid HeightRequest="350">
+                <Image Source="/images/ttlBody.jpg" Aspect="AspectFill" />
+            </Grid>
+            <Label Text="TOTAL BODY" BackgroundColor="White" TextColor="Black" FontSize="30" FontAttributes="Italic" HorizontalTextAlignment="Center" Margin="0, 0, 0, 0"/>
+            <StackLayout>
+                <ScrollView BackgroundColor="White">
+                    <StackLayout>
+                        <Label BackgroundColor="White" Text="Total Body Workout je program koji ciljano djeluje na učvršćivanje i oblikovanje mišića čitavog tijela. Namijenjen je svima, bilo da se radi o početnicima ili naprednim vježbačima, koji žele učvrstiti svoje tijelo i postići dobru mišićnu definiciju, a pritom se i dobro zabaviti, razonoditi i opustiti." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+                        <Label BackgroundColor="White" Text="Opterećenje i tempo rada lako se prilagođava, rizik od povreda je mali, a korist velika – povećava se snaga i izdržljivost svih mišićnih skupina, smanjuje potkožno masno tkivo, jača koštano-zglobni i tetivni sustav (zbog čega je pogodan i za osobe koje imaju problema s koštano-zglobnim strukturama) i povećava aerobna izdržljivost." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+                        <Label BackgroundColor="White" Text="Posebnost ovog treninga je u tome što istovremeno djeluje na reduciranje masnog tkiva, oblikovanje i podizanje tonusa tijela te povećanje snage i izdržljivosti. Jednostavnije rečeno, Total body workout vraća vas u top formu." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+
+                        <TableView HeightRequest="190">
+
+                            <TableRoot>
+                                <TableSection>
+                                    <ImageCell Text="Trener/ica:" TextColor="#db1f28" ImageSource="/images/icons_person.png" Detail="Toni Jakovčević" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Uto, čet, sub" TextColor="#db1f28" ImageSource="/images/icons_calendar.png" Detail="19:30h - 20:30h" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Članarina" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="250 kn/mj." DetailColor="#825c5a" Height="50"/>
+
+                                </TableSection>
+                            </TableRoot>
+                        </TableView>
+
+
+                    </StackLayout>
+
+
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

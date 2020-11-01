@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SlimGym.Pages.PagesOfPrograms.Boks">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Grid HeightRequest="350">
+                <Image Source="/images/boks.jpg" Aspect="AspectFill" />
+            </Grid>
+            <Label Text="BOKS" BackgroundColor="White" TextColor="Black" FontSize="30" FontAttributes="Italic" HorizontalTextAlignment="Center" Margin="0, 0, 0, 0"/>
+            <StackLayout>
+                <ScrollView BackgroundColor="White">
+                    <StackLayout>
+                        <Label BackgroundColor="White" Text="Boks je jedan od najstarijih, najslavnijih, a ujedno i jedan od fizički najzahtjevnijih sportova na svijetu. Od početka civilizacije su poznate borbe šakama između dvoje ljudi zbog dokazivanja moći i snage." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+                        <Label BackgroundColor="White" Text="Prva pravila boksa novijeg doba potječu iz Londona (18. stoljeće) gdje je definiran prostor za borbu, zabrana određenih udaraca, trajanje borbe i slično. Takva pravila, u nešto izmijenjenim izdanjima, koriste se sve do sada. Danas razlikujemo dva osnovna pravca boksa: amaterski (olimpijski) te profesionalni. Po prirodi aktivnosti je anaeroban sport s visokom razinom eksplozivnosti. Između ostalog, glavna karakteristika treninga je visoki intenzitet vježbanja. Treningom se ubrzava puls i postiže ubrzan rad metabolizma. Postao je izuzetno popularan fitness trening jer, osim što pomaže u rješavanju stresa, odličan je za ubrzano gubljenje masnoća." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+                        <Label BackgroundColor="White" Text="Udarci su osnovne napadačke tehnike u boksu. Razlikujemo tri vrste udaraca, to su vertikalni udarci (aperkat), bočni udarci (krošei) i izravni udarci (direkt). Svi ostali udarci u boksu su varijante i kombinacije navedenih udaraca. Ostali udarci pripadaju naprednoj tehnici napada. Udarce razlikuju smjerovi gibanja te osnovne ravnine tijela koje se sijeku udarcima. Kako bi se osigurala ravnopravnost boksačke borbe, boksači se međusobno natječu raspoređeni u težinske kategorije – po kilaži. Za boks je od velike važnosti mentalna snaga i koncentracija. Za vrijeme borbe potrebno je učinkovito pratiti tehniku protivnika, izbjeći ozljede i u isto vrijeme ispravno disati i pravilno se kretati. Ako tražite način za brz dolazak u formu, ovakav tip treninga je pravi izbor. Zahvaljujući svoj visokom intenzitetu vježbanja dovodi do ubrzanog trošenja kalorija. Boks je sport za cijelo tijelo. Predstavlja kombinaciju kardiovaskularnih treninga i treninga snage. Tijekom treninga maksimalno se radi na svakom pojedinačnom mišiću tako da mišići u vrlo kratkom roku postaju jači i zategnutiji. Kontinuiranim treninzima te pravilnom prehranom, rezultati će biti vidljivi već nakon nekoliko tjedana treninga." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+
+                        <TableView HeightRequest="190">
+
+                            <TableRoot>
+                                <TableSection>
+                                    <ImageCell Text="Trener/ica:" TextColor="#db1f28" ImageSource="/images/icons_person.png" Detail="Pero Perić" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Uto, čet, sub" TextColor="#db1f28" ImageSource="/images/icons_calendar.png" Detail="20:30h - 22:30h" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Članarina" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="300 kn/mj." DetailColor="#825c5a" Height="50"/>
+
+                                </TableSection>
+                            </TableRoot>
+                        </TableView>
+
+
+                    </StackLayout>
+
+
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

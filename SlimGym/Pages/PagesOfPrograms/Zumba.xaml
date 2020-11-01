@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SlimGym.Pages.PagesOfPrograms.Zumba">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Grid HeightRequest="350">
+                <Image Source="/images/zumba.jpg" Aspect="AspectFill" />
+            </Grid>
+            <Label Text="ZUMBA" BackgroundColor="White" TextColor="Black" FontSize="30" FontAttributes="Italic" HorizontalTextAlignment="Center" Margin="0, 0, 0, 0"/>
+            <StackLayout>
+                <ScrollView BackgroundColor="White">
+                    <StackLayout>
+                        <Label BackgroundColor="White" Text="Zumba program spaja latino ritmove i jednostavne pokrete i stvara jedinstveni fitness program koji će vas jednostavno oduševiti." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+                        <Label BackgroundColor="White" Text="Zumba je plesni fitness program koji je tijekom devedesetih stvorio kolumbijski plesač i koreograf Alberto Perez. Zumba uključuje plesne i aerobne pokrete koji se izvode uz energičnu glazbu. Uključuje hip-hop, soca, sambu, salsa, merengue i mambo." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+                        <Label BackgroundColor="White" Text="Svaka Zumba vježba se sastoji od tri do četiri pokreta po pjesmi. Pokreti su ponavljajući i jednostavni tako da nije problem ostati sinkroniziran u grupi. Oko 15 milijuna ljudi pohađa tjedne sate Zumbe na više od 200.000 lokacija u 180 zemalja svijeta." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+
+                        <TableView HeightRequest="190">
+
+                            <TableRoot>
+                                <TableSection>
+                                    <ImageCell Text="Trener/ica:" TextColor="#db1f28" ImageSource="/images/icons_person.png" Detail="Petra Dundić" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Uto, čet, sub" TextColor="#db1f28" ImageSource="/images/icons_calendar.png" Detail="18:30h - 19:30h" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Članarina" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="250 kn/mj." DetailColor="#825c5a" Height="50"/>
+
+                                </TableSection>
+                            </TableRoot>
+                        </TableView>
+
+
+                    </StackLayout>
+
+
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

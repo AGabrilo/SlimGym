@@ -3,10 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SlimGym.Pages.Crossfit">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="CROSSFIT!" FontSize="Large"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="White">
+            <Grid HeightRequest="350">
+                <Image Source="/images/crossfit.jpg" Aspect="AspectFill" />
+            </Grid>
+            <Label Text="CROSSFIT" BackgroundColor="White" TextColor="Black" FontSize="30" FontAttributes="Italic" HorizontalTextAlignment="Center" Margin="0, 0, 0, 0"/>
+            <StackLayout>
+                <ScrollView BackgroundColor="White">
+                    <StackLayout>
+                        <Label BackgroundColor="White" Text="CROSSFIT je visoko intenzivan, konstantno varijabilan način vježbanja dizajniran za razvoj snage i kondicije. Namijenjen je svima: potrebe profesionalnih sportaša i naših baka se razlikuju samo po stupnju zahtjevnosti, ne i po vrsti aktivnosti. Čar CrossFita leži u tzv. skaliranju i modificiranju. Prilagođava se opterećenje i intenzitet, dok vježbe ostaju iste. Teži se općenitoj fitness spremi, a ne specijalizaciji. Takav tip funkcionalnog fitnessa pojedince priprema na zahtjeve svakodnevnog života." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+                        <Label BackgroundColor="White" Text="CrossFit je objedinio karakteristike drugih sportova i stvorio sportaše koji su spremni na sve, uključujući ono nepoznato. Trening dana se zove WOD (workout of the day) i uključuje rad na 10 razina fizičke pripremljenosti: kardiovaskularna i respiratorna izdržljivost, opća izdržljivost, snaga, gipkost, jakost, brzina, koordinacija, agilnost, ravnoteža, i preciznost." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+                        <Label BackgroundColor="White" Text="U usporedbi s običnim teretanama, tzv. CrossFit boxevi mogu prostorno biti vrlo mali, zato što se svaki rekvizit i komadić prostora maksimalno iskorištava. Nema sprava koje zauzimaju prostor, radi se sa šipkama, girjama, sanducima, vijačama... Od olimpijskih dizanja do gimnastike, treninzi su individualizirani, maksimalno prilagodljivi, i namijenjeni su poboljšanju zdravlja i cjelokupne fizičke spreme." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+
+                        <TableView HeightRequest="190">
+
+                            <TableRoot>
+                                <TableSection>
+                                    <ImageCell Text="Trener/ica:" TextColor="#db1f28" ImageSource="/images/icons_person.png" Detail="Antea Gabrilo" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Pon, sri, pet" TextColor="#db1f28" ImageSource="/images/icons_calendar.png" Detail="20:30h - 21:30h" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Članarina" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="250 kn/mj." DetailColor="#825c5a" Height="50"/>
+
+                                </TableSection>
+                            </TableRoot>
+                        </TableView>
+
+
+                    </StackLayout>
+
+
+                </ScrollView>
+            </StackLayout>
         </StackLayout>
+
+
     </ContentPage.Content>
 </ContentPage>

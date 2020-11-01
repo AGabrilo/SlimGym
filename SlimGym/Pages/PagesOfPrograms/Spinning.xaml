@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SlimGym.Pages.PagesOfPrograms.Spinning">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Grid HeightRequest="350">
+                <Image Source="/images/spin.jpg" Aspect="AspectFill" />
+            </Grid>
+            <Label Text="SPINNING" BackgroundColor="White" TextColor="Black" FontSize="30" FontAttributes="Italic" HorizontalTextAlignment="Center" Margin="0, 0, 0, 0"/>
+            <StackLayout>
+                <ScrollView BackgroundColor="White">
+                    <StackLayout>
+                        <Label BackgroundColor="White" Text="Spinning je grupni trening na statičkim biciklima u trajanju od 60 minuta. Stimulira vožnju vanjskog bicikla te uključuje i pokrete kojima se koristi u takvoj vožnji: flat (vožnja po ravnini), climbing (vožnja po uzbrdici), jumps (izmjena sjedećeg i stajaćeg položaja) i sprint (utrka)." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+                        <Label BackgroundColor="White" Text="Ovakav način treninga na fitness biciklima nastao je 1986.g. kada je američki biciklist Johnny Goldberg odlučio napraviti trening za održavanje sportske forme biciklista u teškim zimskim uvjetima, ali isto tako primjenjiv i za rekreativce u sportskim dvoranama. Ubrzo nakon početka proizvodnje bicikala spinning groznica zahvatila je Ameriku, a uskoro krenula i u Europu. Spinning je postajao sve popularniji među rekreativcima, ali i među sportskim entuzijastima željnim dobrog aerobnog treninga. U Hrvatskoj se pojavio tek 2008 g. i svakim danom okuplja sve veći broj zaljubljenika u ovaj vrlo zabavan i dinamičan sport." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+                        <Label BackgroundColor="White" Text="Spinning je ciljno usmjeren program vježbanja jednako namjenjen rekreativcima kao i vrhunskim sportašima. U osnovi radi se o grupnom obliku treninga, ali prilagođenom svakom pojedincu budući da si svaki sportaš može prilagoditi intenzitet u skladu sa svojim sposobnostima. Isto tako pogodan je za sve dobne skupine, za osobe koje imaju bilo kakvih problema sa zglobovima, za trudnice, primjenjuju ga mnogi vrhunski sportaši u procesu bazične pripreme a sastavni je dio i priprema biciklističke ekipe za OI u većini zemalja." FontSize="15" FontAttributes="Italic" TextColor="#825c5a" HorizontalTextAlignment="Start" Margin="5"/>
+
+                        <TableView HeightRequest="190">
+
+                            <TableRoot>
+                                <TableSection>
+                                    <ImageCell Text="Trener/ica:" TextColor="#db1f28" ImageSource="/images/icons_person.png" Detail="Duje Srhoj" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Pon, Sri, pet" TextColor="#db1f28" ImageSource="/images/icons_calendar.png" Detail="17:30h - 18:30h" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Članarina" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="350 kn/mj." DetailColor="#825c5a" Height="50"/>
+
+                                </TableSection>
+                            </TableRoot>
+                        </TableView>
+
+
+                    </StackLayout>
+
+
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

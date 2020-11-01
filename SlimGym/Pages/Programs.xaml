@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SlimGym.Programs">
     <ContentPage.Content>
-        <ListView x:Name="flowlistview" ItemsSource="{Binding MyListCollector}" ItemTapped="Handle_ItemTapped" >
+        <ListView x:Name="flowlistview" ItemsSource="{Binding MyListCollector}" ItemTapped="Handle_ItemTapped" BackgroundColor="White" >
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Detail="{Binding ProgramDetail}" Text="{Binding ProgramName}" />
+                    <!--<TextCell Detail="{Binding ProgramDetail}" DetailColor="#825c5a" Text="{Binding ProgramName}" TextColor="Black" />-->
+                    <ImageCell ImageSource="/images/barbell.png" Detail="{Binding ProgramDetail}" DetailColor="#825c5a" Text="{Binding ProgramName}" TextColor="Black" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

@@ -760,23 +760,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\agabr\\.nuget\\packages\\": {},
+    "C:\\Users\\Petra Dundic\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\agabr\\Desktop\\SlimGym\\SlimGym\\SlimGym.csproj",
+      "projectUniqueName": "C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym\\SlimGym.csproj",
       "projectName": "SlimGym",
-      "projectPath": "C:\\Users\\agabr\\Desktop\\SlimGym\\SlimGym\\SlimGym.csproj",
-      "packagesPath": "C:\\Users\\agabr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\agabr\\Desktop\\SlimGym\\SlimGym\\obj\\",
+      "projectPath": "C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym\\SlimGym.csproj",
+      "packagesPath": "C:\\Users\\Petra Dundic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\agabr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Petra Dundic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

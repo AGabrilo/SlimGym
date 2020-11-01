@@ -66,15 +66,27 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
 
+    <EmbeddedResource Update="Pages\PagesOfPrograms\Boks.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+
     <EmbeddedResource Update="Pages\PagesOfPrograms\Crossfit.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
 
-    <EmbeddedResource Update="Pages\PagesOfPrograms\FlowFit.xaml">
+    <EmbeddedResource Update="Pages\AboutUs.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
 
-    <EmbeddedResource Update="Pages\AboutUs.xaml">
+    <EmbeddedResource Update="Pages\PagesOfPrograms\Spinning.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+
+    <EmbeddedResource Update="Pages\PagesOfPrograms\TotalBody.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+
+    <EmbeddedResource Update="Pages\PagesOfPrograms\Zumba.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
 
