@@ -65,13 +65,17 @@ namespace SlimGym_winversion.Objects
             }
         }
 
-        protected override void OnPaint(PaintEventArgs pevent)
+        protected override void OnPaint(PaintEventArgs e)
         {
             
-            base.OnPaint(pevent);
-            Graphics g = pevent.Graphics;
-            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            base.OnPaint(e);
+            Graphics g = e.Graphics;
             GraphicsPath grPath = new GraphicsPath();
+            g.SmoothingMode = ((SmoothingMode)SmoothingMode.HighQuality);    
+            g.InterpolationMode = InterpolationMode.HighQualityBilinear;
+            g.CompositingQuality = CompositingQuality.HighQuality;
+            g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
             Pen pen = new Pen(_borderColor, _borderThickness);
 
             Rectangle rtgLU = new Rectangle(0, 0, Height / _buttonRoundness, Height / _buttonRoundness);
@@ -87,7 +91,7 @@ namespace SlimGym_winversion.Objects
             grPath.CloseFigure();
 
             this.Region = new Region(grPath);
-            pevent.Graphics.DrawPath(pen, grPath);
+            g.DrawPath(pen, grPath);
         }
 
         public Color BorderColor

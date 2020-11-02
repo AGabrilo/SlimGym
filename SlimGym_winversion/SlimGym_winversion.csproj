@@ -54,11 +54,26 @@
     <Compile Include="Objects\buttonEllip.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Objects\CeLearningTextbox.cs" />
+    <Compile Include="Objects\MyRectangle.cs" />
+    <Compile Include="Objects\Trans.cs" />
+    <Compile Include="UserControls\UserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Base.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\Base.Designer.cs">
       <DependentUpon>Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchUsers.Designer.cs">
+      <DependentUpon>SearchUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Users.cs">
       <SubType>UserControl</SubType>
@@ -78,13 +93,16 @@
     <Compile Include="UserControls\LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Objects\Round-Button.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UserControls\UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Base.resx">
       <DependentUpon>Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SearchUsers.resx">
+      <DependentUpon>SearchUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
@@ -94,9 +112,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Objects\Round-Button.resx">
-      <DependentUpon>Round-Button.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,6 +144,7 @@
     <Content Include="Pictures\paper-money-icon-green.png" />
     <Content Include="Pictures\schedule-icon-green.png" />
     <Content Include="Pictures\schedule-icon.png" />
+    <Content Include="Pictures\search-icon-green.png" />
     <Content Include="Pictures\user-icon-green.png" />
     <Content Include="Pictures\user-icon.png" />
     <Content Include="Pictures\x-icon.png" />

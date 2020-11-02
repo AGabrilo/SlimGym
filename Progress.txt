@@ -22,7 +22,13 @@ commit new-button-elliptic 4h
 	napravia users user control
 	doda par botuna
 
-commit edited-buttonEllip
+commit edited-buttonEllip 2h
 	dodana jos neka svojstva na buttonEllip
 	u baseu se promini boja selektiranog botuna/onoga ciji se user control postavlja u window panelu
 	popravljeni login i logout
+
+commit search-user-control 3h
+	dodan search user control i user info(nije zavrsen)
+	dodano minjanje boja za panel buttons u baseu
+	napravljena shema minjanja user controla na membership i users
+	

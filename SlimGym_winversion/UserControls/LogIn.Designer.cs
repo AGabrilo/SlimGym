@@ -76,7 +76,7 @@
             this.buttonLogIn.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonLogIn.OnHoverTextColor = System.Drawing.Color.White;
             this.buttonLogIn.Size = new System.Drawing.Size(149, 54);
-            this.buttonLogIn.TabIndex = 6;
+            this.buttonLogIn.TabIndex = 3;
             this.buttonLogIn.Text = "Log In";
             this.buttonLogIn.UseVisualStyleBackColor = false;
             this.buttonLogIn.Click += new System.EventHandler(this.buttonLogIn_Click);
@@ -89,7 +89,7 @@
             this.linkLabelForgotPassword.Location = new System.Drawing.Point(37, 392);
             this.linkLabelForgotPassword.Name = "linkLabelForgotPassword";
             this.linkLabelForgotPassword.Size = new System.Drawing.Size(128, 20);
-            this.linkLabelForgotPassword.TabIndex = 5;
+            this.linkLabelForgotPassword.TabIndex = 2;
             this.linkLabelForgotPassword.TabStop = true;
             this.linkLabelForgotPassword.Text = "Forgot password";
             // 
@@ -102,7 +102,7 @@
             this.panelDumbellIcon.Margin = new System.Windows.Forms.Padding(2);
             this.panelDumbellIcon.Name = "panelDumbellIcon";
             this.panelDumbellIcon.Size = new System.Drawing.Size(110, 65);
-            this.panelDumbellIcon.TabIndex = 1;
+            this.panelDumbellIcon.TabIndex = 4;
             // 
             // textBoxPassword
             // 
@@ -120,7 +120,7 @@
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(250, 50);
-            this.textBoxPassword.TabIndex = 4;
+            this.textBoxPassword.TabIndex = 1;
             this.textBoxPassword.Text = "tonija";
             this.textBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -133,7 +133,7 @@
             this.labelPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(123, 31);
-            this.labelPassword.TabIndex = 3;
+            this.labelPassword.TabIndex = 6;
             this.labelPassword.Text = "Password:";
             // 
             // textboxUsername
@@ -152,7 +152,7 @@
             this.textboxUsername.Margin = new System.Windows.Forms.Padding(4);
             this.textboxUsername.Name = "textboxUsername";
             this.textboxUsername.Size = new System.Drawing.Size(250, 50);
-            this.textboxUsername.TabIndex = 2;
+            this.textboxUsername.TabIndex = 0;
             this.textboxUsername.Text = "toni";
             this.textboxUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -168,7 +168,7 @@
             this.labelUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(127, 31);
-            this.labelUsername.TabIndex = 1;
+            this.labelUsername.TabIndex = 5;
             this.labelUsername.Text = "Username:";
             // 
             // bunifuCustomLabel1
@@ -181,7 +181,7 @@
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(194, 47);
-            this.bunifuCustomLabel1.TabIndex = 0;
+            this.bunifuCustomLabel1.TabIndex = 3;
             this.bunifuCustomLabel1.Text = "SlimGym";
             this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

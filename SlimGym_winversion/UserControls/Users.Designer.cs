@@ -79,7 +79,7 @@
             this.buttonNewUser.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonNewUser.OnHoverTextColor = System.Drawing.Color.White;
             this.buttonNewUser.Size = new System.Drawing.Size(400, 260);
-            this.buttonNewUser.TabIndex = 2;
+            this.buttonNewUser.TabIndex = 1;
             this.buttonNewUser.Text = "New user";
             this.buttonNewUser.UseVisualStyleBackColor = false;
             this.buttonNewUser.Click += new System.EventHandler(this.buttonNewUser_Click);
@@ -104,7 +104,7 @@
             this.buttonInTheGym.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonInTheGym.OnHoverTextColor = System.Drawing.Color.White;
             this.buttonInTheGym.Size = new System.Drawing.Size(400, 260);
-            this.buttonInTheGym.TabIndex = 1;
+            this.buttonInTheGym.TabIndex = 2;
             this.buttonInTheGym.Text = "In The Gym";
             this.buttonInTheGym.UseVisualStyleBackColor = false;
             this.buttonInTheGym.Click += new System.EventHandler(this.buttonInTheGym_Click);
@@ -134,12 +134,12 @@
             this.buttonUserInfo.TabIndex = 0;
             this.buttonUserInfo.Text = "User Info";
             this.buttonUserInfo.UseVisualStyleBackColor = false;
+            this.buttonUserInfo.Click += new System.EventHandler(this.buttonUserInfo_Click);
             // 
             // Users
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.AutoSize = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Controls.Add(this.buttonSignToGroup);
             this.Controls.Add(this.buttonNewUser);

@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Drawing;
+
 namespace SlimGym_winversion.Properties
 {
 
@@ -33,6 +35,8 @@ namespace SlimGym_winversion.Properties
         internal Resources()
         {
         }
+
+        public static Image Find { get; internal set; }
 
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.

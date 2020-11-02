@@ -20,8 +20,9 @@ C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.csproj.CopyComplete
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.exe
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.pdb
-C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\ePOSOne.btnProduct.Button_WOC.resources
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.Base.resources
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.SlimGym.resources
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.Pictures.Users.resources
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.csprojAssemblyReference.cache
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.SearchUsers.resources
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.UserInfo.resources

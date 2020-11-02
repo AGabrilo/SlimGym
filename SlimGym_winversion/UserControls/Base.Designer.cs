@@ -77,7 +77,7 @@
             this.buttonLogOut.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonLogOut.OnHoverTextColor = System.Drawing.Color.White;
             this.buttonLogOut.Size = new System.Drawing.Size(110, 45);
-            this.buttonLogOut.TabIndex = 9;
+            this.buttonLogOut.TabIndex = 5;
             this.buttonLogOut.Text = "Log Out";
             this.buttonLogOut.UseVisualStyleBackColor = false;
             // 
@@ -94,7 +94,7 @@
             this.buttonChanges.Location = new System.Drawing.Point(0, 280);
             this.buttonChanges.Name = "buttonChanges";
             this.buttonChanges.Size = new System.Drawing.Size(250, 70);
-            this.buttonChanges.TabIndex = 8;
+            this.buttonChanges.TabIndex = 4;
             this.buttonChanges.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonChanges.UseVisualStyleBackColor = false;
             this.buttonChanges.Click += new System.EventHandler(this.buttonChanges_Click);
@@ -112,7 +112,7 @@
             this.buttonRecords.Location = new System.Drawing.Point(0, 140);
             this.buttonRecords.Name = "buttonRecords";
             this.buttonRecords.Size = new System.Drawing.Size(250, 70);
-            this.buttonRecords.TabIndex = 7;
+            this.buttonRecords.TabIndex = 2;
             this.buttonRecords.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonRecords.UseVisualStyleBackColor = false;
             this.buttonRecords.Click += new System.EventHandler(this.buttonRecords_Click);
@@ -130,7 +130,7 @@
             this.buttonMembership.Location = new System.Drawing.Point(0, 210);
             this.buttonMembership.Name = "buttonMembership";
             this.buttonMembership.Size = new System.Drawing.Size(250, 70);
-            this.buttonMembership.TabIndex = 6;
+            this.buttonMembership.TabIndex = 3;
             this.buttonMembership.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonMembership.UseVisualStyleBackColor = false;
             this.buttonMembership.Click += new System.EventHandler(this.buttonMembership_Click);
@@ -156,7 +156,7 @@
             this.labelUser.Location = new System.Drawing.Point(9, 585);
             this.labelUser.Name = "labelUser";
             this.labelUser.Size = new System.Drawing.Size(116, 25);
-            this.labelUser.TabIndex = 4;
+            this.labelUser.TabIndex = 0;
             this.labelUser.Text = "Usrename:";
             // 
             // buttonGroupsScheduel
@@ -204,7 +204,7 @@
             this.panelWindow.Location = new System.Drawing.Point(250, 0);
             this.panelWindow.Name = "panelWindow";
             this.panelWindow.Size = new System.Drawing.Size(1030, 645);
-            this.panelWindow.TabIndex = 1;
+            this.panelWindow.TabIndex = 0;
             // 
             // Base
             // 

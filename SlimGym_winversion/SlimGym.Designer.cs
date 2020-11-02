@@ -76,7 +76,7 @@
             this.buttonMinimize.Location = new System.Drawing.Point(1130, 0);
             this.buttonMinimize.Name = "buttonMinimize";
             this.buttonMinimize.Size = new System.Drawing.Size(50, 50);
-            this.buttonMinimize.TabIndex = 4;
+            this.buttonMinimize.TabIndex = 0;
             this.buttonMinimize.UseVisualStyleBackColor = false;
             this.buttonMinimize.Click += new System.EventHandler(this.buttonMinimize_Click);
             // 
@@ -93,7 +93,7 @@
             this.buttonExit.Location = new System.Drawing.Point(1230, 0);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(50, 50);
-            this.buttonExit.TabIndex = 3;
+            this.buttonExit.TabIndex = 2;
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
@@ -110,7 +110,7 @@
             this.buttonMaximize.Location = new System.Drawing.Point(1180, 0);
             this.buttonMaximize.Name = "buttonMaximize";
             this.buttonMaximize.Size = new System.Drawing.Size(50, 50);
-            this.buttonMaximize.TabIndex = 0;
+            this.buttonMaximize.TabIndex = 1;
             this.buttonMaximize.UseVisualStyleBackColor = false;
             this.buttonMaximize.Click += new System.EventHandler(this.buttonMaximize_Click);
             // 
