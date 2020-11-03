@@ -39,7 +39,9 @@
             this.buttonGroupsScheduel = new System.Windows.Forms.Button();
             this.buttonUsers = new System.Windows.Forms.Button();
             this.panelWindow = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelButtons.SuspendLayout();
+            this.panelWindow.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelButtons
@@ -80,6 +82,7 @@
             this.buttonLogOut.TabIndex = 5;
             this.buttonLogOut.Text = "Log Out";
             this.buttonLogOut.UseVisualStyleBackColor = false;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // buttonChanges
             // 
@@ -201,10 +204,22 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelWindow.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panelWindow.Controls.Add(this.label2);
             this.panelWindow.Location = new System.Drawing.Point(250, 0);
             this.panelWindow.Name = "panelWindow";
             this.panelWindow.Size = new System.Drawing.Size(1030, 645);
             this.panelWindow.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.label2.Location = new System.Drawing.Point(73, 250);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(884, 135);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Select category";
             // 
             // Base
             // 
@@ -216,6 +231,8 @@
             this.Size = new System.Drawing.Size(1280, 645);
             this.panelButtons.ResumeLayout(false);
             this.panelButtons.PerformLayout();
+            this.panelWindow.ResumeLayout(false);
+            this.panelWindow.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -232,5 +249,6 @@
         private System.Windows.Forms.Button buttonRecords;
         private System.Windows.Forms.Button buttonMembership;
         private Objects.buttonEllip buttonLogOut;
+        private System.Windows.Forms.Label label2;
     }
 }

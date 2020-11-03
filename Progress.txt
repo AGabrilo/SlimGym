@@ -31,4 +31,11 @@ commit search-user-control 3h
 	dodan search user control i user info(nije zavrsen)
 	dodano minjanje boja za panel buttons u baseu
 	napravljena shema minjanja user controla na membership i users
+
+commit user-controls-general 1h
+	logout vodi na login user control
+	dodano brisanje svih user controla na click iz panelButtons
+	malo ureden i prokomentiran kod
+	triba: zavrsit UserInfo, ostala 3 botuna iz Users user controla,
+		iduci korak za membership, ostale botune iz panelButtons
 	

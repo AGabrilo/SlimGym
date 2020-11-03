@@ -12,9 +12,23 @@ namespace SlimGym_winversion.UserControls
 {
     public partial class UserInfo : UserControl
     {
+        //==================================
+        //
+        // Initializing all variables
+        //
+        //==================================
+
+
+        //==================================
+        //
+        // Loading Base usercontrol
+        //
+        //==================================
         public UserInfo()
         {
             InitializeComponent();
         }
+
+
     }
 }

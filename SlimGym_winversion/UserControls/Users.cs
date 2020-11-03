@@ -33,20 +33,19 @@ namespace SlimGym_winversion.Pictures
 
         //==================================
         //
-        // Loading user controls on button click
+        // Loading SearchUser user control on button click
         //
         //==================================
         private void buttonUserInfo_Click(object sender, EventArgs e)
         {
             if (!Base.Instance.panelWindowControl.Controls.ContainsKey("SearchUsers"))                  // Checks for exitsting user control
             {                                                                                           // Does not exist
-                SearchUsers searchUsersUserControl = new SearchUsers();                                   // Creates an instance
+                SearchUsers searchUsersUserControl = new SearchUsers();                                 // Creates an instance
                 searchUsersUserControl.Dock = DockStyle.Fill;                                           //
                 Base.Instance.panelWindowControl.Controls.Add(searchUsersUserControl);                  // Adds it to control
             }
 
             Base.Instance.panelWindowControl.Controls["SearchUsers"].BringToFront();                    // Showing Base
-            //Base.Instance.panelWindowControl.Controls.RemoveByKey("Users");                             // Removing LogIn from controls
         }
         private void buttonNewUser_Click(object sender, EventArgs e)
         {

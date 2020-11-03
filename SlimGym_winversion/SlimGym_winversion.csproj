@@ -54,8 +54,8 @@
     <Compile Include="Objects\buttonEllip.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Objects\CeLearningTextbox.cs" />
     <Compile Include="Objects\MyRectangle.cs" />
+    <Compile Include="Objects\textBoxEllip.cs" />
     <Compile Include="Objects\Trans.cs" />
     <Compile Include="UserControls\UserInfo.cs">
       <SubType>UserControl</SubType>

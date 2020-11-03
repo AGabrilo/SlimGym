@@ -22,7 +22,7 @@ namespace SlimGym_winversion
         public LogIn()
         {
             InitializeComponent();
-            this.panelLogIn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelLogIn.Width, panelLogIn.Height, 20, 20));
+            this.panelLogIn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelLogIn.Width, panelLogIn.Height, 20, 20));                // Make login panel rounded
         }
 
         //==================================
@@ -45,7 +45,9 @@ namespace SlimGym_winversion
             }
 
             SlimGym.Instance.panelBodyControl.Controls["Base"].BringToFront();      // Showing Base
-            SlimGym.Instance.panelBodyControl.Controls.RemoveByKey("LogIn");        // Removing LogIn from controls
+
+            textBoxPassword.Text = "";                                              // Deleting data from textboxes
+            textboxUsername.Text = "";                                              // Deleting data from textboxes
 
             //
             // If not show message

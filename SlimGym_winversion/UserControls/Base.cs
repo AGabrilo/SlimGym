@@ -20,8 +20,6 @@ namespace SlimGym_winversion
         //
         //==================================
         static Base _base;
-        Users usersUserControl = new Users();
-        SearchUsers searchUsersUserContol = new SearchUsers();
 
         //==================================
         //
@@ -42,39 +40,54 @@ namespace SlimGym_winversion
         private void buttonUsers_Click(object sender, EventArgs e)
         {
             ChangeBackColor(buttonUsers);
-            usersUserControl.Dock = DockStyle.Fill;
-            panelWindow.Controls.Clear();
-            if (!panelWindow.Controls.ContainsKey("Users"))
+            panelWindow.Controls.Clear();                                       // Removes all user controls from controls to start fresh
+
+            if (!panelWindow.Controls.ContainsKey("Users"))                     // If it does not exitst in controls add it
+            {                
+                Users usersUserControl = new Users();                           // Create new insatnce of Users user control
+                usersUserControl.Dock = DockStyle.Fill;                         // Dock it so it works in full screen
                 panelWindow.Controls.Add(usersUserControl);
-            panelWindow.Controls["Users"].BringToFront();
+            }
+            panelWindow.Controls["Users"].BringToFront();                       // Bring Users to front
         }
 
         private void buttonGroupsScheduel_Click(object sender, EventArgs e)
         {
             ChangeBackColor(buttonGroupsScheduel);
+            panelWindow.Controls.Clear();                                       // Removes all user controls from controls to start fresh
         }
 
         private void buttonRecords_Click(object sender, EventArgs e)
         {
             ChangeBackColor(buttonRecords);
+            panelWindow.Controls.Clear();                                       // Removes all user controls from controls to start fresh
         }
 
         private void buttonMembership_Click(object sender, EventArgs e)
         {
             ChangeBackColor(buttonMembership);
-            searchUsersUserContol.Dock = DockStyle.Fill;
-            panelWindow.Controls.Clear();
-            if(!panelWindow.Controls.ContainsKey("SearchUsers"))
-                panelWindow.Controls.Add(searchUsersUserContol);
-            panelWindow.Controls["SearchUsers"].BringToFront();
+            panelWindow.Controls.Clear();                                       // Removes all user controls from controls to start fresh
 
+            if (!panelWindow.Controls.ContainsKey("SearchUsers"))               // If it does not exitst in controls add it
+            {
+                SearchUsers searchUsersUserContol = new SearchUsers();          // Create new insatnce of SearchUsers user control
+                searchUsersUserContol.Dock = DockStyle.Fill;                    // Dock it so it works in full screen
+                panelWindow.Controls.Add(searchUsersUserContol);
+            }
+            panelWindow.Controls["SearchUsers"].BringToFront();                 // Bring SearchUsers to front
         }
 
         private void buttonChanges_Click(object sender, EventArgs e)
         {
             ChangeBackColor(buttonChanges);
+            panelWindow.Controls.Clear();                                       // Removes all user controls from controls to start fresh
         }
 
+
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            SlimGym.Instance.panelBodyControl.Controls.RemoveByKey("Base");
+        }
 
 
         //=======================================================//
@@ -91,9 +104,9 @@ namespace SlimGym_winversion
         private void ChangeBackColor(Button thisbutton)
         {
             thisbutton.BackColor = Color.FromArgb(105,105,105);
-            foreach (var button in this.panelButtons.Controls.OfType<Button>())
+            foreach (var button in this.panelButtons.Controls.OfType<Button>())             // Checks all buttons and sets color
             {
-                if (button != thisbutton)
+                if (button != thisbutton)                                                   // If it wasn't pressed button make it gray
                     button.BackColor = Color.Gray;
             }
         }
@@ -123,7 +136,7 @@ namespace SlimGym_winversion
 
         //==================================
         //
-        // Used to change user control in panelWindow
+        // Used to make color changable from other user controls
         //
         //==================================
         public Color ResetButtonColors
@@ -134,11 +147,12 @@ namespace SlimGym_winversion
             }
             set
             {
-                foreach(var button in this.panelButtons.Controls.OfType<Button>())
+                foreach(var button in this.panelButtons.Controls.OfType<Button>())          // Go through all buttons
                 {
-                    button.BackColor = value;
+                    button.BackColor = value;                                               // Make them all gray
                 }
             }
         }
+
     }
 }
