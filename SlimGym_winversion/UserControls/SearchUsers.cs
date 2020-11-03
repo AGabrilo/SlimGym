@@ -41,6 +41,7 @@ namespace SlimGym_winversion.UserControls
         //==================================
         private void buttonSearch_Click(object sender, EventArgs e)
         {
+            
             if(textBoxName.ToString() == "Toni" || string.IsNullOrEmpty(textBoxName.Text.ToString()) &&                         // 
                 textBoxSurname.ToString() == "Jakovceic" || string.IsNullOrEmpty(textBoxSurname.Text.ToString()) &&             // Check conditions for search
                 textBoxPersonalID.ToString() == "Toni" || string.IsNullOrEmpty(textBoxPersonalID.Text.ToString()) &&            // 

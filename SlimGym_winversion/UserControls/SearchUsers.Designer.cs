@@ -37,6 +37,11 @@
             this.labelBirthDate = new System.Windows.Forms.Label();
             this.labelPersonalID = new System.Windows.Forms.Label();
             this.dataGridViewSearchUsers = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.userId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birthDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personalID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonSelect = new SlimGym_winversion.Objects.buttonEllip();
             this.buttonBack = new SlimGym_winversion.Objects.buttonEllip();
             this.buttonSearch = new SlimGym_winversion.Objects.buttonEllip();
@@ -44,11 +49,6 @@
             this.textBoxPersonalID = new RoundTextBoxExample.textBoxEllip();
             this.textBoxSurname = new RoundTextBoxExample.textBoxEllip();
             this.textBoxName = new RoundTextBoxExample.textBoxEllip();
-            this.userId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.birthDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personalID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSearchUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,6 +100,10 @@
             this.dataGridViewSearchUsers.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridViewSearchUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewSearchUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewSearchUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridViewSearchUsers.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridViewSearchUsers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewSearchUsers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -138,11 +142,44 @@
             this.dataGridViewSearchUsers.Size = new System.Drawing.Size(876, 392);
             this.dataGridViewSearchUsers.TabIndex = 11;
             // 
+            // userId
+            // 
+            this.userId.HeaderText = "User ID:";
+            this.userId.Name = "userId";
+            this.userId.ReadOnly = true;
+            this.userId.Width = 123;
+            // 
+            // name2
+            // 
+            this.name2.HeaderText = "Name:";
+            this.name2.Name = "name2";
+            this.name2.ReadOnly = true;
+            this.name2.Width = 108;
+            // 
+            // surname
+            // 
+            this.surname.HeaderText = "Surname:";
+            this.surname.Name = "surname";
+            this.surname.ReadOnly = true;
+            this.surname.Width = 140;
+            // 
+            // birthDate
+            // 
+            this.birthDate.HeaderText = "Birth Date:";
+            this.birthDate.Name = "birthDate";
+            this.birthDate.ReadOnly = true;
+            this.birthDate.Width = 148;
+            // 
+            // personalID
+            // 
+            this.personalID.HeaderText = "Personal ID:";
+            this.personalID.Name = "personalID";
+            this.personalID.ReadOnly = true;
+            this.personalID.Width = 168;
+            // 
             // buttonSelect
             // 
-            this.buttonSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSelect.BackColor = System.Drawing.Color.Transparent;
             this.buttonSelect.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonSelect.BorderThickness = 6;
@@ -167,9 +204,7 @@
             // 
             // buttonBack
             // 
-            this.buttonBack.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonBack.BackColor = System.Drawing.Color.Transparent;
             this.buttonBack.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonBack.BorderThickness = 6;
@@ -275,41 +310,6 @@
             this.textBoxName.TabIndex = 0;
             this.textBoxName.textboxRadius = 15;
             this.textBoxName.UseSystemPasswordChar = false;
-            // 
-            // userId
-            // 
-            this.userId.HeaderText = "User ID:";
-            this.userId.Name = "userId";
-            this.userId.ReadOnly = true;
-            this.userId.Width = 175;
-            // 
-            // name2
-            // 
-            this.name2.HeaderText = "Name:";
-            this.name2.Name = "name2";
-            this.name2.ReadOnly = true;
-            this.name2.Width = 175;
-            // 
-            // surname
-            // 
-            this.surname.HeaderText = "Surname:";
-            this.surname.Name = "surname";
-            this.surname.ReadOnly = true;
-            this.surname.Width = 175;
-            // 
-            // birthDate
-            // 
-            this.birthDate.HeaderText = "Birth Date:";
-            this.birthDate.Name = "birthDate";
-            this.birthDate.ReadOnly = true;
-            this.birthDate.Width = 175;
-            // 
-            // personalID
-            // 
-            this.personalID.HeaderText = "Personal ID:";
-            this.personalID.Name = "personalID";
-            this.personalID.ReadOnly = true;
-            this.personalID.Width = 175;
             // 
             // SearchUsers
             // 

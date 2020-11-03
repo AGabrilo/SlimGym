@@ -29,6 +29,11 @@ namespace SlimGym_winversion.UserControls
             InitializeComponent();
         }
 
+        private void UserInfo_Load(object sender, EventArgs e)
+        {
 
+        }
+
+       
     }
 }
