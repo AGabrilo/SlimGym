@@ -29,11 +29,9 @@ namespace SlimGym_winversion.UserControls
             InitializeComponent();
         }
 
-        private void UserInfo_Load(object sender, EventArgs e)
+        private void buttonBack_Click(object sender, EventArgs e)
         {
-
+            Base.Instance.panelWindowControl.Controls.RemoveByKey("UserInfo");
         }
-
-       
     }
 }

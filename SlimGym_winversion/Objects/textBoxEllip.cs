@@ -15,7 +15,6 @@ namespace RoundTextBoxExample
         private Color br;
         private Color _borderColor = Color.Gray;
         private int _borderSize = 1;
-        private char pwdchar;
 
         public textBoxEllip()
         {

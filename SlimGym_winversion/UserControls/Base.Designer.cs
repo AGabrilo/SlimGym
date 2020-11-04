@@ -64,6 +64,7 @@
             // 
             // buttonLogOut
             // 
+            this.buttonLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonLogOut.BackColor = System.Drawing.Color.Transparent;
             this.buttonLogOut.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonLogOut.BorderThickness = 6;

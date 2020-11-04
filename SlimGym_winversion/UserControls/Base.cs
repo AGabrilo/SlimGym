@@ -154,5 +154,18 @@ namespace SlimGym_winversion
             }
         }
 
+        public string SelectedButton
+        {
+            get
+            {
+                foreach (var button in this.panelButtons.Controls.OfType<Button>())          // Go through all buttons
+                {
+                    if (button.BackColor == Color.FromArgb(105, 105, 105))
+                        return button.Name;
+                }
+                return buttonUsers.Name;
+            }
+        }
+
     }
 }

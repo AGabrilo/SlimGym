@@ -36,7 +36,6 @@
             // 
             // buttonSignToGroup
             // 
-            this.buttonSignToGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSignToGroup.BackColor = System.Drawing.Color.Transparent;
             this.buttonSignToGroup.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonSignToGroup.BorderThickness = 10;
@@ -61,7 +60,6 @@
             // 
             // buttonNewUser
             // 
-            this.buttonNewUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonNewUser.BackColor = System.Drawing.Color.Transparent;
             this.buttonNewUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonNewUser.BorderThickness = 10;
@@ -86,7 +84,6 @@
             // 
             // buttonInTheGym
             // 
-            this.buttonInTheGym.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonInTheGym.BackColor = System.Drawing.Color.Transparent;
             this.buttonInTheGym.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonInTheGym.BorderThickness = 10;
@@ -111,9 +108,7 @@
             // 
             // buttonUserInfo
             // 
-            this.buttonUserInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonUserInfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonUserInfo.BackColor = System.Drawing.Color.Transparent;
             this.buttonUserInfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonUserInfo.BorderThickness = 10;

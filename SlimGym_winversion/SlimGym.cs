@@ -31,12 +31,28 @@ namespace SlimGym_winversion
         {
             InitializeComponent();
 
+            labelDate.Text = "Date: " + DateTime.Now.ToString("D");
+
             _slimGym = this;                    // Seting _slimGym to pint on this form
 
             this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20)); // Applying round corners         
             
             logInUserControl.Dock = DockStyle.Fill;     
             panelBody.Controls.Add(logInUserControl);   // Adding LogIn to controls
+        }
+
+        //==================================
+        //
+        // Changing time
+        //
+        //==================================
+        private void timerTime_Tick(object sender, EventArgs e)
+        {
+            if(labelTime.Text == "Time: 00:00:00")
+            {
+                labelDate.Text = "Date: " + DateTime.Now.ToString("D");
+            }
+            labelTime.Text = "Time: " + DateTime.Now.ToString("T");
         }
 
         //==================================
@@ -227,6 +243,8 @@ namespace SlimGym_winversion
             get { return panelBody; }
             set { panelBody = value; }
         }
+
+
         //
         //==================================
         //

@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchUsers));
             this.labelName = new System.Windows.Forms.Label();
             this.labelSurname = new System.Windows.Forms.Label();
@@ -56,7 +57,7 @@
             // 
             this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.labelName.Location = new System.Drawing.Point(65, 25);
+            this.labelName.Location = new System.Drawing.Point(63, 25);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(120, 25);
             this.labelName.TabIndex = 7;
@@ -66,7 +67,7 @@
             // 
             this.labelSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSurname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.labelSurname.Location = new System.Drawing.Point(65, 71);
+            this.labelSurname.Location = new System.Drawing.Point(63, 71);
             this.labelSurname.Name = "labelSurname";
             this.labelSurname.Size = new System.Drawing.Size(120, 25);
             this.labelSurname.TabIndex = 9;
@@ -98,12 +99,12 @@
             this.dataGridViewSearchUsers.AllowUserToDeleteRows = false;
             this.dataGridViewSearchUsers.AllowUserToResizeColumns = false;
             this.dataGridViewSearchUsers.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridViewSearchUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewSearchUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewSearchUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridViewSearchUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewSearchUsers.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridViewSearchUsers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewSearchUsers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -115,7 +116,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewSearchUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewSearchUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSearchUsers.ColumnHeadersHeight = 33;
+            this.dataGridViewSearchUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewSearchUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.userId,
             this.name2,
@@ -123,7 +125,7 @@
             this.birthDate,
             this.personalID});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonShadow;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
@@ -132,50 +134,60 @@
             this.dataGridViewSearchUsers.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewSearchUsers.DoubleBuffered = true;
             this.dataGridViewSearchUsers.EnableHeadersVisualStyles = false;
+            this.dataGridViewSearchUsers.GridColor = System.Drawing.Color.Silver;
             this.dataGridViewSearchUsers.HeaderBgColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridViewSearchUsers.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.dataGridViewSearchUsers.Location = new System.Drawing.Point(70, 137);
+            this.dataGridViewSearchUsers.Location = new System.Drawing.Point(68, 137);
+            this.dataGridViewSearchUsers.MultiSelect = false;
             this.dataGridViewSearchUsers.Name = "dataGridViewSearchUsers";
             this.dataGridViewSearchUsers.ReadOnly = true;
-            this.dataGridViewSearchUsers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridViewSearchUsers.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dataGridViewSearchUsers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle4.Format = "E2";
+            dataGridViewCellStyle4.NullValue = "0";
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewSearchUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewSearchUsers.RowHeadersVisible = false;
-            this.dataGridViewSearchUsers.Size = new System.Drawing.Size(876, 392);
-            this.dataGridViewSearchUsers.TabIndex = 11;
+            this.dataGridViewSearchUsers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridViewSearchUsers.RowTemplate.ReadOnly = true;
+            this.dataGridViewSearchUsers.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewSearchUsers.Size = new System.Drawing.Size(880, 392);
+            this.dataGridViewSearchUsers.TabIndex = 1;
             // 
             // userId
             // 
             this.userId.HeaderText = "User ID:";
             this.userId.Name = "userId";
             this.userId.ReadOnly = true;
-            this.userId.Width = 123;
             // 
             // name2
             // 
             this.name2.HeaderText = "Name:";
             this.name2.Name = "name2";
             this.name2.ReadOnly = true;
-            this.name2.Width = 108;
             // 
             // surname
             // 
             this.surname.HeaderText = "Surname:";
             this.surname.Name = "surname";
             this.surname.ReadOnly = true;
-            this.surname.Width = 140;
             // 
             // birthDate
             // 
             this.birthDate.HeaderText = "Birth Date:";
             this.birthDate.Name = "birthDate";
             this.birthDate.ReadOnly = true;
-            this.birthDate.Width = 148;
             // 
             // personalID
             // 
             this.personalID.HeaderText = "Personal ID:";
             this.personalID.Name = "personalID";
             this.personalID.ReadOnly = true;
-            this.personalID.Width = 168;
             // 
             // buttonSelect
             // 
@@ -191,7 +203,7 @@
             this.buttonSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSelect.Font = new System.Drawing.Font("Tw Cen MT Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSelect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonSelect.Location = new System.Drawing.Point(835, 553);
+            this.buttonSelect.Location = new System.Drawing.Point(833, 553);
             this.buttonSelect.MaximumSize = new System.Drawing.Size(600, 390);
             this.buttonSelect.Name = "buttonSelect";
             this.buttonSelect.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
@@ -238,7 +250,7 @@
             this.buttonSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.buttonSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSearch.Location = new System.Drawing.Point(864, 20);
+            this.buttonSearch.Location = new System.Drawing.Point(862, 20);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.OnClickTextColor = System.Drawing.Color.Transparent;
             this.buttonSearch.OnHoverTextColor = System.Drawing.Color.Transparent;
@@ -287,7 +299,7 @@
             this.textBoxSurname.Br = System.Drawing.SystemColors.ControlDarkDark;
             this.textBoxSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSurname.ForeColor = System.Drawing.Color.White;
-            this.textBoxSurname.Location = new System.Drawing.Point(182, 66);
+            this.textBoxSurname.Location = new System.Drawing.Point(180, 66);
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.PasswordChar = '\0';
             this.textBoxSurname.Size = new System.Drawing.Size(200, 40);
@@ -303,7 +315,7 @@
             this.textBoxName.Br = System.Drawing.SystemColors.ControlDarkDark;
             this.textBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxName.ForeColor = System.Drawing.Color.White;
-            this.textBoxName.Location = new System.Drawing.Point(182, 20);
+            this.textBoxName.Location = new System.Drawing.Point(180, 20);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.PasswordChar = '\0';
             this.textBoxName.Size = new System.Drawing.Size(200, 40);

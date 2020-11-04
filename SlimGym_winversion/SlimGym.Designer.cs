@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SlimGym));
             this.panelHeader = new System.Windows.Forms.Panel();
             this.buttonMinimize = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@
             this.panelFooter = new System.Windows.Forms.Panel();
             this.labelTime = new System.Windows.Forms.Label();
             this.labelDate = new System.Windows.Forms.Label();
+            this.timerTime = new System.Windows.Forms.Timer(this.components);
             this.panelHeader.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.SuspendLayout();
@@ -176,7 +178,7 @@
             // labelTime
             // 
             this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTime.Location = new System.Drawing.Point(105, 0);
+            this.labelTime.Location = new System.Drawing.Point(157, 0);
             this.labelTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(105, 20);
@@ -190,10 +192,15 @@
             this.labelDate.Location = new System.Drawing.Point(0, 0);
             this.labelDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(105, 20);
+            this.labelDate.Size = new System.Drawing.Size(153, 20);
             this.labelDate.TabIndex = 2;
             this.labelDate.Text = "Date: 21.10.2020.";
             this.labelDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // timerTime
+            // 
+            this.timerTime.Enabled = true;
+            this.timerTime.Tick += new System.EventHandler(this.timerTime_Tick);
             // 
             // SlimGym
             // 
@@ -227,6 +234,7 @@
         private System.Windows.Forms.Button buttonMinimize;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonMaximize;
+        private System.Windows.Forms.Timer timerTime;
     }
 }
 

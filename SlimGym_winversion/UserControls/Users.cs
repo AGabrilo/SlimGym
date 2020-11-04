@@ -49,12 +49,26 @@ namespace SlimGym_winversion.Pictures
         }
         private void buttonNewUser_Click(object sender, EventArgs e)
         {
+            if (!Base.Instance.panelWindowControl.Controls.ContainsKey("NewUser"))                      // Checks for exitsting user control
+            {                                                                                           // Does not exist
+                NewUser newUserUserControl = new NewUser();                                             // Creates an instance
+                newUserUserControl.Dock = DockStyle.Fill;                                               //
+                Base.Instance.panelWindowControl.Controls.Add(newUserUserControl);                      // Adds it to control
+            }
 
+            Base.Instance.panelWindowControl.Controls["NewUser"].BringToFront();                        // Showing Base
         }
 
         private void buttonInTheGym_Click(object sender, EventArgs e)
         {
+            if (!Base.Instance.panelWindowControl.Controls.ContainsKey("InTheGym"))                      // Checks for exitsting user control
+            {                                                                                           // Does not exist
+                InTheGym inTheGymUserControl = new InTheGym();                                          // Creates an instance
+                inTheGymUserControl.Dock = DockStyle.Fill;                                               //
+                Base.Instance.panelWindowControl.Controls.Add(inTheGymUserControl);                      // Adds it to control
+            }
 
+            Base.Instance.panelWindowControl.Controls["InTheGym"].BringToFront();                        // Showing Base
         }
 
         private void buttonSignToGroup_Click(object sender, EventArgs e)

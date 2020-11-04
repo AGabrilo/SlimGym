@@ -74,14 +74,22 @@ namespace SlimGym_winversion.UserControls
         {
             if (!string.IsNullOrEmpty(dataGridViewSearchUsers.SelectedRows.ToString()))
             {
-                if (!Base.Instance.panelWindowControl.Controls.ContainsKey("UserInfo"))             // Checks for exitsting user control
-                {                                                                                   // Does not exist
-                    UserInfo userInfoUserControl = new UserInfo();                                  // Creates an instance
-                    userInfoUserControl.Dock = DockStyle.Fill;                                      //
-                    Base.Instance.panelWindowControl.Controls.Add(userInfoUserControl);             // Adds it to control
+                if (Base.Instance.SelectedButton == "buttonUsers")
+                {
+                    if (!Base.Instance.panelWindowControl.Controls.ContainsKey("UserInfo"))             // Checks for exitsting user control
+                    {                                                                                   // Does not exist
+                        UserInfo userInfoUserControl = new UserInfo();                                  // Creates an instance
+                        userInfoUserControl.Dock = DockStyle.Fill;                                      //
+                        Base.Instance.panelWindowControl.Controls.Add(userInfoUserControl);             // Adds it to control
+                    }
+
+                    Base.Instance.panelWindowControl.Controls["UserInfo"].BringToFront();               // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)
                 }
 
-                Base.Instance.panelWindowControl.Controls["UserInfo"].BringToFront();               // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)       
+                if (Base.Instance.SelectedButton == "buttonMembership")
+                {
+
+                }
             }
         }
 
