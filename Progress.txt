@@ -1,3 +1,9 @@
+ZADACI:	SVAKOM USER CONTROLU TRIBA DODAT GETER
+	NA INICIJALIZACIJI SVAKOG USER CONTROLA TRIBA PROVJERIT JE LI MAXIMIZIRANA ILI NE
+	PROVJERIT STA NE VALJA SA LOGINON KAS SE MAXIMIZIRA FORMA
+triba: 	zavrsit UserInfo, ostala 3 botuna iz Users user controla (jedan cili ostali djelomicno),
+	iduci korak za membership, ostale botune iz panelButtons
+
 Commit base-user-control: 4h
 	Dovrsavanje logina
 	Napravljeni zaobljeni kantuni
@@ -36,8 +42,6 @@ commit user-controls-general 1h
 	logout vodi na login user control
 	dodano brisanje svih user controla na click iz panelButtons
 	malo ureden i prokomentiran kod
-	triba: zavrsit UserInfo, ostala 3 botuna iz Users user controla,
-	iduci korak za membership, ostale botune iz panelButtons
 
 commit time-ticker 30min
 	dodan time ticker i namisteni vrime i datum
@@ -48,4 +52,9 @@ commit time-ticker 30min
 commit added-methods 1h
 	dodana klasa metode
 	promijenjen nacin roundanja forme i login panela
-	
+
+commit records-user-control 3h
+	dodan records user conrol
+	napravit u Methods metodu isMaximized koja osluskuje slimgym state
+	zapoceta metoda koja seta sve na maximized
+	malo ureden i prokomentiran kod

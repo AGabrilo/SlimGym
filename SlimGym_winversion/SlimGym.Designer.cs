@@ -177,8 +177,9 @@
             // 
             // labelTime
             // 
+            this.labelTime.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTime.Location = new System.Drawing.Point(157, 0);
+            this.labelTime.Location = new System.Drawing.Point(665, 0);
             this.labelTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(105, 20);
@@ -188,11 +189,12 @@
             // 
             // labelDate
             // 
+            this.labelDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDate.Location = new System.Drawing.Point(0, 0);
+            this.labelDate.Location = new System.Drawing.Point(510, 0);
             this.labelDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(153, 20);
+            this.labelDate.Size = new System.Drawing.Size(155, 20);
             this.labelDate.TabIndex = 2;
             this.labelDate.Text = "Date: 21.10.2020.";
             this.labelDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

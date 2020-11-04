@@ -44,3 +44,4 @@ C:\Users\Toni\Desktop\FESB\treca godina\PROGRAMSKO INZENJERSTVO\SlimGym\SlimGym\
 C:\Users\Toni\Desktop\FESB\treca godina\PROGRAMSKO INZENJERSTVO\SlimGym\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.pdb
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.NewUser.resources
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.InTheGym.resources
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.Records.resources

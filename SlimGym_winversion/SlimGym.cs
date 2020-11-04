@@ -187,7 +187,8 @@ namespace SlimGym_winversion
             if (this.WindowState != FormWindowState.Maximized)
             {
                 this.WindowState = FormWindowState.Maximized;
-                Region = Methods.ReturnRegion(Methods.CreateRectangle(Width, Height));
+                Methods.ChangeParametersToMaximize();
+
             }
             else
             {
@@ -205,9 +206,9 @@ namespace SlimGym_winversion
         }
 
         //==================================
-        //
-        // Used to call user control
-        //
+        //                                  
+        // Get and set functions            
+        //                                  
         //==================================
         public static SlimGym Instance
         {

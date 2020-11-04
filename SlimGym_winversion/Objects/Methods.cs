@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-
+using SlimGym_winversion.UserControls;
 
 namespace SlimGym_winversion.Objects
 {
@@ -37,7 +37,7 @@ namespace SlimGym_winversion.Objects
             GraphicsPath grPath = new GraphicsPath();
 
             Rectangle rtgLU = new Rectangle(0, 0, Height / roundness, Height / roundness);
-            Rectangle rtgLD = new Rectangle(0, Height * (roundness - 1) / roundness, Height / roundness, Height / roundness);
+            Rectangle rtgLD = new Rectangle(0, Height * (roundness - 1)  / roundness, Height / roundness, Height / roundness);
             Rectangle rtgRU = new Rectangle(Width - Height / roundness, 0, Height / roundness, Height / roundness);
             Rectangle rtgRD = new Rectangle(Width - Height / roundness, Height * (roundness - 1) / roundness, Height / roundness, Height / roundness);
 
@@ -51,9 +51,41 @@ namespace SlimGym_winversion.Objects
             return grPath;
         }
 
+        //==================================
+        //
+        // Used to return graphics path
+        //
+        //==================================
         public static Region ReturnRegion(GraphicsPath grPath)
         {
             return new Region(grPath);                   // Applying corners
         }
+
+        //==================================
+        //
+        // Used to change all parameters to maximize
+        //
+        //==================================
+        public static void ChangeParametersToMaximize()
+        {
+            //Records.Instance.PanelFilter.Region = ReturnRegion(CreateRoundedRectangle(3, Records.Instance.PanelFilter.MaximumSize.Width, Records.Instance.PanelFilter.MaximumSize.Height));
+            SlimGym.Instance.Region = Methods.ReturnRegion(Methods.CreateRectangle(SlimGym.Instance.Width,SlimGym.Instance.Height));
+        }
+
+        //==================================
+        //
+        // Used to change location of an object
+        //n
+        //==================================
+        public static void ChangeObjectLocation(Control control, int x, int y)
+        {
+            control.Location = new Point(x,y);
+        }
+
+        public static void ChangeObjectSize(Control control, int x, int y)
+        {
+            control.Size = new Size(x, y);
+        }
+
     }
 }

@@ -12,14 +12,43 @@ namespace SlimGym_winversion.UserControls
 {
     public partial class InTheGym : UserControl
     {
+        //==================================
+        //
+        // Initializing all variables
+        //
+        //==================================
+
+
+        //==================================
+        //
+        // Loading Base usercontrol
+        //
+        //==================================
         public InTheGym()
         {
             InitializeComponent();
         }
 
+        //==================================
+        //
+        // Back button
+        //
+        //==================================
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Base.Instance.panelWindowControl.Controls.RemoveByKey("InTheGym");
         }
+
+        //=======================================================//
+        //                                                       //
+        // ------------------CUSTOM FUNCTIONS------------------- //
+        //                                                       //
+        //=======================================================//
+
+        //==================================
+        //
+        // Get and set functions
+        //
+        //==================================
     }
 }

@@ -61,6 +61,13 @@ namespace SlimGym_winversion
         {
             ChangeBackColor(buttonRecords);
             panelWindow.Controls.Clear();                                       // Removes all user controls from controls to start fresh
+            if (!panelWindow.Controls.ContainsKey("Records"))                   // If it does not exitst in controls add it
+            {
+                Records recordsUserContol = new Records();                  // Create new insatnce of Records user control
+                recordsUserContol.Dock = DockStyle.Fill;                    // Dock it so it works in full screen
+                panelWindow.Controls.Add(recordsUserContol);
+            }
+            panelWindow.Controls["Records"].BringToFront();                 // Bring Records to front
         }
 
         private void buttonMembership_Click(object sender, EventArgs e)
@@ -112,9 +119,9 @@ namespace SlimGym_winversion
         }
 
         //==================================
-        //
-        // Used to change user control in panelWindow
-        //
+        //                                  
+        // Get and set functions            
+        //                                  
         //==================================
         public static Base Instance
         {
@@ -134,11 +141,6 @@ namespace SlimGym_winversion
             set { panelWindow = value; }
         }
 
-        //==================================
-        //
-        // Used to make color changable from other user controls
-        //
-        //==================================
         public Color ResetButtonColors
         {
             get

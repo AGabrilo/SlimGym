@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Base));
             this.panelButtons = new System.Windows.Forms.Panel();
-            this.buttonLogOut = new SlimGym_winversion.Objects.buttonEllip();
             this.buttonChanges = new System.Windows.Forms.Button();
             this.buttonRecords = new System.Windows.Forms.Button();
             this.buttonMembership = new System.Windows.Forms.Button();
@@ -40,6 +39,7 @@
             this.buttonUsers = new System.Windows.Forms.Button();
             this.panelWindow = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.buttonLogOut = new SlimGym_winversion.Objects.buttonEllip();
             this.panelButtons.SuspendLayout();
             this.panelWindow.SuspendLayout();
             this.SuspendLayout();
@@ -61,29 +61,6 @@
             this.panelButtons.Name = "panelButtons";
             this.panelButtons.Size = new System.Drawing.Size(250, 645);
             this.panelButtons.TabIndex = 0;
-            // 
-            // buttonLogOut
-            // 
-            this.buttonLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonLogOut.BackColor = System.Drawing.Color.Transparent;
-            this.buttonLogOut.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonLogOut.BorderThickness = 6;
-            this.buttonLogOut.ButtonRoundness = 1;
-            this.buttonLogOut.FlatAppearance.BorderSize = 0;
-            this.buttonLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.buttonLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.buttonLogOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonLogOut.Location = new System.Drawing.Point(131, 590);
-            this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonLogOut.OnHoverTextColor = System.Drawing.Color.White;
-            this.buttonLogOut.Size = new System.Drawing.Size(110, 45);
-            this.buttonLogOut.TabIndex = 5;
-            this.buttonLogOut.Text = "Log Out";
-            this.buttonLogOut.UseVisualStyleBackColor = false;
-            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // buttonChanges
             // 
@@ -222,6 +199,29 @@
             this.label2.Size = new System.Drawing.Size(884, 135);
             this.label2.TabIndex = 0;
             this.label2.Text = "Select category";
+            // 
+            // buttonLogOut
+            // 
+            this.buttonLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonLogOut.BackColor = System.Drawing.Color.Transparent;
+            this.buttonLogOut.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.buttonLogOut.BorderThickness = 6;
+            this.buttonLogOut.ButtonRoundness = 1;
+            this.buttonLogOut.FlatAppearance.BorderSize = 0;
+            this.buttonLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.buttonLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.buttonLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.buttonLogOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.buttonLogOut.Location = new System.Drawing.Point(131, 590);
+            this.buttonLogOut.Name = "buttonLogOut";
+            this.buttonLogOut.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.buttonLogOut.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonLogOut.Size = new System.Drawing.Size(110, 45);
+            this.buttonLogOut.TabIndex = 5;
+            this.buttonLogOut.Text = "Log Out";
+            this.buttonLogOut.UseVisualStyleBackColor = false;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // Base
             // 

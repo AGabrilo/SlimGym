@@ -70,7 +70,7 @@ namespace SlimGym_winversion.Objects
 
             base.OnPaint(e);
             Graphics g = e.Graphics;
-            GraphicsPath grPath = CreateRoundedRectangle(_buttonRoundness);
+            GraphicsPath grPath = Methods.CreateRoundedRectangle(_buttonRoundness, Width, Height);
             g.SmoothingMode = ((SmoothingMode)SmoothingMode.HighQuality);
             g.InterpolationMode = InterpolationMode.HighQualityBilinear;
             g.CompositingQuality = CompositingQuality.HighQuality;
@@ -110,25 +110,6 @@ namespace SlimGym_winversion.Objects
                 _buttonRoundness = value;
                 Invalidate();
             }
-        }
-
-        public GraphicsPath CreateRoundedRectangle(int roundness)
-        {
-            GraphicsPath grPath = new GraphicsPath();
-
-            Rectangle rtgLU = new Rectangle(0, 0, Height / _buttonRoundness, Height / _buttonRoundness);
-            Rectangle rtgLD = new Rectangle(0, Height * (_buttonRoundness - 1) / _buttonRoundness, Height / _buttonRoundness, Height / _buttonRoundness);
-            Rectangle rtgRU = new Rectangle(Width - Height / _buttonRoundness, 0, Height / _buttonRoundness, Height / _buttonRoundness);
-            Rectangle rtgRD = new Rectangle(Width - Height / _buttonRoundness, Height * (_buttonRoundness - 1) / _buttonRoundness, Height / _buttonRoundness, Height / _buttonRoundness);
-
-            grPath.StartFigure();
-            grPath.AddArc(rtgLU, 180, 90);
-            grPath.AddArc(rtgRU, -90, 90);
-            grPath.AddArc(rtgRD, 0, 90);
-            grPath.AddArc(rtgLD, 90, 90);
-            grPath.CloseFigure();
-
-            return grPath;
         }
     }
 }

@@ -56,6 +56,9 @@
     </Compile>
     <Compile Include="Objects\Methods.cs" />
     <Compile Include="Objects\MyRectangle.cs" />
+    <Compile Include="Objects\panelEllip.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Objects\textBoxEllip.cs" />
     <Compile Include="Objects\Trans.cs" />
     <Compile Include="UserControls\InTheGym.cs">
@@ -69,6 +72,12 @@
     </Compile>
     <Compile Include="UserControls\NewUser.Designer.cs">
       <DependentUpon>NewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Records.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Records.Designer.cs">
+      <DependentUpon>Records.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UserInfo.cs">
       <SubType>UserControl</SubType>
@@ -113,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\NewUser.resx">
       <DependentUpon>NewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Records.resx">
+      <DependentUpon>Records.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserInfo.resx">
       <DependentUpon>UserInfo.cs</DependentUpon>

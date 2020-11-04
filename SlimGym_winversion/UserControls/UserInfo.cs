@@ -29,9 +29,26 @@ namespace SlimGym_winversion.UserControls
             InitializeComponent();
         }
 
+        //==================================
+        //
+        // Back button
+        //
+        //==================================
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Base.Instance.panelWindowControl.Controls.RemoveByKey("UserInfo");
         }
+
+        //=======================================================//
+        //                                                       //
+        // ------------------CUSTOM FUNCTIONS------------------- //
+        //                                                       //
+        //=======================================================//
+
+        //==================================
+        //
+        // Get and set functions
+        //
+        //==================================
     }
 }
