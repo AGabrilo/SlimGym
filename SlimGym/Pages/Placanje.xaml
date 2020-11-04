@@ -3,10 +3,58 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SlimGym.Placanje">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Page 3.!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large" TextColor="Green"  />
+        <StackLayout BackgroundColor="White">
+            <Frame BackgroundColor="#16c945"  HeightRequest="35">
+                <Label Text="Članarina"  TextColor="DarkSlateGray" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
+            </Frame>
+        
+            <!--<ImageCell Text="dkdkfdlfk" ImageSource="/images/icons_money.png" />-->
+            <Frame HeightRequest="60" CornerRadius="30" BackgroundColor="#cce3d2">
+                <Grid BackgroundColor="#cce3d2">
+                    <!--<Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>-->
+                    <Image Source="/images/icons_money.png" HorizontalOptions="Start" />
+                    <Label Grid.Column="1" Text="Prosinac" FontSize="Title" HorizontalOptions="Start" VerticalOptions="Center" TextColor="DarkSlateGray"/>
+                    <Label Grid.Column="2" Text="250 kn" FontSize="Subtitle" HorizontalOptions="Start" VerticalOptions="Center" TextColor="DarkSlateGray"/>
+                    
+                   
+
+                </Grid>
+
+                <!--<Image Source="/images/icons_money.png" HorizontalOptions="Start" />-->
+            </Frame>
+            <Button x:Name="Btn_history" Text="Povijest plaćanja" BackgroundColor="#16c945" TextColor="DarkSlateGray" FontAttributes="Bold" CornerRadius="20" Clicked="Btn_history_Clicked" />
+            <ScrollView x:Name="history_scroll" BackgroundColor="White" IsVisible="false">
+                <StackLayout>
+                   
+                    <TableView>
+
+                        <TableRoot>
+                            <TableSection>
+                                
+                                <ImageCell Text="Studeni" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="2.11.2020." DetailColor="#825c5a" Height="50"/>
+                                <ImageCell Text="Listopad" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="2.10.2020." DetailColor="#825c5a" Height="50"/>
+                                <ImageCell Text="Rujan" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="2.9.2020." DetailColor="#825c5a" Height="50"/>
+                                <ImageCell Text="Kolovoz" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="2.8.2020." DetailColor="#825c5a" Height="50"/>
+                                <ImageCell Text="Srpanj" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="2.7.2020." DetailColor="#825c5a" Height="50"/>
+                                <ImageCell Text="Lipanj" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="2.6.2020." DetailColor="#825c5a" Height="50"/>
+                                <ImageCell Text="Svibanj" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="2.5.2020." DetailColor="#825c5a" Height="50"/>
+                                <ImageCell Text="Travanj" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="2.4.2020." DetailColor="#825c5a" Height="50"/>
+                                <ImageCell Text="Ožujak" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="2.3.2020." DetailColor="#825c5a" Height="50"/>
+                                <ImageCell Text="Veljača" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="2.2.2020." DetailColor="#825c5a" Height="50"/>
+                                <ImageCell Text="Siječanj" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="2.1.2020." DetailColor="#825c5a" Height="50"/>
+                                
+                            </TableSection>
+                        </TableRoot>
+                    </TableView>
+
+
+                </StackLayout>
+
+
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
