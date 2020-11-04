@@ -72,15 +72,12 @@ namespace SlimGym.Models
         {
             eventNameCollection = new List<string>();
             eventNameCollection.Add("Crossfit");
-            eventNameCollection.Add("Flow fit");
-            eventNameCollection.Add("Lift&Pump");
-            eventNameCollection.Add("Fat Burning");
+            eventNameCollection.Add("Total body");
             eventNameCollection.Add("Boks");
-            eventNameCollection.Add("Yoga Therapy");
+            eventNameCollection.Add("Spinning");
             eventNameCollection.Add("Zumba");
-            eventNameCollection.Add("Kruzni trening");
-            eventNameCollection.Add("Trx");
-            eventNameCollection.Add("Aerial Hoop");
+           
+        
         }
 
         /// <summary>  
