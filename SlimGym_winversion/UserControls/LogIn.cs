@@ -7,13 +7,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
+using SlimGym_winversion.Objects;
 
 namespace SlimGym_winversion
 {
     public partial class LogIn : UserControl
     {
-
+        //==================================
+        //
+        // Initializing all variables
+        //
+        //==================================
+        private int roundness = 18;
         //==================================
         //
         // Loading LogIn user control
@@ -22,7 +29,7 @@ namespace SlimGym_winversion
         public LogIn()
         {
             InitializeComponent();
-            this.panelLogIn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelLogIn.Width, panelLogIn.Height, 20, 20));                // Make login panel rounded
+            panelLogIn.Region =  Methods.ReturnRegion(Methods.CreateRoundedRectangle(roundness, panelLogIn.Width, panelLogIn.Height));                // Make login panel rounded
         }
 
         //==================================
@@ -58,22 +65,8 @@ namespace SlimGym_winversion
         //                                                       //
         // ------------------CUSTOM FUNCTIONS------------------- //
         //                                                       //
-        //=======================================================//
+        //=======================================================// 
 
-        //==================================
-        //
-        // Make form rounded function
-        //
-        //==================================
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        public static extern IntPtr CreateRoundRectRgn
-        (
-            int nLeftRect,     // x-coordinate of upper-left corner
-            int nTopRect,      // y-coordinate of upper-left corner
-            int nRightRect,    // x-coordinate of lower-right corner
-            int nBottomRect,   // y-coordinate of lower-right corner
-            int nWidthEllipse, // height of ellipse
-            int nHeightEllipse // width of ellipse
-        );
+        
     }
 }

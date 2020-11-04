@@ -54,6 +54,7 @@
     <Compile Include="Objects\buttonEllip.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Objects\Methods.cs" />
     <Compile Include="Objects\MyRectangle.cs" />
     <Compile Include="Objects\textBoxEllip.cs" />
     <Compile Include="Objects\Trans.cs" />

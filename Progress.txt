@@ -39,8 +39,13 @@ commit user-controls-general 1h
 	triba: zavrsit UserInfo, ostala 3 botuna iz Users user controla,
 	iduci korak za membership, ostale botune iz panelButtons
 
-commit time-ticker
+commit time-ticker 30min
 	dodan time ticker i namisteni vrime i datum
 	dodan in the gym user control
 	malo prominjeni data grid viewovi
 	sranje sa maximiziranjen nije se odstranilo
+
+commit added-methods 1h
+	dodana klasa metode
+	promijenjen nacin roundanja forme i login panela
+	

@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using SlimGym_winversion.Objects;
 
 namespace SlimGym_winversion
 {
@@ -20,6 +22,7 @@ namespace SlimGym_winversion
         //
         //==================================
         static SlimGym _slimGym;                // Creating a SlimGym object
+        private int formRoundness = 18;
         LogIn logInUserControl = new LogIn();
         
         //==================================
@@ -31,15 +34,15 @@ namespace SlimGym_winversion
         {
             InitializeComponent();
 
-            labelDate.Text = "Date: " + DateTime.Now.ToString("D");
+            labelDate.Text = "Date: " + DateTime.Now.ToString("D");                                             // Seting date
 
-            _slimGym = this;                    // Seting _slimGym to pint on this form
+            _slimGym = this;                                                                                    // Seting _slimGym to pint on this form
 
-            this.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20)); // Applying round corners         
-            
+            Region = Methods.ReturnRegion(Methods.CreateRoundedRectangle(formRoundness, Width, Height));        // Make form corners rounded
+
             logInUserControl.Dock = DockStyle.Fill;     
-            panelBody.Controls.Add(logInUserControl);   // Adding LogIn to controls
-        }
+            panelBody.Controls.Add(logInUserControl);                                                           // Adding LogIn to controls
+        }      
 
         //==================================
         //
@@ -153,31 +156,11 @@ namespace SlimGym_winversion
             this.Close();
         }
 
-
-
-
-
         //=======================================================//
         //                                                       //
         // ------------------CUSTOM FUNCTIONS------------------- //
         //                                                       //
         //=======================================================//
-
-        //==================================
-        //
-        // Make form rounded function
-        //
-        //==================================
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        public static extern IntPtr CreateRoundRectRgn
-        (
-            int nLeftRect,     // x-coordinate of upper-left corner
-            int nTopRect,      // y-coordinate of upper-left corner
-            int nRightRect,    // x-coordinate of lower-right corner
-            int nBottomRect,   // y-coordinate of lower-right corner
-            int nWidthEllipse, // height of ellipse
-            int nHeightEllipse // width of ellipse
-        );
 
         //==================================
         //
@@ -201,16 +184,16 @@ namespace SlimGym_winversion
 
         private void maximize_SlimGym()     // Calling when maximizing function
         {
-                if (this.WindowState != FormWindowState.Maximized)
-                {
-                    this.WindowState = FormWindowState.Maximized;
-                    this.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 0, 0));    // Set normal corners when maximized
-                }
-                else
-                {
-                    this.WindowState = FormWindowState.Normal;
-                    this.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));  // Apply round corners when form size is normal
-                }
+            if (this.WindowState != FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Maximized;
+                Region = Methods.ReturnRegion(Methods.CreateRectangle(Width, Height));
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+                Region = Methods.ReturnRegion(Methods.CreateRoundedRectangle(formRoundness, Width, Height));
+            }
         }
 
         private void maximize_Slimgym_DoubleMouseClick(object sender, MouseEventArgs e)
@@ -243,12 +226,5 @@ namespace SlimGym_winversion
             get { return panelBody; }
             set { panelBody = value; }
         }
-
-
-        //
-        //==================================
-        //
-        // 
-        //
     }
 }
