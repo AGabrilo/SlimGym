@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "AubyqgKuaZRqAzPw0I807FF+y9N+a60G//RKy4gLNfwFTbGA8rN/9Cu7PIFvbNqIxHzvcH/AOL+p+UlT8f7JDg==",
+  "dgSpecHash": "4CQlMt7Dme0WSYNRi6swgFRGY80NhOpY27cIlOePavO25qsWJQrMrr3NoRNqaAmwzuB/ie1rKyE1AjmB2HYj6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym\\SlimGym.csproj",
+  "projectFilePath": "C:\\Users\\agabr\\Downloads\\SlimGym\\SlimGym\\SlimGym.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Petra Dundic\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Petra Dundic\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Petra Dundic\\.nuget\\packages\\syncfusion.licensing\\18.3.0.44\\syncfusion.licensing.18.3.0.44.nupkg.sha512",
-    "C:\\Users\\Petra Dundic\\.nuget\\packages\\syncfusion.xamarin.core\\18.3.0.44\\syncfusion.xamarin.core.18.3.0.44.nupkg.sha512",
-    "C:\\Users\\Petra Dundic\\.nuget\\packages\\syncfusion.xamarin.sfschedule\\18.3.0.44\\syncfusion.xamarin.sfschedule.18.3.0.44.nupkg.sha512",
-    "C:\\Users\\Petra Dundic\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\agabr\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\agabr\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\agabr\\.nuget\\packages\\syncfusion.licensing\\18.3.0.44\\syncfusion.licensing.18.3.0.44.nupkg.sha512",
+    "C:\\Users\\agabr\\.nuget\\packages\\syncfusion.xamarin.core\\18.3.0.44\\syncfusion.xamarin.core.18.3.0.44.nupkg.sha512",
+    "C:\\Users\\agabr\\.nuget\\packages\\syncfusion.xamarin.sfschedule\\18.3.0.44\\syncfusion.xamarin.sfschedule.18.3.0.44.nupkg.sha512",
+    "C:\\Users\\agabr\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],

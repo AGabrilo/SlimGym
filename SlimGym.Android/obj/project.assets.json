@@ -2066,24 +2066,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Petra Dundic\\.nuget\\packages\\": {},
+    "C:\\Users\\agabr\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym.Android\\SlimGym.Android.csproj",
+      "projectUniqueName": "C:\\Users\\agabr\\Downloads\\SlimGym\\SlimGym.Android\\SlimGym.Android.csproj",
       "projectName": "SlimGym.Android",
-      "projectPath": "C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym.Android\\SlimGym.Android.csproj",
-      "packagesPath": "C:\\Users\\Petra Dundic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym.Android\\obj\\",
+      "projectPath": "C:\\Users\\agabr\\Downloads\\SlimGym\\SlimGym.Android\\SlimGym.Android.csproj",
+      "packagesPath": "C:\\Users\\agabr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\agabr\\Downloads\\SlimGym\\SlimGym.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Petra Dundic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\agabr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2097,8 +2097,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym\\SlimGym.csproj": {
-              "projectPath": "C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym\\SlimGym.csproj"
+            "C:\\Users\\agabr\\Downloads\\SlimGym\\SlimGym\\SlimGym.csproj": {
+              "projectPath": "C:\\Users\\agabr\\Downloads\\SlimGym\\SlimGym\\SlimGym.csproj"
             }
           }
         }
