@@ -4,14 +4,13 @@
              x:Class="SlimGym.Pocetna"
              Title="Početna">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="PaleGreen">
-            <Grid HeightRequest="250" BackgroundColor="Aqua">
-                <Image Source="/images/teretana.jpg" Aspect="AspectFill"/>
-            </Grid>
-            <Label Text="Dobrodošli!"
-                VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large" TextColor="Red"  />
+        <StackLayout BackgroundColor="White">
+            <Frame BackgroundColor="White" HeightRequest="110">
+                <Image Source="/images/Logo.png"/>
+            </Frame>
             
-                <Label Text="Mobilna aplikacija za članove SlimGym teretane." FontSize="Medium" TextColor="Black" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"/>
+            <Label Text="Dobrodošli!" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="40" TextColor="#595b5e"  />
+            <Label Text="Mobilna aplikacija za članove SlimGym teretane." FontSize="Medium" TextColor="#595b5e" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"/>
            
         </StackLayout>
     </ContentPage.Content>

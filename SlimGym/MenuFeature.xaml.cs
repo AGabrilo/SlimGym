@@ -29,31 +29,31 @@ namespace SlimGym
 			// Adding menu items to menuList and you can define title ,page and icon  
 			menuList.Add(new MenuFeatureMasterMenuItem()
 			{
-				Title = "Home",
+				Title = "Početna",
                 Icon = "/images/home.png",
 				TargetType = typeof(Pocetna)
 			});
 			menuList.Add(new MenuFeatureMasterMenuItem()
 			{
-				Title = "Programs",
+				Title = "Grupni programi",
 				Icon = "/images/programs.png",
 				TargetType = typeof(Programs)
 			});
 			menuList.Add(new MenuFeatureMasterMenuItem()
 			{
-				Title = "Activity",
+				Title = "Aktivnost",
 				Icon = "/images/activity.png",
 				TargetType = typeof(Placanje)
 			});
 			menuList.Add(new MenuFeatureMasterMenuItem()
 			{
-				Title = "Schedule",
+				Title = "Raspored",
 				Icon = "/images/calendar.png",
 				TargetType = typeof(SchedulePage)
 			});
 			menuList.Add(new MenuFeatureMasterMenuItem()
 			{
-				Title = "Logout",
+				Title = "Odjava",
 				Icon = "/images/logout.png",
 				TargetType = typeof(MainPage)
 			});
