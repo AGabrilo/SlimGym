@@ -68,7 +68,6 @@ namespace SlimGym_winversion.Objects
         //==================================
         public static void ChangeParametersToMaximize()
         {
-            //Records.Instance.PanelFilter.Region = ReturnRegion(CreateRoundedRectangle(3, Records.Instance.PanelFilter.MaximumSize.Width, Records.Instance.PanelFilter.MaximumSize.Height));
             SlimGym.Instance.Region = Methods.ReturnRegion(Methods.CreateRectangle(SlimGym.Instance.Width,SlimGym.Instance.Height));
         }
 
@@ -83,6 +82,10 @@ namespace SlimGym_winversion.Objects
         }
 
         public static void ChangeObjectSize(Control control, int x, int y)
+        {
+            control.Size = new Size(x, y);
+        }
+        public static void ChangeObjectFontSize(Control control, int x, int y)
         {
             control.Size = new Size(x, y);
         }

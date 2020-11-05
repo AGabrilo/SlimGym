@@ -20,7 +20,8 @@ namespace SlimGym_winversion
         // Initializing all variables
         //
         //==================================
-        private int roundness = 18;
+
+
         //==================================
         //
         // Loading LogIn user control
@@ -29,7 +30,6 @@ namespace SlimGym_winversion
         public LogIn()
         {
             InitializeComponent();
-            panelLogIn.Region =  Methods.ReturnRegion(Methods.CreateRoundedRectangle(roundness, panelLogIn.Width, panelLogIn.Height));                // Make login panel rounded
         }
 
         //==================================
@@ -54,7 +54,7 @@ namespace SlimGym_winversion
             SlimGym.Instance.panelBodyControl.Controls["Base"].BringToFront();      // Showing Base
 
             textBoxPassword.Text = "";                                              // Deleting data from textboxes
-            textboxUsername.Text = "";                                              // Deleting data from textboxes
+            textBoxUsername.Text = "";                                              // Deleting data from textboxes
 
             //
             // If not show message

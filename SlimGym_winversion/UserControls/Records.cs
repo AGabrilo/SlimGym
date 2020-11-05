@@ -31,10 +31,6 @@ namespace SlimGym_winversion.UserControls
 
             _records = this;
 
-            panelFilter.Region = Methods.ReturnRegion(Methods.CreateRoundedRectangle(2, panelFilter.Width, panelFilter.Height));
-            labelFilter.Region = Methods.ReturnRegion(Methods.CreateRoundedRectangle(1, labelFilter.Width, labelFilter.Height));
-            datePickerEntrance.Region = Methods.ReturnRegion(Methods.CreateRoundedRectangle(1, datePickerEntrance.Width, datePickerEntrance.Height - 3));
-            datePickerExit.Region = Methods.ReturnRegion(Methods.CreateRoundedRectangle(1, datePickerExit.Width, datePickerExit.Height - 3));
         }
 
         //=======================================================//
@@ -57,12 +53,6 @@ namespace SlimGym_winversion.UserControls
                 }
                 return _records;
             }
-        }
-
-        public panelEllip PanelFilter
-        {
-            get { return panelFilter; }
-            set { panelFilter = value; }
         }
     }
 }

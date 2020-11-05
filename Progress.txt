@@ -1,6 +1,5 @@
 ZADACI:	SVAKOM USER CONTROLU TRIBA DODAT GETER
 	NA INICIJALIZACIJI SVAKOG USER CONTROLA TRIBA PROVJERIT JE LI MAXIMIZIRANA ILI NE
-	PROVJERIT STA NE VALJA SA LOGINON KAS SE MAXIMIZIRA FORMA
 triba: 	zavrsit UserInfo, ostala 3 botuna iz Users user controla (jedan cili ostali djelomicno),
 	iduci korak za membership, ostale botune iz panelButtons
 
@@ -58,3 +57,9 @@ commit records-user-control 3h
 	napravit u Methods metodu isMaximized koja osluskuje slimgym state
 	zapoceta metoda koja seta sve na maximized
 	malo ureden i prokomentiran kod
+
+commit panelEllip 1h
+	dodan panelEllip
+	rijeseno lose resizanje panela
+	prominjeni login textboxovi
+	

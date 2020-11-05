@@ -44,7 +44,7 @@
             // 
             // labelName
             // 
-            this.labelName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.labelName.Location = new System.Drawing.Point(223, 16);

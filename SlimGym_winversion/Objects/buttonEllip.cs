@@ -20,6 +20,24 @@ namespace SlimGym_winversion.Objects
         private int _borderThickness = 0;
         private int _buttonRoundness = 3;
 
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+
+            base.OnPaint(e);
+            Graphics g = e.Graphics;
+            GraphicsPath grPath = Methods.CreateRoundedRectangle(_buttonRoundness, Width, Height);
+            g.SmoothingMode = ((SmoothingMode)SmoothingMode.HighQuality);
+            g.InterpolationMode = InterpolationMode.HighQualityBilinear;
+            g.CompositingQuality = CompositingQuality.HighQuality;
+            g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+            Pen pen = new Pen(_borderColor, _borderThickness);
+
+            this.Region = new Region(grPath);
+            g.DrawPath(pen, grPath);
+        }
+
         protected override void OnMouseEnter(EventArgs e)
         {
             _offHoverTextColor = ForeColor;
@@ -65,23 +83,6 @@ namespace SlimGym_winversion.Objects
             }
         }
 
-        protected override void OnPaint(PaintEventArgs e)
-        {
-
-            base.OnPaint(e);
-            Graphics g = e.Graphics;
-            GraphicsPath grPath = Methods.CreateRoundedRectangle(_buttonRoundness, Width, Height);
-            g.SmoothingMode = ((SmoothingMode)SmoothingMode.HighQuality);
-            g.InterpolationMode = InterpolationMode.HighQualityBilinear;
-            g.CompositingQuality = CompositingQuality.HighQuality;
-            g.PixelOffsetMode = PixelOffsetMode.HighQuality;
-            g.SmoothingMode = SmoothingMode.AntiAlias;
-            Pen pen = new Pen(_borderColor, _borderThickness);
-
-            this.Region = new Region(grPath);
-            g.DrawPath(pen, grPath);
-        }
-
         public Color BorderColor
         {
             get => _borderColor;
@@ -94,7 +95,7 @@ namespace SlimGym_winversion.Objects
 
         public int BorderThickness
         {
-            get { return _borderThickness; }
+            get =>_borderThickness;
             set
             {
                 _borderThickness = value;
@@ -104,7 +105,7 @@ namespace SlimGym_winversion.Objects
 
         public int ButtonRoundness
         {
-            get { return _buttonRoundness; }
+            get => _buttonRoundness;
             set
             {
                 _buttonRoundness = value;
