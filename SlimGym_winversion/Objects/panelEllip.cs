@@ -9,7 +9,7 @@ using System.Drawing.Drawing2D;
 
 namespace SlimGym_winversion.Objects
 {
-    class panelEllip : Panel
+    public class panelEllip : Panel
     {
 
         private Color _borderColor = Color.Transparent;

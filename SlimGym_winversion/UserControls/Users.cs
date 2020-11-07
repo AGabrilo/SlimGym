@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using SlimGym_winversion.UserControls;
+using SlimGym_winversion.Objects;
 
 namespace SlimGym_winversion.Pictures
 {
@@ -40,7 +41,7 @@ namespace SlimGym_winversion.Pictures
         {
             if (!Base.Instance.panelWindowControl.Controls.ContainsKey("SearchUsers"))                  // Checks for exitsting user control
             {                                                                                           // Does not exist
-                SearchUsers searchUsersUserControl = new SearchUsers();                                 // Creates an instance
+                SearchUsers searchUsersUserControl = new SearchUsers(buttonUserInfo.Name);                                 // Creates an instance
                 searchUsersUserControl.Dock = DockStyle.Fill;                                           //
                 Base.Instance.panelWindowControl.Controls.Add(searchUsersUserControl);                  // Adds it to control
             }
@@ -73,7 +74,14 @@ namespace SlimGym_winversion.Pictures
 
         private void buttonSignToGroup_Click(object sender, EventArgs e)
         {
+            if (!Base.Instance.panelWindowControl.Controls.ContainsKey("SearchUsers"))                  // Checks for exitsting user control
+            {                                                                                           // Does not exist
+                SearchUsers searchUsersUserControl = new SearchUsers(buttonSignToGroup.Name.ToString());                                 // Creates an instance
+                searchUsersUserControl.Dock = DockStyle.Fill;                                           //
+                Base.Instance.panelWindowControl.Controls.Add(searchUsersUserControl);                  // Adds it to control
+            }
 
+            Base.Instance.panelWindowControl.Controls["SearchUsers"].BringToFront();                    // Showing Base
         }
 
         //=======================================================//

@@ -77,7 +77,7 @@ namespace SlimGym_winversion
 
             if (!panelWindow.Controls.ContainsKey("SearchUsers"))               // If it does not exitst in controls add it
             {
-                SearchUsers searchUsersUserContol = new SearchUsers();          // Create new insatnce of SearchUsers user control
+                SearchUsers searchUsersUserContol = new SearchUsers(buttonMembership.Name.ToString());          // Create new insatnce of SearchUsers user control
                 searchUsersUserContol.Dock = DockStyle.Fill;                    // Dock it so it works in full screen
                 panelWindow.Controls.Add(searchUsersUserContol);
             }

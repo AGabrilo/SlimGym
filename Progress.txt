@@ -62,4 +62,8 @@ commit panelEllip 1h
 	dodan panelEllip
 	rijeseno lose resizanje panela
 	prominjeni login textboxovi
+
+commit schedule-start 30min
+	zapoceto planiranje rasporeda
+	
 	

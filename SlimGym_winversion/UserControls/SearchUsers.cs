@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SlimGym_winversion.Pictures;
+using SlimGym_winversion.Objects;
 
 namespace SlimGym_winversion.UserControls
 {
@@ -18,16 +19,17 @@ namespace SlimGym_winversion.UserControls
         // Initializing all variables
         //
         //==================================
-        
+        public string triggerName;
 
         //==================================
         //
         // Loading Base usercontrol
         //
         //==================================
-        public SearchUsers()
+        public SearchUsers(string triggerName)
         {
             InitializeComponent();
+            this.triggerName = triggerName;
             if (Base.Instance.panelWindowControl.Controls.Count == 0)                    // Checks if the searchUsers is onley user control in controls
             {
                 buttonBack.Visible = false;                                             // If yes make buttonBack invisible
@@ -74,7 +76,7 @@ namespace SlimGym_winversion.UserControls
         {
             if (!string.IsNullOrEmpty(dataGridViewSearchUsers.SelectedRows.ToString()))
             {
-                if (Base.Instance.SelectedButton == "buttonUsers")
+                if (triggerName == "buttonUserInfo")
                 {
                     if (!Base.Instance.panelWindowControl.Controls.ContainsKey("UserInfo"))             // Checks for exitsting user control
                     {                                                                                   // Does not exist
@@ -86,7 +88,22 @@ namespace SlimGym_winversion.UserControls
                     Base.Instance.panelWindowControl.Controls["UserInfo"].BringToFront();               // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)
                 }
 
-                if (Base.Instance.SelectedButton == "buttonMembership")
+                if (triggerName == "buttonSignToGroup")
+                {
+                    if (!Base.Instance.panelWindowControl.Controls.ContainsKey("UserControl1"))             // Checks for exitsting user control
+                    {                                                                                   // Does not exist
+                        UserControl1 userInfoUserControl = new UserControl1();                                  // Creates an instance
+                        userInfoUserControl.Dock = DockStyle.Fill;                                      //
+                        Base.Instance.panelWindowControl.Controls.Add(userInfoUserControl);             // Adds it to control
+                    }
+
+                    Base.Instance.panelWindowControl.Controls["UserControl1"].BringToFront();               // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)                                                                                                 
+
+                    Methods.AddButton(UserControl1.Instance.PanelEllip);
+                }
+
+
+                if (triggerName == "buttonMembership")
                 {
 
                 }

@@ -90,5 +90,16 @@ namespace SlimGym_winversion.Objects
             control.Size = new Size(x, y);
         }
 
+        public static void AddButton(panelEllip panel)
+        {
+            buttonEllip buttonEllip = new buttonEllip();
+            buttonEllip.Size = new Size(100, 50);
+            buttonEllip.BackColor = Color.Red;
+            buttonEllip.Location = new Point(30,30);
+            buttonEllip.Show();
+            buttonEllip.BringToFront();
+            panel.Controls.Add(buttonEllip);
+        }
+
     }
 }
