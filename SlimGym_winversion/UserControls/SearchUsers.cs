@@ -92,14 +92,14 @@ namespace SlimGym_winversion.UserControls
                 {
                     if (!Base.Instance.panelWindowControl.Controls.ContainsKey("UserControl1"))             // Checks for exitsting user control
                     {                                                                                   // Does not exist
-                        UserControl1 userInfoUserControl = new UserControl1();                                  // Creates an instance
-                        userInfoUserControl.Dock = DockStyle.Fill;                                      //
-                        Base.Instance.panelWindowControl.Controls.Add(userInfoUserControl);             // Adds it to control
+                        Schedule scheduleUserControl = new Schedule();                                  // Creates an instance
+                        scheduleUserControl.Dock = DockStyle.Fill;                                      //
+                        Base.Instance.panelWindowControl.Controls.Add(scheduleUserControl);             // Adds it to control
                     }
 
-                    Base.Instance.panelWindowControl.Controls["UserControl1"].BringToFront();               // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)                                                                                                 
+                    Base.Instance.panelWindowControl.Controls["Schedule"].BringToFront();               // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)                                                                                                 
 
-                    Methods.AddButton(UserControl1.Instance.PanelEllip);
+                    Methods.AddButton(Schedule.Instance.panelSchedule);
                 }
 
 

@@ -9,9 +9,8 @@ using System.Drawing.Drawing2D;
 
 namespace SlimGym_winversion.Objects
 {
-    public class panelEllip : Panel
+    public class panelSchedule : Panel
     {
-
         private Color _borderColor = Color.Transparent;
         private int _borderThickness = 0;
         private int _panelRoundness = 3;
@@ -28,17 +27,22 @@ namespace SlimGym_winversion.Objects
             g.CompositingQuality = CompositingQuality.HighQuality;
             g.PixelOffsetMode = PixelOffsetMode.HighQuality;
             g.SmoothingMode = SmoothingMode.AntiAlias;
-            Pen pen = new Pen(_borderColor, _borderThickness);            
+            Pen pen = new Pen(_borderColor, _borderThickness);
+            for (int i = 0; i < 16; i++)
+            {
+                g.DrawLine(penline, (i + 1) * 58, 20, (i + 1) * 58, 575);
+            }
+
 
             this.Region = new Region(grPath);
-            g.DrawPath(pen, grPath);           
+            g.DrawPath(pen, grPath);
 
         }
 
         protected override void OnResize(EventArgs e)
         {
             Invalidate();
-            base.OnResize(e); 
+            base.OnResize(e);
         }
 
         public Color BorderColor
@@ -72,6 +76,3 @@ namespace SlimGym_winversion.Objects
         }
     }
 }
-
-
-

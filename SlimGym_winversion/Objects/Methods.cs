@@ -3,6 +3,8 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using SlimGym_winversion.UserControls;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace SlimGym_winversion.Objects
 {
@@ -90,15 +92,27 @@ namespace SlimGym_winversion.Objects
             control.Size = new Size(x, y);
         }
 
-        public static void AddButton(panelEllip panel)
+        public static void AddButton(panelSchedule panel)
         {
-            buttonEllip buttonEllip = new buttonEllip();
-            buttonEllip.Size = new Size(100, 50);
-            buttonEllip.BackColor = Color.Red;
-            buttonEllip.Location = new Point(30,30);
-            buttonEllip.Show();
-            buttonEllip.BringToFront();
-            panel.Controls.Add(buttonEllip);
+            List<buttonEllip> btnlist = new List<buttonEllip>();
+
+            for (int i = 0; i < 17; i++)
+            {
+                buttonEllip buttonEllip = new buttonEllip();
+
+                buttonEllip.Size = new Size(54, 100);
+                buttonEllip.BackColor = Color.FromArgb(70,180,30);
+                buttonEllip.Location = new Point(((i)*58 + 2), 30);
+                buttonEllip.BringToFront();
+                buttonEllip.FlatStyle = FlatStyle.Flat;
+                buttonEllip.FlatAppearance.BorderSize = 0;
+                buttonEllip.BorderColor = Color.Transparent;
+                buttonEllip.BorderThickness = 0;
+                buttonEllip.ButtonRoundness = 5;
+                btnlist.Add(buttonEllip);
+
+                panel.Controls.Add(btnlist.ElementAt(i));
+            }
         }
 
     }

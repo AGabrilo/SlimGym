@@ -62,7 +62,7 @@
     <Compile Include="Objects\panelEllip.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Objects\Schedule.cs">
+    <Compile Include="Objects\panelSchedule.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Objects\textBoxEllip.cs" />
@@ -84,6 +84,12 @@
     </Compile>
     <Compile Include="UserControls\Records.Designer.cs">
       <DependentUpon>Records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Schedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UserControl1.cs">
       <SubType>UserControl</SubType>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Records.resx">
       <DependentUpon>Records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>

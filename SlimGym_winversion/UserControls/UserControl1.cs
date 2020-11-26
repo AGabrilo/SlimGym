@@ -36,7 +36,8 @@ namespace SlimGym_winversion.UserControls
             }
         }
 
-        public panelEllip PanelEllip => panelEllip1;
+        public panelEllip PanelEllip => 
+            panelEllip1;
         
     }
 }
