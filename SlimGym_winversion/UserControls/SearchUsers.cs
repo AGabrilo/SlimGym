@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SlimGym_winversion.Pictures;
 using SlimGym_winversion.Objects;
+using SlimGym_winversion.DB_Connection;
 
 namespace SlimGym_winversion.UserControls
 {
@@ -43,14 +44,7 @@ namespace SlimGym_winversion.UserControls
         //==================================
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            
-            if(textBoxName.ToString() == "Toni" || string.IsNullOrEmpty(textBoxName.Text.ToString()) &&                         // 
-                textBoxSurname.ToString() == "Jakovceic" || string.IsNullOrEmpty(textBoxSurname.Text.ToString()) &&             // Check conditions for search
-                textBoxPersonalID.ToString() == "Toni" || string.IsNullOrEmpty(textBoxPersonalID.Text.ToString()) &&            // 
-                textBoxBithDate.ToString() == "Toni" || string.IsNullOrEmpty(textBoxBithDate.Text.ToString()))                  // 
-            {
-                dataGridViewSearchUsers.Rows.Add("Toni", "Jakovcevic", "12345678910", "1.1.1999.");
-            }
+            dataGridViewSearchUsers.DataSource = DBAcess.get(Queries.getUsers());
         }
 
         //==================================
@@ -99,7 +93,7 @@ namespace SlimGym_winversion.UserControls
 
                     Base.Instance.panelWindowControl.Controls["Schedule"].BringToFront();               // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)                                                                                                 
 
-                    Methods.AddButton(Schedule.Instance.panelSchedule);
+                    Methods.AddButton(Schedule.Instance.panelSchedule, DateTime.Now, DateTime.Now.AddHours(1));
                 }
 
 

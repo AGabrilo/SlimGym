@@ -5,11 +5,20 @@ using System.Drawing.Drawing2D;
 using SlimGym_winversion.UserControls;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data;
 
 namespace SlimGym_winversion.Objects
 {
     internal class Methods
     {
+        //==================================
+        //
+        // Initializing all variables
+        //
+        //==================================
+
+        static List<buttonEllip> buttonlist = new List<buttonEllip>();
+
         //==================================
         //
         // Used to make regular rectangle
@@ -92,28 +101,30 @@ namespace SlimGym_winversion.Objects
             control.Size = new Size(x, y);
         }
 
-        public static void AddButton(panelSchedule panel)
+        public static void AddButton(panelSchedule panel, DateTime dateTimeStart, DateTime dateTimeEnd)
         {
-            List<buttonEllip> btnlist = new List<buttonEllip>();
+            int hoursStart, hoursEnd;
+            buttonEllip buttonEllip = new buttonEllip();
+            //MessageBox.Show(int.Parse(dateTimeStart.TimeOfDay.TotalHours.ToString().Substring(0, 2)).ToString());
+            hoursStart = int.Parse(dateTimeStart.TimeOfDay.TotalHours.ToString().Substring(0, 2));
 
-            for (int i = 0; i < 17; i++)
-            {
-                buttonEllip buttonEllip = new buttonEllip();
+            hoursEnd = int.Parse(dateTimeStart.TimeOfDay.TotalHours.ToString().Substring(0, 2));
+            buttonEllip.Size = new Size(56 * (hoursEnd + 1 - hoursStart), 100);
+            buttonEllip.BackColor = Color.FromArgb(70,180,30);
+            buttonEllip.Location = new Point((((hoursStart - 6) * 60) + 1), 30);
+            buttonEllip.BringToFront();
+            buttonEllip.FlatStyle = FlatStyle.Flat;
+            buttonEllip.FlatAppearance.BorderSize = 0;
+            buttonEllip.BorderColor = Color.Transparent;
+            buttonEllip.BorderThickness = 0;
+            buttonEllip.ButtonRoundness = 5;
+            buttonlist.Add(buttonEllip);
 
-                buttonEllip.Size = new Size(54, 100);
-                buttonEllip.BackColor = Color.FromArgb(70,180,30);
-                buttonEllip.Location = new Point(((i)*58 + 2), 30);
-                buttonEllip.BringToFront();
-                buttonEllip.FlatStyle = FlatStyle.Flat;
-                buttonEllip.FlatAppearance.BorderSize = 0;
-                buttonEllip.BorderColor = Color.Transparent;
-                buttonEllip.BorderThickness = 0;
-                buttonEllip.ButtonRoundness = 5;
-                btnlist.Add(buttonEllip);
-
-                panel.Controls.Add(btnlist.ElementAt(i));
-            }
+            panel.Controls.Add(buttonEllip);
+            
         }
+
+        //public static DataTable 
 
     }
 }

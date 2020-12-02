@@ -30,7 +30,7 @@ namespace SlimGym_winversion.Objects
             Pen pen = new Pen(_borderColor, _borderThickness);
             for (int i = 0; i < 16; i++)
             {
-                g.DrawLine(penline, (i + 1) * 58, 20, (i + 1) * 58, 575);
+                g.DrawLine(penline, (i + 1) * 60, 20, (i + 1) * 60, 615);
             }
 
 

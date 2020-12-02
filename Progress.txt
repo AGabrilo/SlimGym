@@ -1,8 +1,16 @@
+ZADACI ZA TONIJA: 
+	- Dodat tablice u bazu podataka sa engleskin imenima stupaca
+	- Izmislit queryje za svako dohvacanje podataka i spremanje podataka u bazu
+	- napravit funkicije za svako komuniciranje s bazom
+PLIIIIIIIIIZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+===================================================================
+
 ZADACI:	SVAKOM USER CONTROLU TRIBA DODAT GETER
 	NA INICIJALIZACIJI SVAKOG USER CONTROLA TRIBA PROVJERIT JE LI MAXIMIZIRANA ILI NE
 triba: 	zavrsit UserInfo, ostala 3 botuna iz Users user controla (jedan cili ostali djelomicno),
 	iduci korak za membership, ostale botune iz panelButtons
 	za raspored triba napravit funkicje prikazivanja(smistanja) botuna u panel kad se posalje vrime pocetka i vrime kraja
+	
 
 Commit base-user-control: 4h
 	Dovrsavanje logina
@@ -71,4 +79,10 @@ commit schedule-design 30min
 	napravljen user control za raspored
 	dodan novi panel za raspored sa gridon
 	dodani neki testni botuni
+
+commit DBConection-schedule-experiments
+	dodana sql konekcija
+	u search users se prikazuju korisnici
+	napravljena baza podataka (samo server)
+	instaliran nuget za bazu
 	

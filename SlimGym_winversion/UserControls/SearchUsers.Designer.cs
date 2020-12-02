@@ -38,11 +38,6 @@
             this.labelBirthDate = new System.Windows.Forms.Label();
             this.labelPersonalID = new System.Windows.Forms.Label();
             this.dataGridViewSearchUsers = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.userId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.birthDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personalID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonSelect = new SlimGym_winversion.Objects.buttonEllip();
             this.buttonBack = new SlimGym_winversion.Objects.buttonEllip();
             this.buttonSearch = new SlimGym_winversion.Objects.buttonEllip();
@@ -118,12 +113,6 @@
             this.dataGridViewSearchUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewSearchUsers.ColumnHeadersHeight = 33;
             this.dataGridViewSearchUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridViewSearchUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.userId,
-            this.name2,
-            this.surname,
-            this.birthDate,
-            this.personalID});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonShadow;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -158,36 +147,6 @@
             this.dataGridViewSearchUsers.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewSearchUsers.Size = new System.Drawing.Size(880, 392);
             this.dataGridViewSearchUsers.TabIndex = 1;
-            // 
-            // userId
-            // 
-            this.userId.HeaderText = "User ID:";
-            this.userId.Name = "userId";
-            this.userId.ReadOnly = true;
-            // 
-            // name2
-            // 
-            this.name2.HeaderText = "Name:";
-            this.name2.Name = "name2";
-            this.name2.ReadOnly = true;
-            // 
-            // surname
-            // 
-            this.surname.HeaderText = "Surname:";
-            this.surname.Name = "surname";
-            this.surname.ReadOnly = true;
-            // 
-            // birthDate
-            // 
-            this.birthDate.HeaderText = "Birth Date:";
-            this.birthDate.Name = "birthDate";
-            this.birthDate.ReadOnly = true;
-            // 
-            // personalID
-            // 
-            this.personalID.HeaderText = "Personal ID:";
-            this.personalID.Name = "personalID";
-            this.personalID.ReadOnly = true;
             // 
             // buttonSelect
             // 
@@ -360,10 +319,5 @@
         private Objects.buttonEllip buttonBack;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewSearchUsers;
         private Objects.buttonEllip buttonSelect;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn surname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn birthDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn personalID;
     }
 }

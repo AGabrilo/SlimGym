@@ -36,10 +36,10 @@
             this.panelSchedule1.BackColor = System.Drawing.Color.White;
             this.panelSchedule1.BorderColor = System.Drawing.Color.Transparent;
             this.panelSchedule1.BorderThickness = 0;
-            this.panelSchedule1.Location = new System.Drawing.Point(22, 25);
+            this.panelSchedule1.Location = new System.Drawing.Point(5, 5);
             this.panelSchedule1.Name = "panelSchedule1";
             this.panelSchedule1.PanelRoundness = 15;
-            this.panelSchedule1.Size = new System.Drawing.Size(986, 595);
+            this.panelSchedule1.Size = new System.Drawing.Size(1020, 635);
             this.panelSchedule1.TabIndex = 0;
             // 
             // Schedule
