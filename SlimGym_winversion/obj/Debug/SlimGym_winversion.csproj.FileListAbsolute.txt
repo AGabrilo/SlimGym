@@ -23,7 +23,6 @@ C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.Base.resources
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.SlimGym.resources
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.Pictures.Users.resources
-C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.csprojAssemblyReference.cache
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.SearchUsers.resources
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.UserInfo.resources
 C:\Users\Toni\Desktop\FESB\treca godina\PROGRAMSKO INZENJERSTVO\SlimGym\SlimGym\SlimGym_winversion\bin\Debug\SlimGym_winversion.exe.config
@@ -69,3 +68,4 @@ C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\bin\Debug\System.
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\bin\Debug\System.Threading.Channels.xml
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\bin\Debug\System.ValueTuple.xml
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.csprojAssemblyReference.cache

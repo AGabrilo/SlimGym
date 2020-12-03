@@ -98,7 +98,7 @@
     <Compile Include="Objects\panelEllip.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Objects\panelSchedule.cs">
+    <Compile Include="Objects\panelEllipSchedule.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Objects\textBoxEllip.cs" />

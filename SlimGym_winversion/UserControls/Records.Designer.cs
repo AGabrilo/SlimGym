@@ -34,23 +34,23 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Records));
             this.dataGridViewRecords = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.labelRecordOfUsers = new System.Windows.Forms.Label();
+            this.labelFilter = new System.Windows.Forms.Label();
+            this.panelFilter = new SlimGym_winversion.Objects.panelEllip();
+            this.datePickerExit = new SlimGym_winversion.Objects.datePickerEllip();
+            this.labelDateEntrance = new System.Windows.Forms.Label();
+            this.datePickerEntrance = new SlimGym_winversion.Objects.datePickerEllip();
+            this.maskedTextBoxTimeEntrance = new System.Windows.Forms.MaskedTextBox();
+            this.buttonSearch = new SlimGym_winversion.Objects.buttonEllip();
+            this.labelTimeExit = new System.Windows.Forms.Label();
+            this.labelDateExit = new System.Windows.Forms.Label();
+            this.labelTimeEntrance = new System.Windows.Forms.Label();
+            this.maskedTextBoxTimeExit = new System.Windows.Forms.MaskedTextBox();
             this.name2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.entranceTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.exitTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.labelRecords = new System.Windows.Forms.Label();
-            this.labelFilter = new System.Windows.Forms.Label();
-            this.panelFilter = new SlimGym_winversion.Objects.panelEllip();
-            this.datePickerEllip2 = new SlimGym_winversion.Objects.datePickerEllip();
-            this.labelDateEntrance = new System.Windows.Forms.Label();
-            this.datePickerEllip1 = new SlimGym_winversion.Objects.datePickerEllip();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.buttonSearch = new SlimGym_winversion.Objects.buttonEllip();
-            this.labelTimeExit = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.labelTimeEntrance = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRecords)).BeginInit();
             this.panelFilter.SuspendLayout();
             this.SuspendLayout();
@@ -121,48 +121,18 @@
             this.dataGridViewRecords.Size = new System.Drawing.Size(876, 423);
             this.dataGridViewRecords.TabIndex = 17;
             // 
-            // name2
+            // labelRecordOfUsers
             // 
-            this.name2.HeaderText = "Name:";
-            this.name2.Name = "name2";
-            this.name2.ReadOnly = true;
-            // 
-            // surname
-            // 
-            this.surname.HeaderText = "Surname:";
-            this.surname.Name = "surname";
-            this.surname.ReadOnly = true;
-            // 
-            // entranceTime
-            // 
-            this.entranceTime.HeaderText = "Entrance Time:";
-            this.entranceTime.Name = "entranceTime";
-            this.entranceTime.ReadOnly = true;
-            // 
-            // exitTime
-            // 
-            this.exitTime.HeaderText = "Exit Time:";
-            this.exitTime.Name = "exitTime";
-            this.exitTime.ReadOnly = true;
-            // 
-            // userId
-            // 
-            this.userId.HeaderText = "User ID:";
-            this.userId.Name = "userId";
-            this.userId.ReadOnly = true;
-            // 
-            // labelRecords
-            // 
-            this.labelRecords.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelRecords.BackColor = System.Drawing.Color.Transparent;
-            this.labelRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
-            this.labelRecords.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.labelRecords.Location = new System.Drawing.Point(360, 11);
-            this.labelRecords.Name = "labelRecords";
-            this.labelRecords.Size = new System.Drawing.Size(310, 38);
-            this.labelRecords.TabIndex = 18;
-            this.labelRecords.Text = "Record of Users:";
-            this.labelRecords.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelRecordOfUsers.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelRecordOfUsers.BackColor = System.Drawing.Color.Transparent;
+            this.labelRecordOfUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
+            this.labelRecordOfUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.labelRecordOfUsers.Location = new System.Drawing.Point(360, 11);
+            this.labelRecordOfUsers.Name = "labelRecordOfUsers";
+            this.labelRecordOfUsers.Size = new System.Drawing.Size(310, 38);
+            this.labelRecordOfUsers.TabIndex = 18;
+            this.labelRecordOfUsers.Text = "Record of Users:";
+            this.labelRecordOfUsers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelFilter
             // 
@@ -182,35 +152,35 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelFilter.BorderColor = System.Drawing.Color.Silver;
             this.panelFilter.BorderThickness = 6;
-            this.panelFilter.Controls.Add(this.datePickerEllip2);
+            this.panelFilter.Controls.Add(this.datePickerExit);
             this.panelFilter.Controls.Add(this.labelDateEntrance);
-            this.panelFilter.Controls.Add(this.datePickerEllip1);
-            this.panelFilter.Controls.Add(this.maskedTextBox1);
+            this.panelFilter.Controls.Add(this.datePickerEntrance);
+            this.panelFilter.Controls.Add(this.maskedTextBoxTimeEntrance);
             this.panelFilter.Controls.Add(this.buttonSearch);
             this.panelFilter.Controls.Add(this.labelTimeExit);
-            this.panelFilter.Controls.Add(this.label1);
+            this.panelFilter.Controls.Add(this.labelDateExit);
             this.panelFilter.Controls.Add(this.labelTimeEntrance);
-            this.panelFilter.Controls.Add(this.maskedTextBox2);
+            this.panelFilter.Controls.Add(this.maskedTextBoxTimeExit);
             this.panelFilter.Location = new System.Drawing.Point(77, 52);
             this.panelFilter.Name = "panelFilter";
             this.panelFilter.PanelRoundness = 3;
             this.panelFilter.Size = new System.Drawing.Size(876, 96);
             this.panelFilter.TabIndex = 24;
             // 
-            // datePickerEllip2
+            // datePickerExit
             // 
-            this.datePickerEllip2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.datePickerEllip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.datePickerEllip2.BorderRadius = 2;
-            this.datePickerEllip2.ForeColor = System.Drawing.Color.White;
-            this.datePickerEllip2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datePickerEllip2.FormatCustom = null;
-            this.datePickerEllip2.Location = new System.Drawing.Point(207, 50);
-            this.datePickerEllip2.Name = "datePickerEllip2";
-            this.datePickerEllip2.Roundness = 1;
-            this.datePickerEllip2.Size = new System.Drawing.Size(230, 34);
-            this.datePickerEllip2.TabIndex = 27;
-            this.datePickerEllip2.Value = new System.DateTime(2020, 11, 5, 13, 47, 23, 0);
+            this.datePickerExit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.datePickerExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.datePickerExit.BorderRadius = 2;
+            this.datePickerExit.ForeColor = System.Drawing.Color.White;
+            this.datePickerExit.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datePickerExit.FormatCustom = null;
+            this.datePickerExit.Location = new System.Drawing.Point(207, 50);
+            this.datePickerExit.Name = "datePickerExit";
+            this.datePickerExit.Roundness = 1;
+            this.datePickerExit.Size = new System.Drawing.Size(230, 34);
+            this.datePickerExit.TabIndex = 27;
+            this.datePickerExit.Value = new System.DateTime(2020, 11, 5, 13, 47, 23, 0);
             // 
             // labelDateEntrance
             // 
@@ -226,39 +196,39 @@
             this.labelDateEntrance.Text = "Date Entrance:";
             this.labelDateEntrance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // datePickerEllip1
+            // datePickerEntrance
             // 
-            this.datePickerEllip1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.datePickerEllip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.datePickerEllip1.BorderRadius = 2;
-            this.datePickerEllip1.ForeColor = System.Drawing.Color.White;
-            this.datePickerEllip1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datePickerEllip1.FormatCustom = null;
-            this.datePickerEllip1.Location = new System.Drawing.Point(207, 9);
-            this.datePickerEllip1.Name = "datePickerEllip1";
-            this.datePickerEllip1.Roundness = 1;
-            this.datePickerEllip1.Size = new System.Drawing.Size(230, 34);
-            this.datePickerEllip1.TabIndex = 24;
-            this.datePickerEllip1.Value = new System.DateTime(2020, 11, 5, 13, 47, 23, 0);
+            this.datePickerEntrance.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.datePickerEntrance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.datePickerEntrance.BorderRadius = 2;
+            this.datePickerEntrance.ForeColor = System.Drawing.Color.White;
+            this.datePickerEntrance.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datePickerEntrance.FormatCustom = null;
+            this.datePickerEntrance.Location = new System.Drawing.Point(207, 9);
+            this.datePickerEntrance.Name = "datePickerEntrance";
+            this.datePickerEntrance.Roundness = 1;
+            this.datePickerEntrance.Size = new System.Drawing.Size(230, 34);
+            this.datePickerEntrance.TabIndex = 24;
+            this.datePickerEntrance.Value = new System.DateTime(2020, 11, 5, 13, 47, 23, 0);
             // 
-            // maskedTextBox1
+            // maskedTextBoxTimeEntrance
             // 
-            this.maskedTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.maskedTextBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.maskedTextBox1.ForeColor = System.Drawing.Color.White;
-            this.maskedTextBox1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.maskedTextBox1.Location = new System.Drawing.Point(644, 12);
-            this.maskedTextBox1.Mask = "00:00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PromptChar = '-';
-            this.maskedTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.maskedTextBox1.Size = new System.Drawing.Size(82, 31);
-            this.maskedTextBox1.TabIndex = 21;
-            this.maskedTextBox1.Text = "0000";
-            this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBoxTimeEntrance.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.maskedTextBoxTimeEntrance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.maskedTextBoxTimeEntrance.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.maskedTextBoxTimeEntrance.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.maskedTextBoxTimeEntrance.ForeColor = System.Drawing.Color.White;
+            this.maskedTextBoxTimeEntrance.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
+            this.maskedTextBoxTimeEntrance.Location = new System.Drawing.Point(644, 12);
+            this.maskedTextBoxTimeEntrance.Mask = "00:00";
+            this.maskedTextBoxTimeEntrance.Name = "maskedTextBoxTimeEntrance";
+            this.maskedTextBoxTimeEntrance.PromptChar = '-';
+            this.maskedTextBoxTimeEntrance.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.maskedTextBoxTimeEntrance.Size = new System.Drawing.Size(82, 31);
+            this.maskedTextBoxTimeEntrance.TabIndex = 21;
+            this.maskedTextBoxTimeEntrance.Text = "0000";
+            this.maskedTextBoxTimeEntrance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.maskedTextBoxTimeEntrance.ValidatingType = typeof(System.DateTime);
             // 
             // buttonSearch
             // 
@@ -294,19 +264,19 @@
             this.labelTimeExit.Text = "Time Exit:";
             this.labelTimeExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // labelDateExit
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.label1.Location = new System.Drawing.Point(31, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 29);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Date Exit:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDateExit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelDateExit.AutoSize = true;
+            this.labelDateExit.BackColor = System.Drawing.Color.Transparent;
+            this.labelDateExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDateExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.labelDateExit.Location = new System.Drawing.Point(31, 55);
+            this.labelDateExit.Name = "labelDateExit";
+            this.labelDateExit.Size = new System.Drawing.Size(114, 29);
+            this.labelDateExit.TabIndex = 22;
+            this.labelDateExit.Text = "Date Exit:";
+            this.labelDateExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelTimeEntrance
             // 
@@ -322,26 +292,56 @@
             this.labelTimeEntrance.Text = "Time Entrance:";
             this.labelTimeEntrance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // maskedTextBox2
+            // maskedTextBoxTimeExit
             // 
-            this.maskedTextBox2.AllowPromptAsInput = false;
-            this.maskedTextBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.maskedTextBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.maskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.maskedTextBox2.Culture = new System.Globalization.CultureInfo("hr-HR");
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.maskedTextBox2.ForeColor = System.Drawing.Color.White;
-            this.maskedTextBox2.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.maskedTextBox2.Location = new System.Drawing.Point(644, 52);
-            this.maskedTextBox2.Mask = "00:00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.PromptChar = '-';
-            this.maskedTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.maskedTextBox2.Size = new System.Drawing.Size(82, 31);
-            this.maskedTextBox2.TabIndex = 22;
-            this.maskedTextBox2.Text = "0000";
-            this.maskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBoxTimeExit.AllowPromptAsInput = false;
+            this.maskedTextBoxTimeExit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.maskedTextBoxTimeExit.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.maskedTextBoxTimeExit.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.maskedTextBoxTimeExit.Culture = new System.Globalization.CultureInfo("hr-HR");
+            this.maskedTextBoxTimeExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.maskedTextBoxTimeExit.ForeColor = System.Drawing.Color.White;
+            this.maskedTextBoxTimeExit.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
+            this.maskedTextBoxTimeExit.Location = new System.Drawing.Point(644, 52);
+            this.maskedTextBoxTimeExit.Mask = "00:00";
+            this.maskedTextBoxTimeExit.Name = "maskedTextBoxTimeExit";
+            this.maskedTextBoxTimeExit.PromptChar = '-';
+            this.maskedTextBoxTimeExit.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.maskedTextBoxTimeExit.Size = new System.Drawing.Size(82, 31);
+            this.maskedTextBoxTimeExit.TabIndex = 22;
+            this.maskedTextBoxTimeExit.Text = "0000";
+            this.maskedTextBoxTimeExit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.maskedTextBoxTimeExit.ValidatingType = typeof(System.DateTime);
+            // 
+            // name2
+            // 
+            this.name2.HeaderText = "Name:";
+            this.name2.Name = "name2";
+            this.name2.ReadOnly = true;
+            // 
+            // surname
+            // 
+            this.surname.HeaderText = "Surname:";
+            this.surname.Name = "surname";
+            this.surname.ReadOnly = true;
+            // 
+            // entranceTime
+            // 
+            this.entranceTime.HeaderText = "Entrance:";
+            this.entranceTime.Name = "entranceTime";
+            this.entranceTime.ReadOnly = true;
+            // 
+            // exitTime
+            // 
+            this.exitTime.HeaderText = "Exit:";
+            this.exitTime.Name = "exitTime";
+            this.exitTime.ReadOnly = true;
+            // 
+            // userId
+            // 
+            this.userId.HeaderText = "User ID:";
+            this.userId.Name = "userId";
+            this.userId.ReadOnly = true;
             // 
             // Records
             // 
@@ -350,7 +350,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Controls.Add(this.labelFilter);
             this.Controls.Add(this.panelFilter);
-            this.Controls.Add(this.labelRecords);
+            this.Controls.Add(this.labelRecordOfUsers);
             this.Controls.Add(this.dataGridViewRecords);
             this.Name = "Records";
             this.Size = new System.Drawing.Size(1030, 645);
@@ -364,22 +364,22 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewRecords;
-        private System.Windows.Forms.Label labelRecords;
+        private System.Windows.Forms.Label labelRecordOfUsers;
+        private System.Windows.Forms.Label labelFilter;
+        private Objects.panelEllip panelFilter;
+        private Objects.datePickerEllip datePickerExit;
+        private System.Windows.Forms.Label labelDateEntrance;
+        private Objects.datePickerEllip datePickerEntrance;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxTimeEntrance;
+        private Objects.buttonEllip buttonSearch;
+        private System.Windows.Forms.Label labelTimeExit;
+        private System.Windows.Forms.Label labelDateExit;
+        private System.Windows.Forms.Label labelTimeEntrance;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxTimeExit;
         private System.Windows.Forms.DataGridViewTextBoxColumn name2;
         private System.Windows.Forms.DataGridViewTextBoxColumn surname;
         private System.Windows.Forms.DataGridViewTextBoxColumn entranceTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn exitTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn userId;
-        private System.Windows.Forms.Label labelFilter;
-        private Objects.panelEllip panelFilter;
-        private Objects.datePickerEllip datePickerEllip2;
-        private System.Windows.Forms.Label labelDateEntrance;
-        private Objects.datePickerEllip datePickerEllip1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private Objects.buttonEllip buttonSearch;
-        private System.Windows.Forms.Label labelTimeExit;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label labelTimeEntrance;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
     }
 }

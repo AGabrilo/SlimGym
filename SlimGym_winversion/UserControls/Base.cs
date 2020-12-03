@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SlimGym_winversion.Pictures;
 using SlimGym_winversion.UserControls;
+using SlimGym_winversion.Objects;
 
 namespace SlimGym_winversion
 {
@@ -55,6 +56,15 @@ namespace SlimGym_winversion
         {
             ChangeBackColor(buttonGroupsScheduel);
             panelWindow.Controls.Clear();                                       // Removes all user controls from controls to start fresh
+            if (!panelWindow.Controls.ContainsKey("Schedule"))                  // Checks for exitsting user control
+            {                                                                   // Does not exist
+                Schedule scheduleUserControl = new Schedule();                  // Creates an instance
+                scheduleUserControl.Dock = DockStyle.Fill;                      //
+                panelWindow.Controls.Add(scheduleUserControl);                  // Adds it to control
+            }
+
+            panelWindow.Controls["Schedule"].BringToFront();                    // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)
+            Methods.AddButtons(Schedule.Instance.PanelSchedule);
         }
 
         private void buttonRecords_Click(object sender, EventArgs e)
@@ -63,11 +73,12 @@ namespace SlimGym_winversion
             panelWindow.Controls.Clear();                                       // Removes all user controls from controls to start fresh
             if (!panelWindow.Controls.ContainsKey("Records"))                   // If it does not exitst in controls add it
             {
-                Records recordsUserContol = new Records();                  // Create new insatnce of Records user control
-                recordsUserContol.Dock = DockStyle.Fill;                    // Dock it so it works in full screen
+                Records recordsUserContol = new Records();                      // Create new insatnce of Records user control
+                recordsUserContol.Dock = DockStyle.Fill;                        // Dock it so it works in full screen
                 panelWindow.Controls.Add(recordsUserContol);
             }
-            panelWindow.Controls["Records"].BringToFront();                 // Bring Records to front
+            panelWindow.Controls["Records"].BringToFront();                     // Bring Records to front
+            
         }
 
         private void buttonMembership_Click(object sender, EventArgs e)
@@ -129,9 +140,9 @@ namespace SlimGym_winversion
             {
                 if (_base == null)
                 {
-                    _base = new Base();     // If _slimGym is null pointer create new instance of form
+                    _base = new Base();         // If _slimGym is null pointer create new instance of form
                 }
-                return _base;                // Return pointer on form
+                return _base;                   // Return pointer on form
             }
         }
 

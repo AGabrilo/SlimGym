@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Runtime.CompilerServices;
 
 namespace SlimGym_winversion.Objects
@@ -18,15 +19,22 @@ namespace SlimGym_winversion.Objects
         private Color _offClickTextColor = Color.Transparent;
         private Color _borderColor = Color.Transparent;
         private int _borderThickness = 0;
-        private int _buttonRoundness = 3;
-
+        private int _buttonRoundness = 0;
 
         protected override void OnPaint(PaintEventArgs e)
         {
 
             base.OnPaint(e);
             Graphics g = e.Graphics;
-            GraphicsPath grPath = Methods.CreateRoundedRectangle(_buttonRoundness, Width, Height);
+            GraphicsPath grPath;
+            if (_buttonRoundness > 0)
+            {
+                grPath = Methods.CreateRoundedRectangle(_buttonRoundness, Width, Height);
+            }
+            else
+            {
+                grPath = Methods.CreateRectangle(Width, Height);
+            }
             g.SmoothingMode = ((SmoothingMode)SmoothingMode.HighQuality);
             g.InterpolationMode = InterpolationMode.HighQualityBilinear;
             g.CompositingQuality = CompositingQuality.HighQuality;

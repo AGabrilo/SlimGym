@@ -84,16 +84,7 @@ namespace SlimGym_winversion.UserControls
 
                 if (triggerName == "buttonSignToGroup")
                 {
-                    if (!Base.Instance.panelWindowControl.Controls.ContainsKey("UserControl1"))             // Checks for exitsting user control
-                    {                                                                                   // Does not exist
-                        Schedule scheduleUserControl = new Schedule();                                  // Creates an instance
-                        scheduleUserControl.Dock = DockStyle.Fill;                                      //
-                        Base.Instance.panelWindowControl.Controls.Add(scheduleUserControl);             // Adds it to control
-                    }
-
-                    Base.Instance.panelWindowControl.Controls["Schedule"].BringToFront();               // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)                                                                                                 
-
-                    Methods.AddButton(Schedule.Instance.panelSchedule, DateTime.Now, DateTime.Now.AddHours(1));
+                    
                 }
 
 

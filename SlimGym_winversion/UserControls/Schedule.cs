@@ -19,6 +19,17 @@ namespace SlimGym_winversion.UserControls
             InitializeComponent();
             sch = this;
         }
+
+        private void buttonPrevious_Click(object sender, EventArgs e)
+        {
+            datePicker.Value = datePicker.Value.AddDays(-1);
+        }
+
+        private void buttonNext_Click(object sender, EventArgs e)
+        {
+            datePicker.Value = datePicker.Value.AddDays(1);
+        }
+
         public static Schedule Instance
         {
             get
@@ -31,8 +42,10 @@ namespace SlimGym_winversion.UserControls
             }
         }
 
-        public panelSchedule panelSchedule =>
-            panelSchedule1;
-            
+        public panelEllipSchedule PanelSchedule
+        {
+            get => panelSchedule;
+        }
+
     }
 }

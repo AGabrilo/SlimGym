@@ -101,30 +101,55 @@ namespace SlimGym_winversion.Objects
             control.Size = new Size(x, y);
         }
 
-        public static void AddButton(panelSchedule panel, DateTime dateTimeStart, DateTime dateTimeEnd)
+        public static void AddButtons(panelEllipSchedule panel /*DataTable dataTable*/)
         {
-            int hoursStart, hoursEnd;
-            buttonEllip buttonEllip = new buttonEllip();
-            //MessageBox.Show(int.Parse(dateTimeStart.TimeOfDay.TotalHours.ToString().Substring(0, 2)).ToString());
-            hoursStart = int.Parse(dateTimeStart.TimeOfDay.TotalHours.ToString().Substring(0, 2));
-
-            hoursEnd = int.Parse(dateTimeStart.TimeOfDay.TotalHours.ToString().Substring(0, 2));
-            buttonEllip.Size = new Size(56 * (hoursEnd + 1 - hoursStart), 100);
-            buttonEllip.BackColor = Color.FromArgb(70,180,30);
-            buttonEllip.Location = new Point((((hoursStart - 6) * 60) + 1), 30);
-            buttonEllip.BringToFront();
-            buttonEllip.FlatStyle = FlatStyle.Flat;
-            buttonEllip.FlatAppearance.BorderSize = 0;
-            buttonEllip.BorderColor = Color.Transparent;
-            buttonEllip.BorderThickness = 0;
-            buttonEllip.ButtonRoundness = 5;
-            buttonlist.Add(buttonEllip);
-
-            panel.Controls.Add(buttonEllip);
-            
+            buttonEllip button;
+            //for (int i = 0; i < dataTable.Rows.Count; i++)
+            {
+                button = createButton(panel, "06:00", "07:00", 0); //dataTable.Rows[i][0].ToString(), dataTable.Rows[i][1].ToString(), int.Parse(dataTable.Rows[i][2].ToString()));
+                //DODAT FUNKCIJU ZA DODAVANJE TEKSTA U BOTUN(TRENERA, VRIME, BROJ LJUDI ...)
+                setStyle(button);
+                buttonlist.Add(button);
+                panel.Controls.Add(button);
+            }
         }
 
-        //public static DataTable 
+        public static int getMinutesInIntFromString(string timeString)
+        {
+            string[] subStrings;
+            subStrings = timeString.Split(':');
 
+            return int.Parse(subStrings[0]) * 60 + int.Parse(subStrings[1]);
+        }
+
+        public static void setStyle(buttonEllip button)
+        { 
+            button.BackColor = Color.FromArgb(75, 180, 30);
+            button.FlatStyle = FlatStyle.Flat;
+            button.FlatAppearance.BorderSize = 0;
+            button.BorderColor = Color.Transparent;
+            button.BorderThickness = 0;
+        }
+
+        public static buttonEllip createButton(panelEllipSchedule panel, string timeStartString, string timeEndString, int room)
+        {
+            buttonEllip button = new buttonEllip();
+            int timeStartInt = getMinutesInIntFromString(timeStartString);
+            int timeEndInt = getMinutesInIntFromString(timeEndString);
+            int duration = timeEndInt - timeStartInt;
+            int segmentHeight = panel.Height / panel.NumberOfHorizontalSegments;
+            int quarterHourSegment = segmentHeight / 4;
+            int segmentWidth = panel.Width / panel.NumberOfVerticalSegments;
+            int timeStartFromStart = timeStartInt - 360;
+
+
+            MessageBox.Show(duration.ToString());
+
+            button.Size = new Size(segmentWidth - 6, (duration / 15) * quarterHourSegment - 6);
+            
+            button.Location = new Point(segmentWidth * room + 3, (timeStartFromStart / 15) * quarterHourSegment + 3);
+
+            return button;
+        }
     }
 }
