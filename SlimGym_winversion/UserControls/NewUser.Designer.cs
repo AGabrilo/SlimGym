@@ -214,7 +214,7 @@
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Font = new System.Drawing.Font("Tw Cen MT Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonCancel.Location = new System.Drawing.Point(70, 553);
+            this.buttonCancel.Location = new System.Drawing.Point(30, 564);
             this.buttonCancel.MaximumSize = new System.Drawing.Size(600, 390);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
@@ -239,7 +239,7 @@
             this.buttonCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCreate.Font = new System.Drawing.Font("Tw Cen MT Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCreate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.buttonCreate.Location = new System.Drawing.Point(771, 553);
+            this.buttonCreate.Location = new System.Drawing.Point(885, 564);
             this.buttonCreate.MaximumSize = new System.Drawing.Size(600, 390);
             this.buttonCreate.Name = "buttonCreate";
             this.buttonCreate.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));

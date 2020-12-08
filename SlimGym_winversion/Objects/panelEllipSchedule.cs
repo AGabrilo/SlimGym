@@ -38,7 +38,15 @@ namespace SlimGym_winversion.Objects
 
             base.OnPaint(e);
             Graphics g = e.Graphics;
-            GraphicsPath grPath = Methods.CreateRoundedRectangle(_panelRoundness, Width, Height);
+            GraphicsPath grPath;
+            if (_panelRoundness > 0)
+            {
+                grPath = Methods.CreateRoundedRectangle(_panelRoundness, Width, Height);
+            }
+            else
+            {
+                grPath = Methods.CreateRectangle(Width, Height);
+            }
             g.SmoothingMode = ((SmoothingMode)SmoothingMode.HighQuality);
             g.InterpolationMode = InterpolationMode.HighQualityBilinear;
             g.CompositingQuality = CompositingQuality.HighQuality;

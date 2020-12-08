@@ -17,7 +17,8 @@ namespace SlimGym_winversion.Objects
         //
         //==================================
 
-        static List<buttonEllip> buttonlist = new List<buttonEllip>();
+        static List<buttonEllip> buttonList = new List<buttonEllip>();
+        static List<panellGroup> panelList = new List<panellGroup>();
 
         //==================================
         //
@@ -85,7 +86,7 @@ namespace SlimGym_winversion.Objects
         //==================================
         //
         // Used to change location of an object
-        //n
+        //
         //==================================
         public static void ChangeObjectLocation(Control control, int x, int y)
         {
@@ -101,6 +102,11 @@ namespace SlimGym_winversion.Objects
             control.Size = new Size(x, y);
         }
 
+        //==================================
+        //
+        // Used to add buttons
+        //
+        //==================================
         public static void AddButtons(panelEllipSchedule panel /*DataTable dataTable*/)
         {
             buttonEllip button;
@@ -109,7 +115,7 @@ namespace SlimGym_winversion.Objects
                 button = createButton(panel, "06:00", "07:00", 0); //dataTable.Rows[i][0].ToString(), dataTable.Rows[i][1].ToString(), int.Parse(dataTable.Rows[i][2].ToString()));
                 //DODAT FUNKCIJU ZA DODAVANJE TEKSTA U BOTUN(TRENERA, VRIME, BROJ LJUDI ...)
                 setStyle(button);
-                buttonlist.Add(button);
+                buttonList.Add(button);
                 panel.Controls.Add(button);
             }
         }
@@ -129,6 +135,7 @@ namespace SlimGym_winversion.Objects
             button.FlatAppearance.BorderSize = 0;
             button.BorderColor = Color.Transparent;
             button.BorderThickness = 0;
+            //button.Anchor = AnchorStyles.Left;
         }
 
         public static buttonEllip createButton(panelEllipSchedule panel, string timeStartString, string timeEndString, int room)
@@ -143,13 +150,29 @@ namespace SlimGym_winversion.Objects
             int timeStartFromStart = timeStartInt - 360;
 
 
-            MessageBox.Show(duration.ToString());
+            //MessageBox.Show(duration.ToString());
 
             button.Size = new Size(segmentWidth - 6, (duration / 15) * quarterHourSegment - 6);
             
             button.Location = new Point(segmentWidth * room + 3, (timeStartFromStart / 15) * quarterHourSegment + 3);
 
             return button;
+        }
+
+        //==================================
+        //
+        // Used to add panels
+        //
+        //==================================
+
+        public static void addPanels(panelEllip panelParent, int index)
+        {
+            for (int i = 0; i < 9; i++)
+            {
+                panellGroup panel = new panellGroup(panelParent.Width, i);
+                panelList.Add(panel);
+                panelParent.Controls.Add(panel);
+            }
         }
     }
 }

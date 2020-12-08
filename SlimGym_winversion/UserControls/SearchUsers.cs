@@ -84,7 +84,15 @@ namespace SlimGym_winversion.UserControls
 
                 if (triggerName == "buttonSignToGroup")
                 {
-                    
+                    if (!Base.Instance.panelWindowControl.Controls.ContainsKey("ListGroups"))             // Checks for exitsting user control
+                    {                                                                                   // Does not exist
+                        ListGroups listGroupsUserControl = new ListGroups();                                  // Creates an instance
+                        listGroupsUserControl.Dock = DockStyle.Fill;                                      //
+                        Base.Instance.panelWindowControl.Controls.Add(listGroupsUserControl);             // Adds it to control
+                    }
+
+                    Base.Instance.panelWindowControl.Controls["ListGroups"].BringToFront();               // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)
+                    Methods.addPanels(ListGroups.Instance.PanelGroups, 5);
                 }
 
 

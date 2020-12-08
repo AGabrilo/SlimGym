@@ -94,3 +94,7 @@ commit schedule-buttons-functions
 	prominjen panelellip i buttonellip
 	// fale uvjeti za input vrimena u odnosu radno vrime gyma
 	
+commit user-control-listGroups
+	dodan user control listGroups
+	dodana klasa panel group i napravljen test
+	triba prominit input u funkciju (citat podatke iz datatablea)

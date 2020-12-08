@@ -101,13 +101,24 @@
     <Compile Include="Objects\panelEllipSchedule.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Objects\textBoxEllip.cs" />
+    <Compile Include="Objects\panellGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Objects\textBoxEllip.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Objects\Trans.cs" />
     <Compile Include="UserControls\InTheGym.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\InTheGym.Designer.cs">
       <DependentUpon>InTheGym.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ListGroups.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ListGroups.Designer.cs">
+      <DependentUpon>ListGroups.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\NewUser.cs">
       <SubType>UserControl</SubType>
@@ -173,6 +184,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="UserControls\InTheGym.resx">
       <DependentUpon>InTheGym.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ListGroups.resx">
+      <DependentUpon>ListGroups.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\NewUser.resx">
       <DependentUpon>NewUser.cs</DependentUpon>
