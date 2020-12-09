@@ -50,6 +50,7 @@
             // 
             // labelName
             // 
+            this.labelName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.labelName.Location = new System.Drawing.Point(63, 25);
@@ -60,6 +61,7 @@
             // 
             // labelSurname
             // 
+            this.labelSurname.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSurname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.labelSurname.Location = new System.Drawing.Point(63, 71);
@@ -70,6 +72,7 @@
             // 
             // labelBirthDate
             // 
+            this.labelBirthDate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBirthDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.labelBirthDate.Location = new System.Drawing.Point(464, 71);
@@ -80,6 +83,7 @@
             // 
             // labelPersonalID
             // 
+            this.labelPersonalID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelPersonalID.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPersonalID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.labelPersonalID.Location = new System.Drawing.Point(464, 25);
@@ -200,6 +204,7 @@
             // 
             // buttonSearch
             // 
+            this.buttonSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.buttonSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSearch.BackgroundImage")));
             this.buttonSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonSearch.BorderColor = System.Drawing.Color.Transparent;
@@ -220,6 +225,7 @@
             // 
             // textBoxBithDate
             // 
+            this.textBoxBithDate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBoxBithDate.BackColor = System.Drawing.Color.Transparent;
             this.textBoxBithDate.BorderColor = System.Drawing.Color.Silver;
             this.textBoxBithDate.BorderSize = 1;
@@ -236,6 +242,7 @@
             // 
             // textBoxPersonalID
             // 
+            this.textBoxPersonalID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBoxPersonalID.BackColor = System.Drawing.Color.Transparent;
             this.textBoxPersonalID.BorderColor = System.Drawing.Color.Silver;
             this.textBoxPersonalID.BorderSize = 1;
@@ -252,6 +259,7 @@
             // 
             // textBoxSurname
             // 
+            this.textBoxSurname.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBoxSurname.BackColor = System.Drawing.Color.Transparent;
             this.textBoxSurname.BorderColor = System.Drawing.Color.Silver;
             this.textBoxSurname.BorderSize = 1;
@@ -268,6 +276,7 @@
             // 
             // textBoxName
             // 
+            this.textBoxName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBoxName.BackColor = System.Drawing.Color.Transparent;
             this.textBoxName.BorderColor = System.Drawing.Color.Silver;
             this.textBoxName.BorderSize = 1;

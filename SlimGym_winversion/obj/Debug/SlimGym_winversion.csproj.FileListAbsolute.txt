@@ -44,7 +44,6 @@ C:\Users\Toni\Desktop\FESB\treca godina\PROGRAMSKO INZENJERSTVO\SlimGym\SlimGym\
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.NewUser.resources
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.InTheGym.resources
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.Records.resources
-C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.UserControl1.resources
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.Schedule.resources
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\bin\Debug\Npgsql.dll

@@ -48,6 +48,9 @@
             // 
             // panelGroups
             // 
+            this.panelGroups.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelGroups.AutoScroll = true;
             this.panelGroups.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panelGroups.BorderColor = System.Drawing.Color.Transparent;
@@ -55,7 +58,7 @@
             this.panelGroups.Location = new System.Drawing.Point(0, 50);
             this.panelGroups.Name = "panelGroups";
             this.panelGroups.PanelRoundness = 0;
-            this.panelGroups.Size = new System.Drawing.Size(1013, 500);
+            this.panelGroups.Size = new System.Drawing.Size(1015, 500);
             this.panelGroups.TabIndex = 24;
             // 
             // buttonBack

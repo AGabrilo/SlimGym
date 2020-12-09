@@ -58,6 +58,7 @@ namespace SlimGym_winversion.Objects
             button.Text = "Sign";
             button.ForeColor = Color.FromArgb(75, 180, 30);
             button.Font = new Font("Microsoft San Sherif", 15, FontStyle.Bold);
+            button.Anchor = (AnchorStyles.Top | AnchorStyles.Right);
 
             button.Size = new Size(150, 50);
             button.Location = new Point(Width - 200, (Height - button.Height) / 2);
@@ -70,7 +71,8 @@ namespace SlimGym_winversion.Objects
             BorderThickness = 3;
             BorderColor = Color.Gray;
             BorderStyle = BorderStyle.None;
-        }
+            Anchor = (AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right);
+        }   
 
 
     }

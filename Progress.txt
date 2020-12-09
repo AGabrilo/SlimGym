@@ -98,3 +98,7 @@ commit user-control-listGroups
 	dodan user control listGroups
 	dodana klasa panel group i napravljen test
 	triba prominit input u funkciju (citat podatke iz datatablea)
+
+commit anchored-panels-and-buttons
+	dodan anchor za neke objekte
+	popravljen bug u schedule panelu

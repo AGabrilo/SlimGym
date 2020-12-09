@@ -112,7 +112,7 @@ namespace SlimGym_winversion.Objects
             buttonEllip button;
             //for (int i = 0; i < dataTable.Rows.Count; i++)
             {
-                button = createButton(panel, "06:00", "07:00", 0); //dataTable.Rows[i][0].ToString(), dataTable.Rows[i][1].ToString(), int.Parse(dataTable.Rows[i][2].ToString()));
+                button = createButton(panel, "11:00", "12:00", 1); //dataTable.Rows[i][0].ToString(), dataTable.Rows[i][1].ToString(), int.Parse(dataTable.Rows[i][2].ToString()));
                 //DODAT FUNKCIJU ZA DODAVANJE TEKSTA U BOTUN(TRENERA, VRIME, BROJ LJUDI ...)
                 setStyle(button);
                 buttonList.Add(button);
@@ -167,7 +167,7 @@ namespace SlimGym_winversion.Objects
 
         public static void addPanels(panelEllip panelParent, int index)
         {
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < 6; i++)
             {
                 panellGroup panel = new panellGroup(panelParent.Width, i);
                 panelList.Add(panel);

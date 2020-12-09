@@ -13,11 +13,11 @@ namespace SlimGym_winversion.UserControls
 {
     public partial class Schedule : UserControl
     {
-        static Schedule sch;
+        static Schedule schedule;
         public Schedule()
         {
             InitializeComponent();
-            sch = this;
+            schedule = this;
         }
 
         private void buttonPrevious_Click(object sender, EventArgs e)
@@ -34,11 +34,11 @@ namespace SlimGym_winversion.UserControls
         {
             get
             {
-                if (sch == null)
+                if (schedule == null)
                 {
-                    sch = new Schedule();
+                    schedule = new Schedule();
                 }
-                return sch;
+                return schedule;
             }
         }
 

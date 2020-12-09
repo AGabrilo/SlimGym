@@ -83,8 +83,9 @@
             this.panelSchedule.BorderThickness = 0;
             this.panelSchedule.HorizontalLineLocationXAxis = 5;
             this.panelSchedule.Location = new System.Drawing.Point(20, 95);
+            this.panelSchedule.MaximumSize = new System.Drawing.Size(1630, 884);
             this.panelSchedule.Name = "panelSchedule";
-            this.panelSchedule.NumberOfHorizontalSegments = 10;
+            this.panelSchedule.NumberOfHorizontalSegments = 17;
             this.panelSchedule.NumberOfVerticalSegments = 3;
             this.panelSchedule.PanelRoundness = 30;
             this.panelSchedule.Size = new System.Drawing.Size(990, 544);
