@@ -56,7 +56,7 @@
             this.labelName.Location = new System.Drawing.Point(63, 25);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(120, 25);
-            this.labelName.TabIndex = 7;
+            this.labelName.TabIndex = 8;
             this.labelName.Text = "Name:";
             // 
             // labelSurname
@@ -78,7 +78,7 @@
             this.labelBirthDate.Location = new System.Drawing.Point(464, 71);
             this.labelBirthDate.Name = "labelBirthDate";
             this.labelBirthDate.Size = new System.Drawing.Size(145, 25);
-            this.labelBirthDate.TabIndex = 10;
+            this.labelBirthDate.TabIndex = 11;
             this.labelBirthDate.Text = "Birth Date:";
             // 
             // labelPersonalID
@@ -89,7 +89,7 @@
             this.labelPersonalID.Location = new System.Drawing.Point(464, 25);
             this.labelPersonalID.Name = "labelPersonalID";
             this.labelPersonalID.Size = new System.Drawing.Size(145, 25);
-            this.labelPersonalID.TabIndex = 8;
+            this.labelPersonalID.TabIndex = 10;
             this.labelPersonalID.Text = "Personal ID:";
             // 
             // dataGridViewSearchUsers
@@ -150,7 +150,7 @@
             this.dataGridViewSearchUsers.RowTemplate.ReadOnly = true;
             this.dataGridViewSearchUsers.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewSearchUsers.Size = new System.Drawing.Size(880, 392);
-            this.dataGridViewSearchUsers.TabIndex = 1;
+            this.dataGridViewSearchUsers.TabIndex = 5;
             // 
             // buttonSelect
             // 
@@ -197,7 +197,7 @@
             this.buttonBack.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonBack.OnHoverTextColor = System.Drawing.Color.White;
             this.buttonBack.Size = new System.Drawing.Size(115, 51);
-            this.buttonBack.TabIndex = 5;
+            this.buttonBack.TabIndex = 7;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);

@@ -108,6 +108,18 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Objects\Trans.cs" />
+    <Compile Include="UserControls\AddEntranceOrExit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AddEntranceOrExit.Designer.cs">
+      <DependentUpon>AddEntranceOrExit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AddRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AddRecord.Designer.cs">
+      <DependentUpon>AddRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\InTheGym.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -176,6 +188,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UserControls\AddEntranceOrExit.resx">
+      <DependentUpon>AddEntranceOrExit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AddRecord.resx">
+      <DependentUpon>AddRecord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\InTheGym.resx">
       <DependentUpon>InTheGym.cs</DependentUpon>
     </EmbeddedResource>

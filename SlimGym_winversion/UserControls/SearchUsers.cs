@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using SlimGym_winversion.Pictures;
+﻿using SlimGym_winversion.DB_Connection;
 using SlimGym_winversion.Objects;
-using SlimGym_winversion.DB_Connection;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace SlimGym_winversion.UserControls
 {
@@ -55,7 +48,7 @@ namespace SlimGym_winversion.UserControls
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Base.Instance.panelWindowControl.Controls.RemoveByKey("SearchUsers");       // Removes user control from controls
-            if(Base.Instance.panelWindowControl.Controls.Count == 0)                    // Checks if the searchUsers is onley user control in controls
+            if (Base.Instance.panelWindowControl.Controls.Count == 0)                    // Checks if the searchUsers is onley user control in controls
             {
                 Base.Instance.ResetButtonColors = Color.Gray;                           // To reset colors of buttons in panelButtons if it is first user control that button opens
             }
@@ -100,6 +93,20 @@ namespace SlimGym_winversion.UserControls
                 {
 
                 }
+
+                if (triggerName == "buttonAddEntrance")
+                {
+                    callAddEntranceOrExitUserControl();
+                    AddEntranceOrExit.Instance.LabelExitTime.Visible = false;
+                    AddEntranceOrExit.Instance.LabelExitTimeValue.Visible = false;
+                }
+
+                if (triggerName == "buttonAddExit")
+                {
+                    callAddEntranceOrExitUserControl();
+                    AddEntranceOrExit.Instance.LabelExitTime.Visible = true;
+                    AddEntranceOrExit.Instance.LabelExitTimeValue.Visible = true;
+                }
             }
         }
 
@@ -110,13 +117,20 @@ namespace SlimGym_winversion.UserControls
         //=======================================================//
 
         //==================================
-        //
-        // Refresh data grid view
-        //
+        //                                  
+        // Call AddEntranceOrExit user control
+        //                                  
         //==================================
-        private void RefreshDataGridView(DataGrid dataGrid)
+        private void callAddEntranceOrExitUserControl()
         {
-          
+            if (!Base.Instance.panelWindowControl.Controls.ContainsKey("AddEntranceOrExit"))                // Checks for exitsting user control
+            {                                                                                               // Does not exist
+                AddEntranceOrExit AddEntranceOrExitUserControl = new AddEntranceOrExit();                   // Creates an instance
+                AddEntranceOrExitUserControl.Dock = DockStyle.Fill;                                         //
+                Base.Instance.panelWindowControl.Controls.Add(AddEntranceOrExitUserControl);                // Adds it to control
+
+                Base.Instance.panelWindowControl.Controls["AddEntranceOrExit"].BringToFront();              // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)
+            }
         }
     }
 }

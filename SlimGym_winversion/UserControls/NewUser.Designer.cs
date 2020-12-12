@@ -56,7 +56,7 @@
             this.textBoxBithDate.Name = "textBoxBithDate";
             this.textBoxBithDate.PasswordChar = '\0';
             this.textBoxBithDate.Size = new System.Drawing.Size(200, 40);
-            this.textBoxBithDate.TabIndex = 14;
+            this.textBoxBithDate.TabIndex = 4;
             this.textBoxBithDate.textboxRadius = 15;
             this.textBoxBithDate.UseSystemPasswordChar = false;
             // 
@@ -67,7 +67,7 @@
             this.labelBirthDate.Location = new System.Drawing.Point(538, 114);
             this.labelBirthDate.Name = "labelBirthDate";
             this.labelBirthDate.Size = new System.Drawing.Size(145, 25);
-            this.labelBirthDate.TabIndex = 18;
+            this.labelBirthDate.TabIndex = 12;
             this.labelBirthDate.Text = "Birth Date:";
             // 
             // textBoxPersonalID
@@ -82,7 +82,7 @@
             this.textBoxPersonalID.Name = "textBoxPersonalID";
             this.textBoxPersonalID.PasswordChar = '\0';
             this.textBoxPersonalID.Size = new System.Drawing.Size(200, 40);
-            this.textBoxPersonalID.TabIndex = 13;
+            this.textBoxPersonalID.TabIndex = 3;
             this.textBoxPersonalID.textboxRadius = 15;
             this.textBoxPersonalID.UseSystemPasswordChar = false;
             // 
@@ -93,7 +93,7 @@
             this.labelPersonalID.Location = new System.Drawing.Point(536, 25);
             this.labelPersonalID.Name = "labelPersonalID";
             this.labelPersonalID.Size = new System.Drawing.Size(145, 25);
-            this.labelPersonalID.TabIndex = 16;
+            this.labelPersonalID.TabIndex = 11;
             this.labelPersonalID.Text = "Personal ID:";
             // 
             // textBoxSurname
@@ -108,7 +108,7 @@
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.PasswordChar = '\0';
             this.textBoxSurname.Size = new System.Drawing.Size(200, 40);
-            this.textBoxSurname.TabIndex = 12;
+            this.textBoxSurname.TabIndex = 1;
             this.textBoxSurname.textboxRadius = 15;
             this.textBoxSurname.UseSystemPasswordChar = false;
             // 
@@ -119,7 +119,7 @@
             this.labelSurname.Location = new System.Drawing.Point(65, 114);
             this.labelSurname.Name = "labelSurname";
             this.labelSurname.Size = new System.Drawing.Size(120, 25);
-            this.labelSurname.TabIndex = 17;
+            this.labelSurname.TabIndex = 9;
             this.labelSurname.Text = "Surname:";
             // 
             // textBoxName
@@ -134,7 +134,7 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.PasswordChar = '\0';
             this.textBoxName.Size = new System.Drawing.Size(200, 40);
-            this.textBoxName.TabIndex = 11;
+            this.textBoxName.TabIndex = 0;
             this.textBoxName.textboxRadius = 15;
             this.textBoxName.UseSystemPasswordChar = false;
             // 
@@ -145,7 +145,7 @@
             this.labelName.Location = new System.Drawing.Point(65, 25);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(120, 25);
-            this.labelName.TabIndex = 15;
+            this.labelName.TabIndex = 8;
             this.labelName.Text = "Name:";
             // 
             // textBoxGender
@@ -160,7 +160,7 @@
             this.textBoxGender.Name = "textBoxGender";
             this.textBoxGender.PasswordChar = '\0';
             this.textBoxGender.Size = new System.Drawing.Size(200, 40);
-            this.textBoxGender.TabIndex = 19;
+            this.textBoxGender.TabIndex = 2;
             this.textBoxGender.textboxRadius = 15;
             this.textBoxGender.UseSystemPasswordChar = false;
             // 
@@ -171,7 +171,7 @@
             this.labelGender.Location = new System.Drawing.Point(65, 198);
             this.labelGender.Name = "labelGender";
             this.labelGender.Size = new System.Drawing.Size(120, 25);
-            this.labelGender.TabIndex = 20;
+            this.labelGender.TabIndex = 10;
             this.labelGender.Text = "Gender:";
             // 
             // textBoxPhone
@@ -186,7 +186,7 @@
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.PasswordChar = '\0';
             this.textBoxPhone.Size = new System.Drawing.Size(200, 40);
-            this.textBoxPhone.TabIndex = 21;
+            this.textBoxPhone.TabIndex = 5;
             this.textBoxPhone.textboxRadius = 15;
             this.textBoxPhone.UseSystemPasswordChar = false;
             // 
@@ -197,7 +197,7 @@
             this.labelPhone.Location = new System.Drawing.Point(538, 198);
             this.labelPhone.Name = "labelPhone";
             this.labelPhone.Size = new System.Drawing.Size(120, 25);
-            this.labelPhone.TabIndex = 22;
+            this.labelPhone.TabIndex = 13;
             this.labelPhone.Text = "Phone:";
             // 
             // buttonCancel
@@ -220,7 +220,7 @@
             this.buttonCancel.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonCancel.OnHoverTextColor = System.Drawing.Color.White;
             this.buttonCancel.Size = new System.Drawing.Size(115, 51);
-            this.buttonCancel.TabIndex = 23;
+            this.buttonCancel.TabIndex = 7;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
@@ -245,7 +245,7 @@
             this.buttonCreate.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonCreate.OnHoverTextColor = System.Drawing.Color.White;
             this.buttonCreate.Size = new System.Drawing.Size(115, 51);
-            this.buttonCreate.TabIndex = 24;
+            this.buttonCreate.TabIndex = 6;
             this.buttonCreate.Text = "Create";
             this.buttonCreate.UseVisualStyleBackColor = false;
             // 

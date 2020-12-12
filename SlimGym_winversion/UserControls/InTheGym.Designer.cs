@@ -50,7 +50,7 @@
             this.labelName.Location = new System.Drawing.Point(223, 16);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(574, 85);
-            this.labelName.TabIndex = 12;
+            this.labelName.TabIndex = 2;
             this.labelName.Text = "Users In The Gym:";
             this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -74,7 +74,7 @@
             this.buttonBack.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonBack.OnHoverTextColor = System.Drawing.Color.White;
             this.buttonBack.Size = new System.Drawing.Size(115, 51);
-            this.buttonBack.TabIndex = 14;
+            this.buttonBack.TabIndex = 1;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
@@ -142,7 +142,7 @@
             this.dataGridViewSearchUsers.RowTemplate.ReadOnly = true;
             this.dataGridViewSearchUsers.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewSearchUsers.Size = new System.Drawing.Size(876, 416);
-            this.dataGridViewSearchUsers.TabIndex = 15;
+            this.dataGridViewSearchUsers.TabIndex = 0;
             // 
             // name2
             // 

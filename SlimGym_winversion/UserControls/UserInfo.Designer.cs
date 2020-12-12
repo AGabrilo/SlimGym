@@ -59,7 +59,7 @@
             this.labelName.Location = new System.Drawing.Point(45, 39);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(101, 33);
-            this.labelName.TabIndex = 0;
+            this.labelName.TabIndex = 1;
             this.labelName.Text = "Name:";
             this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -71,7 +71,7 @@
             this.labelSurname.Location = new System.Drawing.Point(45, 115);
             this.labelSurname.Name = "labelSurname";
             this.labelSurname.Size = new System.Drawing.Size(141, 33);
-            this.labelSurname.TabIndex = 1;
+            this.labelSurname.TabIndex = 3;
             this.labelSurname.Text = "Surname:";
             this.labelSurname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -83,7 +83,7 @@
             this.labelPersonalID.Location = new System.Drawing.Point(488, 39);
             this.labelPersonalID.Name = "labelPersonalID";
             this.labelPersonalID.Size = new System.Drawing.Size(175, 33);
-            this.labelPersonalID.TabIndex = 2;
+            this.labelPersonalID.TabIndex = 11;
             this.labelPersonalID.Text = "Personal ID:";
             this.labelPersonalID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -95,7 +95,7 @@
             this.labelBirthDate.Location = new System.Drawing.Point(488, 115);
             this.labelBirthDate.Name = "labelBirthDate";
             this.labelBirthDate.Size = new System.Drawing.Size(152, 33);
-            this.labelBirthDate.TabIndex = 3;
+            this.labelBirthDate.TabIndex = 13;
             this.labelBirthDate.Text = "Birth Date:";
             this.labelBirthDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -107,7 +107,7 @@
             this.labelUserID.Location = new System.Drawing.Point(45, 202);
             this.labelUserID.Name = "labelUserID";
             this.labelUserID.Size = new System.Drawing.Size(122, 33);
-            this.labelUserID.TabIndex = 4;
+            this.labelUserID.TabIndex = 5;
             this.labelUserID.Text = "User ID:";
             this.labelUserID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -119,7 +119,7 @@
             this.labelMembership.Location = new System.Drawing.Point(488, 202);
             this.labelMembership.Name = "labelMembership";
             this.labelMembership.Size = new System.Drawing.Size(184, 33);
-            this.labelMembership.TabIndex = 5;
+            this.labelMembership.TabIndex = 15;
             this.labelMembership.Text = "Membership:";
             this.labelMembership.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -131,7 +131,7 @@
             this.labelExpirationDate.Location = new System.Drawing.Point(488, 372);
             this.labelExpirationDate.Name = "labelExpirationDate";
             this.labelExpirationDate.Size = new System.Drawing.Size(222, 33);
-            this.labelExpirationDate.TabIndex = 6;
+            this.labelExpirationDate.TabIndex = 19;
             this.labelExpirationDate.Text = "Expiration Date:";
             this.labelExpirationDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -143,7 +143,7 @@
             this.labelPaymentDate.Location = new System.Drawing.Point(45, 372);
             this.labelPaymentDate.Name = "labelPaymentDate";
             this.labelPaymentDate.Size = new System.Drawing.Size(207, 33);
-            this.labelPaymentDate.TabIndex = 8;
+            this.labelPaymentDate.TabIndex = 9;
             this.labelPaymentDate.Text = "Payment Date:";
             this.labelPaymentDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -155,7 +155,7 @@
             this.labelContact.Location = new System.Drawing.Point(488, 288);
             this.labelContact.Name = "labelContact";
             this.labelContact.Size = new System.Drawing.Size(123, 33);
-            this.labelContact.TabIndex = 9;
+            this.labelContact.TabIndex = 17;
             this.labelContact.Text = "Contact:";
             this.labelContact.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -167,7 +167,7 @@
             this.labelGender.Location = new System.Drawing.Point(45, 288);
             this.labelGender.Name = "labelGender";
             this.labelGender.Size = new System.Drawing.Size(120, 33);
-            this.labelGender.TabIndex = 10;
+            this.labelGender.TabIndex = 7;
             this.labelGender.Text = "Gender:";
             this.labelGender.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -179,7 +179,7 @@
             this.labelGenderValue.Location = new System.Drawing.Point(161, 288);
             this.labelGenderValue.Name = "labelGenderValue";
             this.labelGenderValue.Size = new System.Drawing.Size(186, 33);
-            this.labelGenderValue.TabIndex = 15;
+            this.labelGenderValue.TabIndex = 8;
             this.labelGenderValue.Text = "GenderValue";
             this.labelGenderValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -191,7 +191,7 @@
             this.labelPaymentDateValue.Location = new System.Drawing.Point(249, 372);
             this.labelPaymentDateValue.Name = "labelPaymentDateValue";
             this.labelPaymentDateValue.Size = new System.Drawing.Size(204, 33);
-            this.labelPaymentDateValue.TabIndex = 14;
+            this.labelPaymentDateValue.TabIndex = 10;
             this.labelPaymentDateValue.Text = "PaymentDateValue";
             this.labelPaymentDateValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -203,7 +203,7 @@
             this.labelUserIDValue.Location = new System.Drawing.Point(161, 202);
             this.labelUserIDValue.Name = "labelUserIDValue";
             this.labelUserIDValue.Size = new System.Drawing.Size(180, 33);
-            this.labelUserIDValue.TabIndex = 13;
+            this.labelUserIDValue.TabIndex = 6;
             this.labelUserIDValue.Text = "UserIDValue";
             this.labelUserIDValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -215,7 +215,7 @@
             this.labelSurnameValue.Location = new System.Drawing.Point(178, 115);
             this.labelSurnameValue.Name = "labelSurnameValue";
             this.labelSurnameValue.Size = new System.Drawing.Size(207, 33);
-            this.labelSurnameValue.TabIndex = 12;
+            this.labelSurnameValue.TabIndex = 4;
             this.labelSurnameValue.Text = "SurnameValue";
             this.labelSurnameValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -227,7 +227,7 @@
             this.labelNameValue.Location = new System.Drawing.Point(138, 39);
             this.labelNameValue.Name = "labelNameValue";
             this.labelNameValue.Size = new System.Drawing.Size(167, 33);
-            this.labelNameValue.TabIndex = 11;
+            this.labelNameValue.TabIndex = 2;
             this.labelNameValue.Text = "NameValue";
             this.labelNameValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -239,7 +239,7 @@
             this.labelContactValue.Location = new System.Drawing.Point(617, 288);
             this.labelContactValue.Name = "labelContactValue";
             this.labelContactValue.Size = new System.Drawing.Size(189, 33);
-            this.labelContactValue.TabIndex = 20;
+            this.labelContactValue.TabIndex = 18;
             this.labelContactValue.Text = "ContactValue";
             this.labelContactValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -251,7 +251,7 @@
             this.labelExpirationDateValue.Location = new System.Drawing.Point(703, 372);
             this.labelExpirationDateValue.Name = "labelExpirationDateValue";
             this.labelExpirationDateValue.Size = new System.Drawing.Size(280, 33);
-            this.labelExpirationDateValue.TabIndex = 19;
+            this.labelExpirationDateValue.TabIndex = 20;
             this.labelExpirationDateValue.Text = "ExpirationDateValue";
             this.labelExpirationDateValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -263,7 +263,7 @@
             this.labelMembeshipValue.Location = new System.Drawing.Point(669, 202);
             this.labelMembeshipValue.Name = "labelMembeshipValue";
             this.labelMembeshipValue.Size = new System.Drawing.Size(250, 33);
-            this.labelMembeshipValue.TabIndex = 18;
+            this.labelMembeshipValue.TabIndex = 16;
             this.labelMembeshipValue.Text = "MembershipValue";
             this.labelMembeshipValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -275,7 +275,7 @@
             this.labelBirthDateValue.Location = new System.Drawing.Point(646, 115);
             this.labelBirthDateValue.Name = "labelBirthDateValue";
             this.labelBirthDateValue.Size = new System.Drawing.Size(210, 33);
-            this.labelBirthDateValue.TabIndex = 17;
+            this.labelBirthDateValue.TabIndex = 14;
             this.labelBirthDateValue.Text = "BirthDateValue";
             this.labelBirthDateValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -287,7 +287,7 @@
             this.labelPersonalIDValue.Location = new System.Drawing.Point(669, 39);
             this.labelPersonalIDValue.Name = "labelPersonalIDValue";
             this.labelPersonalIDValue.Size = new System.Drawing.Size(233, 33);
-            this.labelPersonalIDValue.TabIndex = 21;
+            this.labelPersonalIDValue.TabIndex = 12;
             this.labelPersonalIDValue.Text = "PersonalIDValue";
             this.labelPersonalIDValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -311,7 +311,7 @@
             this.buttonBack.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonBack.OnHoverTextColor = System.Drawing.Color.White;
             this.buttonBack.Size = new System.Drawing.Size(115, 51);
-            this.buttonBack.TabIndex = 22;
+            this.buttonBack.TabIndex = 0;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);

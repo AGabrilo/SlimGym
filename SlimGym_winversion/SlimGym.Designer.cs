@@ -59,7 +59,7 @@
             this.panelHeader.Margin = new System.Windows.Forms.Padding(2);
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(1280, 50);
-            this.panelHeader.TabIndex = 0;
+            this.panelHeader.TabIndex = 1;
             this.panelHeader.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseDoubleClick);
             this.panelHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseDown);
             this.panelHeader.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseMove);
@@ -126,7 +126,7 @@
             this.panelDumbellIcon.Margin = new System.Windows.Forms.Padding(2);
             this.panelDumbellIcon.Name = "panelDumbellIcon";
             this.panelDumbellIcon.Size = new System.Drawing.Size(85, 50);
-            this.panelDumbellIcon.TabIndex = 2;
+            this.panelDumbellIcon.TabIndex = 4;
             this.panelDumbellIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panelDumbellIcon_MouseDoubleClick);
             this.panelDumbellIcon.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelDumbellIcon_MouseDown);
             this.panelDumbellIcon.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelDumbellIcon_MouseMove);
@@ -142,7 +142,7 @@
             this.labelTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(190, 50);
-            this.labelTitle.TabIndex = 1;
+            this.labelTitle.TabIndex = 3;
             this.labelTitle.Text = "SlimGym";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelTitle.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.labelTitle_MouseDoubleClick);
@@ -160,7 +160,7 @@
             this.panelBody.Margin = new System.Windows.Forms.Padding(2);
             this.panelBody.Name = "panelBody";
             this.panelBody.Size = new System.Drawing.Size(1280, 645);
-            this.panelBody.TabIndex = 1;
+            this.panelBody.TabIndex = 0;
             // 
             // panelFooter
             // 
@@ -183,7 +183,7 @@
             this.labelTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(105, 20);
-            this.labelTime.TabIndex = 4;
+            this.labelTime.TabIndex = 1;
             this.labelTime.Text = "Time: 23:59:59";
             this.labelTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -195,7 +195,7 @@
             this.labelDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(155, 20);
-            this.labelDate.TabIndex = 2;
+            this.labelDate.TabIndex = 0;
             this.labelDate.Text = "Date: 21.10.2020.";
             this.labelDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 

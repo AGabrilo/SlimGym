@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
-using SlimGym_winversion.Objects;
+using SlimGym_winversion.DB_Connection;
 
 namespace SlimGym_winversion
 {
@@ -20,7 +20,6 @@ namespace SlimGym_winversion
         // Initializing all variables
         //
         //==================================
-
 
         //==================================
         //
@@ -44,15 +43,23 @@ namespace SlimGym_winversion
             // Validates data from textboxses
             // If data is authenticated do followin
             //
-            if (!SlimGym.Instance.panelBodyControl.Controls.ContainsKey("Base"))    // Checks for exitsting user control
-            {                                                                       // Does not exist
-                Base baseUserControl = new Base();                                  // Creates an instance
-                baseUserControl.Dock = DockStyle.Fill;                              //
-                SlimGym.Instance.panelBodyControl.Controls.Add(baseUserControl);    // Adds it to control
+            DataTable dataTable = DBAcess.get(Queries.getLogin(textBoxPassword.Text, textBoxUsername.Text));
+            if (dataTable != null)
+            {
+                if (!SlimGym.Instance.panelBodyControl.Controls.ContainsKey("Base"))    // Checks for exitsting user control
+                {                                                                       // Does not exist
+                    Base baseUserControl = new Base(dataTable.Rows[0][0].ToString());                                  // Creates an instance
+                    baseUserControl.Dock = DockStyle.Fill;                              //
+                    SlimGym.Instance.panelBodyControl.Controls.Add(baseUserControl);    // Adds it to control
+                }
+
+                SlimGym.Instance.panelBodyControl.Controls["Base"].BringToFront();      // Showing Base
             }
-
-            SlimGym.Instance.panelBodyControl.Controls["Base"].BringToFront();      // Showing Base
-
+            
+            else
+            {
+                MessageBox.Show("Data is invalid!!!");
+            }
             textBoxPassword.Text = "";                                              // Deleting data from textboxes
             textBoxUsername.Text = "";                                              // Deleting data from textboxes
 

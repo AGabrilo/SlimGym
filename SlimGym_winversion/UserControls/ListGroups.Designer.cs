@@ -42,7 +42,7 @@
             this.labelRecordOfUsers.Location = new System.Drawing.Point(360, 11);
             this.labelRecordOfUsers.Name = "labelRecordOfUsers";
             this.labelRecordOfUsers.Size = new System.Drawing.Size(310, 38);
-            this.labelRecordOfUsers.TabIndex = 25;
+            this.labelRecordOfUsers.TabIndex = 2;
             this.labelRecordOfUsers.Text = "List of Groups:";
             this.labelRecordOfUsers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -58,8 +58,8 @@
             this.panelGroups.Location = new System.Drawing.Point(0, 50);
             this.panelGroups.Name = "panelGroups";
             this.panelGroups.PanelRoundness = 0;
-            this.panelGroups.Size = new System.Drawing.Size(1015, 500);
-            this.panelGroups.TabIndex = 24;
+            this.panelGroups.Size = new System.Drawing.Size(1020, 500);
+            this.panelGroups.TabIndex = 0;
             // 
             // buttonBack
             // 
@@ -81,9 +81,10 @@
             this.buttonBack.OnClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
             this.buttonBack.OnHoverTextColor = System.Drawing.Color.White;
             this.buttonBack.Size = new System.Drawing.Size(115, 51);
-            this.buttonBack.TabIndex = 23;
+            this.buttonBack.TabIndex = 1;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // ListGroups
             // 

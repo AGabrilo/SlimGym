@@ -21,16 +21,18 @@ namespace SlimGym_winversion
         //
         //==================================
         static Base _base;
-
+        public string username;
         //==================================
         //
         // Loading Base usercontrol
         //
         //==================================
-        public Base()
+        public Base(string username)
         {
             InitializeComponent();
             _base = this;
+            labelUsernameValue.Text = username;
+            this.username = username;    
         }
 
         //==================================
@@ -58,7 +60,7 @@ namespace SlimGym_winversion
             panelWindow.Controls.Clear();                                       // Removes all user controls from controls to start fresh
             if (!panelWindow.Controls.ContainsKey("Schedule"))                  // Checks for exitsting user control
             {                                                                   // Does not exist
-                Schedule scheduleUserControl = new Schedule();                  // Creates an instance
+                Schedule scheduleUserControl = new Schedule();                  // Creates an instance of Schedule user control
                 scheduleUserControl.Dock = DockStyle.Fill;                      //
                 panelWindow.Controls.Add(scheduleUserControl);                  // Adds it to control
             }
@@ -99,6 +101,14 @@ namespace SlimGym_winversion
         {
             ChangeBackColor(buttonChanges);
             panelWindow.Controls.Clear();                                       // Removes all user controls from controls to start fresh
+
+            if (!panelWindow.Controls.ContainsKey("AddRecord"))               // If it does not exitst in controls add it
+            {
+                AddRecord addRecordUserContol = new AddRecord();          // Create new insatnce of SearchUsers user control
+                addRecordUserContol.Dock = DockStyle.Fill;                    // Dock it so it works in full screen
+                panelWindow.Controls.Add(addRecordUserContol);
+            }
+            panelWindow.Controls["AddRecord"].BringToFront();                 // Bring SearchUsers to front
         }
 
 
@@ -140,7 +150,7 @@ namespace SlimGym_winversion
             {
                 if (_base == null)
                 {
-                    _base = new Base();         // If _slimGym is null pointer create new instance of form
+                    _base = new Base("Error");         // If _slimGym is null pointer create new instance of form
                 }
                 return _base;                   // Return pointer on form
             }
@@ -179,6 +189,5 @@ namespace SlimGym_winversion
                 return buttonUsers.Name;
             }
         }
-
     }
 }

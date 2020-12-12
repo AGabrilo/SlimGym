@@ -15,5 +15,15 @@ namespace SlimGym_winversion.DB_Connection
             query = "select * from users";
             return query;
         }
+
+        public static string getLogin(string password, string username)
+        {
+            query = "select name, account.username, account.password " +
+                "from person " +
+                "join person_registration on person.personal_id = person_registration.person_id " +
+                "join account on person_registration.username = account.username " +
+                "where account.username = '" + username + "' and account.password = '" + password + "'";
+            return query;
+        }
     }
 }

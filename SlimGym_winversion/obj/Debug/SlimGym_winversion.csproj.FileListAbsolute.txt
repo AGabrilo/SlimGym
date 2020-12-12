@@ -69,3 +69,5 @@ C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\bin\Debug\System.
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\bin\Debug\System.ValueTuple.xml
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.csprojAssemblyReference.cache
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.ListGroups.resources
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.AddRecord.resources
+C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.AddEntranceOrExit.resources

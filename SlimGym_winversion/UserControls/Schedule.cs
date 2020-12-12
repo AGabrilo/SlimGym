@@ -13,7 +13,18 @@ namespace SlimGym_winversion.UserControls
 {
     public partial class Schedule : UserControl
     {
+        //==================================
+        //
+        // Initializing all variables
+        //
+        //==================================
         static Schedule schedule;
+
+        //==================================
+        //
+        // Loading ListGroups usercontrol
+        //
+        //==================================
         public Schedule()
         {
             InitializeComponent();
@@ -30,6 +41,11 @@ namespace SlimGym_winversion.UserControls
             datePicker.Value = datePicker.Value.AddDays(1);
         }
 
+        //==================================
+        //                                  
+        // Get and set functions            
+        //                                  
+        //==================================
         public static Schedule Instance
         {
             get
