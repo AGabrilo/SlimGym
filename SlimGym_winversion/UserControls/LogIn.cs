@@ -10,6 +10,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
 using SlimGym_winversion.DB_Connection;
+using SlimGym_winversion.LoggedUser;
 
 namespace SlimGym_winversion
 {
@@ -44,8 +45,9 @@ namespace SlimGym_winversion
             // If data is authenticated do followin
             //
             DataTable dataTable = DBAcess.get(Queries.getLogin(textBoxPassword.Text, textBoxUsername.Text));
-            if (dataTable != null)
+            if (dataTable != null && int.Parse(dataTable.Rows[0][3].ToString()) < 3)
             {
+                SlimGym.loggedUser = new LoggedIn(dataTable);
                 if (!SlimGym.Instance.panelBodyControl.Controls.ContainsKey("Base"))    // Checks for exitsting user control
                 {                                                                       // Does not exist
                     Base baseUserControl = new Base(dataTable.Rows[0][0].ToString());                                  // Creates an instance

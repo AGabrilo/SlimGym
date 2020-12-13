@@ -30,6 +30,9 @@ namespace SlimGym_winversion
         public Base(string username)
         {
             InitializeComponent();
+            if (SlimGym.loggedUser.Rights == 1)
+                buttonGiveRights.Visible = true;
+
             _base = this;
             labelUsernameValue.Text = username;
             this.username = username;    

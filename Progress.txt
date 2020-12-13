@@ -109,3 +109,8 @@ commit user-control-add-records-implemented-ape-like-login 3ipo h
 	dodan "admin u bazu"
 	dodan najprmitivniji login ikad
 	
+commit login-check-rights-class-loggedIn
+	dodana klasa u kojoj se spremi ko je logiran
+	provjera prava pri logiranju
+	dodan botun daj prava
+	

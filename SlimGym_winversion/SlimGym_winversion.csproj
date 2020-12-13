@@ -87,6 +87,7 @@
   <ItemGroup>
     <Compile Include="DB Connection\DBAcess.cs" />
     <Compile Include="DB Connection\Queries.cs" />
+    <Compile Include="LoggedUserData\LoggedIn.cs" />
     <Compile Include="Objects\buttonEllip.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using SlimGym_winversion.Objects;
+using SlimGym_winversion.LoggedUser;
 
 namespace SlimGym_winversion
 {
@@ -24,7 +25,7 @@ namespace SlimGym_winversion
         static SlimGym _slimGym;                // Creating a SlimGym object
         private int formRoundness = 18;
         LogIn logInUserControl = new LogIn();
-        
+        public static LoggedIn loggedUser;
         //==================================
         //
         // Loading the form

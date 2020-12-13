@@ -40,6 +40,7 @@
             this.buttonUsers = new System.Windows.Forms.Button();
             this.panelWindow = new System.Windows.Forms.Panel();
             this.labelSelectCategory = new System.Windows.Forms.Label();
+            this.buttonGiveRights = new System.Windows.Forms.Button();
             this.panelButtons.SuspendLayout();
             this.panelWindow.SuspendLayout();
             this.SuspendLayout();
@@ -49,6 +50,7 @@
             this.panelButtons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelButtons.BackColor = System.Drawing.Color.Gray;
+            this.panelButtons.Controls.Add(this.buttonGiveRights);
             this.panelButtons.Controls.Add(this.buttonLogOut);
             this.panelButtons.Controls.Add(this.buttonChanges);
             this.panelButtons.Controls.Add(this.buttonRecords);
@@ -223,6 +225,25 @@
             this.labelSelectCategory.TabIndex = 0;
             this.labelSelectCategory.Text = "Select category";
             // 
+            // buttonGiveRights
+            // 
+            this.buttonGiveRights.BackColor = System.Drawing.Color.Transparent;
+            this.buttonGiveRights.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonGiveRights.FlatAppearance.BorderSize = 0;
+            this.buttonGiveRights.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.buttonGiveRights.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonGiveRights.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGiveRights.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.buttonGiveRights.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
+            this.buttonGiveRights.Location = new System.Drawing.Point(0, 350);
+            this.buttonGiveRights.Name = "buttonGiveRights";
+            this.buttonGiveRights.Size = new System.Drawing.Size(250, 70);
+            this.buttonGiveRights.TabIndex = 6;
+            this.buttonGiveRights.Text = "Give Rights";
+            this.buttonGiveRights.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonGiveRights.UseVisualStyleBackColor = false;
+            this.buttonGiveRights.Visible = false;
+            // 
             // Base
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,5 +273,6 @@
         private System.Windows.Forms.Button buttonMembership;
         private Objects.buttonEllip buttonLogOut;
         private System.Windows.Forms.Label labelSelectCategory;
+        private System.Windows.Forms.Button buttonGiveRights;
     }
 }

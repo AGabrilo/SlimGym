@@ -37,7 +37,7 @@ namespace SlimGym_winversion.UserControls
         //==================================
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            dataGridViewSearchUsers.DataSource = DBAcess.get(Queries.getUsers());
+            dataGridViewSearchUsers.DataSource = DBAcess.get(Queries.getUsersOrEmployees());
         }
 
         //==================================
