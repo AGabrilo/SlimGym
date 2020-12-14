@@ -4,14 +4,27 @@
              x:Class="SlimGym.Pocetna"
              Title="Početna">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="White">
-            <Frame BackgroundColor="White" HeightRequest="110">
-                <Image Source="/images/Logo.png"/>
-            </Frame>
-            
-            <Label Text="Dobrodošli!" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="40" TextColor="#595b5e"  />
-            <Label Text="Mobilna aplikacija za članove SlimGym teretane." FontSize="Medium" TextColor="#595b5e" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"/>
-           
+        <StackLayout BackgroundColor="White" >
+
+            <Grid>
+                <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                    <Frame BackgroundColor="DarkSeaGreen" HeightRequest="120" HorizontalOptions="FillAndExpand" Padding="22" CornerRadius="0">
+                        <Image  Source="/images/Logo.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="AspectFit" Margin="0"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="15,110,15,0">
+                    <Frame BackgroundColor="#77B777" HeightRequest="175" WidthRequest="175" CornerRadius="85" HasShadow="False" BorderColor="DarkGray" Margin="0" HorizontalOptions="Center" Padding="0">
+                        <Button  Text="Dobrodošli" BackgroundColor="#77B777" TextColor="DarkSlateGray"  FontSize="Large" FontAttributes="Bold" CornerRadius="20" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="20,310,20,0">
+                    <Frame BackgroundColor="white" HasShadow="False">
+                        <Label Text="Dobrodošli u mobilnu aplikaciju SlimGym. Dizajnirana je kako bi vam olakšala bolji uvid u organizaciju rasporeda,plaćanja članarina,te ponuđenih grupnih programa." TextColor="DarkSlateGray" FontSize="15" VerticalOptions="Center"/>
+                    </Frame>
+                </StackLayout>
+
+
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

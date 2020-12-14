@@ -61,7 +61,6 @@ C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\SlimGym.csproj
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\MenuFeature.xaml.g.cs
-C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\AboutUs.xaml.g.cs
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\ChangeProfileData\ChangePassword.xaml.g.cs
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\ChangeProfileData\ChangeUsername.xaml.g.cs
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\PagesOfPrograms\Boks.xaml.g.cs
