@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kZ+dEIDYOt/TlozhU8cpq70dvJCaRPBfxtmDsG1o+hWfVjEBI7C82D9LGQS4xJbES5MnxrP+5T6tUbbkbGYE6w==",
+  "dgSpecHash": "eUj/Tn+TQrziFjQcEkwesT/wMnkQgERzUpsBGUVmpQllsLjvIf8LR8ADICgJvWDDZnihAyBbjXosE4d/48Q/IA==",
   "success": true,
   "projectFilePath": "C:\\Users\\agabr\\Downloads\\SlimGym\\SlimGym.Android\\SlimGym.Android.csproj",
   "expectedPackageFiles": [
@@ -47,5 +47,16 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1560 to 4.6.0.1141. Reference the package directly from the project to select a different version. \r\n SlimGym.Android -> SlimGym -> Xamarin.Forms (>= 4.8.0.1560) \r\n SlimGym.Android -> Xamarin.Forms (>= 4.6.0.1141)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    }
+  ]
 }

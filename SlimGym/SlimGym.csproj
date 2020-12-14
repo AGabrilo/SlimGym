@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <PackageReference Include="Syncfusion.Xamarin.SfSchedule" Version="18.3.0.44" />
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
 
@@ -28,14 +28,8 @@
     <Compile Update="MenuFeature.xaml.cs">
       <DependentUpon>MenuFeature.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Pages\AboutUs.xaml.cs">
-      <DependentUpon>AboutUs.xaml</DependentUpon>
-    </Compile>
     <Compile Update="Pages\Profile.xaml.cs">
       <DependentUpon>Profile.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\SchedulePage.xaml.cs">
-      <DependentUpon>SchedulePage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Pages\Programs.xaml.cs">
       <DependentUpon>Programs.xaml</DependentUpon>
@@ -74,10 +68,6 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
 
-    <EmbeddedResource Update="Pages\AboutUs.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-
     <EmbeddedResource Update="Pages\PagesOfPrograms\Spinning.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -102,7 +92,7 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
 
-    <EmbeddedResource Update="Pages\SchedulePage.xaml">
+    <EmbeddedResource Update="Pages\Schedule.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
 

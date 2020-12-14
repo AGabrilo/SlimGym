@@ -73,7 +73,6 @@ C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Placanje
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Pocetna.xaml.g.cs
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Profile.xaml.g.cs
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Programs.xaml.g.cs
-C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\SchedulePage.xaml.g.cs
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\SignUp.xaml.g.cs
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\SlimGym.AssemblyInfoInputs.cache
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\SlimGym.AssemblyInfo.cs
@@ -82,3 +81,4 @@ C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\SlimGym.dll
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\ref\SlimGym.dll
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\SlimGym.pdb
+C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Schedule.xaml.g.cs
