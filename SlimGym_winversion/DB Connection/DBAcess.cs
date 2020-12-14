@@ -37,5 +37,18 @@ namespace SlimGym_winversion.DB_Connection
             return dataTable;
         }
 
+        public static void put(string query)
+        {
+            DataTable dataTable = new DataTable();
+
+            connection.Open();
+            command.Connection = connection;
+            command.CommandType = CommandType.Text;
+            command.CommandText = query;
+            command.ExecuteReader();
+
+            MessageBox.Show("Successful!!");
+            connection.Close();
+        }
     }
 }

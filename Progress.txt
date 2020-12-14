@@ -1,3 +1,5 @@
+//kod search users problm sa datumon(formaton unosa)
+
 ZADACI ZA TONIJA: 
 	- Dodat tablice u bazu podataka sa engleskin imenima stupaca
 	- Izmislit queryje za svako dohvacanje podataka i spremanje podataka u bazu
@@ -109,8 +111,13 @@ commit user-control-add-records-implemented-ape-like-login 3ipo h
 	dodan "admin u bazu"
 	dodan najprmitivniji login ikad
 	
-commit login-check-rights-class-loggedIn
+commit login-check-rights-class-loggedIn 1ipo h
 	dodana klasa u kojoj se spremi ko je logiran
 	provjera prava pri logiranju
 	dodan botun daj prava
+	
+commit search-and-add-user-or-employee 2ipo h
+	dodan query za search user
+	jos nesto oko queryja dodano
+	dodano dodavanje korisnika ili zaposlenika
 	
