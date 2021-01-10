@@ -101,5 +101,20 @@ namespace SlimGym_winversion.DB_Connection
 
             return conditions;
         }
+
+
+        //get user for user info cs
+        public static string getUser(string personalid)
+        {
+            query = "SELECT" +
+                    "'name', surname, users.user_id, personal_id, birth_date, gender, phone_number, " +
+                    "membership.payment_date, membership.expiration_date, membership.membership_level" +
+                    "from users " +
+                    "join user_membership 'um' on 'um'.user_id = users.user_id " +
+                    "join membership on membership.membership_id = 'um'.membership_id " +
+                    "where " + "users.personal_id = " + personalid;
+            return query;
+        }
+
     }
 }

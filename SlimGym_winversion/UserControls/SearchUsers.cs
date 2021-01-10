@@ -1,6 +1,7 @@
 ﻿using SlimGym_winversion.DB_Connection;
 using SlimGym_winversion.Objects;
 using System;
+using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -23,6 +24,7 @@ namespace SlimGym_winversion.UserControls
         public SearchUsers(string triggerName)
         {
             InitializeComponent();
+            dataGridViewSearchUsers.DataSource = DBAcess.get(Queries.getUsers(textBoxName.Text, textBoxSurname.Text, textBoxPersonalID.Text, textBoxBithDate.Text));
             this.triggerName = triggerName;
             if (Base.Instance.panelWindowControl.Controls.Count == 0)                    // Checks if the searchUsers is onley user control in controls
             {
@@ -67,9 +69,12 @@ namespace SlimGym_winversion.UserControls
                 {
                     if (!Base.Instance.panelWindowControl.Controls.ContainsKey("UserInfo"))             // Checks for exitsting user control
                     {                                                                                   // Does not exist
-                        UserInfo userInfoUserControl = new UserInfo();                                  // Creates an instance
-                        userInfoUserControl.Dock = DockStyle.Fill;                                      //
-                        Base.Instance.panelWindowControl.Controls.Add(userInfoUserControl);             // Adds it to control
+                        DataTable selectedUserInfo= new DataTable();
+                        /*NE VALJA*/
+                        selectedUserInfo.Rows.Add(dataGridViewSearchUsers.SelectedRows.ToString());
+                        UserInfo userInfoUserControl = new UserInfo(selectedUserInfo);                  // Creates an instance
+                        userInfoUserControl.Dock = DockStyle.Fill;                                     //
+                        Base.Instance.panelWindowControl.Controls.Add(userInfoUserControl);           // Adds it to control
                     }
 
                     Base.Instance.panelWindowControl.Controls["UserInfo"].BringToFront();               // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)

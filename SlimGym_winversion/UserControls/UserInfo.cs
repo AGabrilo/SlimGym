@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SlimGym_winversion.DB_Connection;
 
 namespace SlimGym_winversion.UserControls
 {
@@ -24,9 +25,11 @@ namespace SlimGym_winversion.UserControls
         // Loading Base usercontrol
         //
         //==================================
-        public UserInfo()
-        {
-            InitializeComponent();
+        public UserInfo(DataTable info)
+        {                                                                                               //ovo bi tribalo bit oke,
+            InitializeComponent();                                                                      //samo prominit labele u vrijednosti
+            string personalid = info.Rows[0][3].ToString();
+            DBAcess.get(Queries.getUser(personalid));
         }
 
         //==================================
