@@ -34,21 +34,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Records));
             this.dataGridViewRecords = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.name2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.entranceTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.exitTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelRecordOfUsers = new System.Windows.Forms.Label();
             this.labelFilter = new System.Windows.Forms.Label();
             this.panelFilter = new SlimGym_winversion.Objects.panelEllip();
-            this.datePickerExit = new SlimGym_winversion.Objects.datePickerEllip();
             this.labelDateEntrance = new System.Windows.Forms.Label();
             this.datePickerEntrance = new SlimGym_winversion.Objects.datePickerEllip();
             this.maskedTextBoxTimeEntrance = new System.Windows.Forms.MaskedTextBox();
             this.buttonSearch = new SlimGym_winversion.Objects.buttonEllip();
             this.labelTimeExit = new System.Windows.Forms.Label();
-            this.labelDateExit = new System.Windows.Forms.Label();
             this.labelTimeEntrance = new System.Windows.Forms.Label();
             this.maskedTextBoxTimeExit = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRecords)).BeginInit();
@@ -80,12 +73,6 @@
             this.dataGridViewRecords.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewRecords.ColumnHeadersHeight = 33;
             this.dataGridViewRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridViewRecords.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.name2,
-            this.surname,
-            this.entranceTime,
-            this.exitTime,
-            this.userId});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonShadow;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,36 +108,6 @@
             this.dataGridViewRecords.Size = new System.Drawing.Size(876, 423);
             this.dataGridViewRecords.TabIndex = 1;
             // 
-            // name2
-            // 
-            this.name2.HeaderText = "Name:";
-            this.name2.Name = "name2";
-            this.name2.ReadOnly = true;
-            // 
-            // surname
-            // 
-            this.surname.HeaderText = "Surname:";
-            this.surname.Name = "surname";
-            this.surname.ReadOnly = true;
-            // 
-            // entranceTime
-            // 
-            this.entranceTime.HeaderText = "Entrance:";
-            this.entranceTime.Name = "entranceTime";
-            this.entranceTime.ReadOnly = true;
-            // 
-            // exitTime
-            // 
-            this.exitTime.HeaderText = "Exit:";
-            this.exitTime.Name = "exitTime";
-            this.exitTime.ReadOnly = true;
-            // 
-            // userId
-            // 
-            this.userId.HeaderText = "User ID:";
-            this.userId.Name = "userId";
-            this.userId.ReadOnly = true;
-            // 
             // labelRecordOfUsers
             // 
             this.labelRecordOfUsers.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -182,13 +139,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelFilter.BorderColor = System.Drawing.Color.Silver;
             this.panelFilter.BorderThickness = 6;
-            this.panelFilter.Controls.Add(this.datePickerExit);
             this.panelFilter.Controls.Add(this.labelDateEntrance);
             this.panelFilter.Controls.Add(this.datePickerEntrance);
             this.panelFilter.Controls.Add(this.maskedTextBoxTimeEntrance);
             this.panelFilter.Controls.Add(this.buttonSearch);
             this.panelFilter.Controls.Add(this.labelTimeExit);
-            this.panelFilter.Controls.Add(this.labelDateExit);
             this.panelFilter.Controls.Add(this.labelTimeEntrance);
             this.panelFilter.Controls.Add(this.maskedTextBoxTimeExit);
             this.panelFilter.Location = new System.Drawing.Point(77, 52);
@@ -197,21 +152,6 @@
             this.panelFilter.Size = new System.Drawing.Size(876, 96);
             this.panelFilter.TabIndex = 0;
             // 
-            // datePickerExit
-            // 
-            this.datePickerExit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.datePickerExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.datePickerExit.BorderRadius = 2;
-            this.datePickerExit.ForeColor = System.Drawing.Color.White;
-            this.datePickerExit.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datePickerExit.FormatCustom = null;
-            this.datePickerExit.Location = new System.Drawing.Point(207, 50);
-            this.datePickerExit.Name = "datePickerExit";
-            this.datePickerExit.Roundness = 1;
-            this.datePickerExit.Size = new System.Drawing.Size(230, 34);
-            this.datePickerExit.TabIndex = 1;
-            this.datePickerExit.Value = new System.DateTime(2020, 11, 5, 13, 47, 23, 0);
-            // 
             // labelDateEntrance
             // 
             this.labelDateEntrance.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -219,7 +159,7 @@
             this.labelDateEntrance.BackColor = System.Drawing.Color.Transparent;
             this.labelDateEntrance.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDateEntrance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.labelDateEntrance.Location = new System.Drawing.Point(31, 15);
+            this.labelDateEntrance.Location = new System.Drawing.Point(31, 28);
             this.labelDateEntrance.Name = "labelDateEntrance";
             this.labelDateEntrance.Size = new System.Drawing.Size(170, 29);
             this.labelDateEntrance.TabIndex = 5;
@@ -234,7 +174,7 @@
             this.datePickerEntrance.ForeColor = System.Drawing.Color.White;
             this.datePickerEntrance.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.datePickerEntrance.FormatCustom = null;
-            this.datePickerEntrance.Location = new System.Drawing.Point(207, 9);
+            this.datePickerEntrance.Location = new System.Drawing.Point(207, 22);
             this.datePickerEntrance.Name = "datePickerEntrance";
             this.datePickerEntrance.Roundness = 1;
             this.datePickerEntrance.Size = new System.Drawing.Size(230, 34);
@@ -279,6 +219,7 @@
             this.buttonSearch.Size = new System.Drawing.Size(86, 86);
             this.buttonSearch.TabIndex = 4;
             this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // labelTimeExit
             // 
@@ -293,20 +234,6 @@
             this.labelTimeExit.TabIndex = 8;
             this.labelTimeExit.Text = "Time Exit:";
             this.labelTimeExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelDateExit
-            // 
-            this.labelDateExit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelDateExit.AutoSize = true;
-            this.labelDateExit.BackColor = System.Drawing.Color.Transparent;
-            this.labelDateExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDateExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(180)))), ((int)(((byte)(30)))));
-            this.labelDateExit.Location = new System.Drawing.Point(31, 55);
-            this.labelDateExit.Name = "labelDateExit";
-            this.labelDateExit.Size = new System.Drawing.Size(114, 29);
-            this.labelDateExit.TabIndex = 6;
-            this.labelDateExit.Text = "Date Exit:";
-            this.labelDateExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelTimeEntrance
             // 
@@ -367,19 +294,12 @@
         private System.Windows.Forms.Label labelRecordOfUsers;
         private System.Windows.Forms.Label labelFilter;
         private Objects.panelEllip panelFilter;
-        private Objects.datePickerEllip datePickerExit;
         private System.Windows.Forms.Label labelDateEntrance;
         private Objects.datePickerEllip datePickerEntrance;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxTimeEntrance;
         private Objects.buttonEllip buttonSearch;
         private System.Windows.Forms.Label labelTimeExit;
-        private System.Windows.Forms.Label labelDateExit;
         private System.Windows.Forms.Label labelTimeEntrance;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxTimeExit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn surname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn entranceTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn exitTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userId;
     }
 }

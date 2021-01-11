@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SlimGym_winversion.DB_Connection;
 
 namespace SlimGym_winversion.UserControls
 {
@@ -27,6 +28,7 @@ namespace SlimGym_winversion.UserControls
         public InTheGym()
         {
             InitializeComponent();
+            dataGridViewSearchUsers.DataSource =  DBAcess.get(Queries.getPeoleInTheGym());
         }
 
         //==================================

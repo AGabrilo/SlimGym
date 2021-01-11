@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SlimGym_winversion.DB_Connection;
 
 namespace SlimGym_winversion.UserControls
 {
@@ -18,16 +19,21 @@ namespace SlimGym_winversion.UserControls
         //
         //==================================
         static AddEntranceOrExit addEntranceOrExit;
-
+        private string command;
         //==================================
         //
         // Loading AddEntranceOrExit usercontrol
         //
         //==================================
-        public AddEntranceOrExit()
+        public AddEntranceOrExit(string command, string name, string surname, string user_id)
         {
             InitializeComponent();
             addEntranceOrExit = this;
+            labelNameValue.Text = name;
+            labelSurnameValue.Text = surname;
+            labelUserIDValue.Text = user_id;
+            this.command = command;
+            setEntranceOrExit();
         }
 
         //==================================
@@ -44,6 +50,34 @@ namespace SlimGym_winversion.UserControls
             }
         }
 
+        private void setEntranceOrExit()
+        {
+            if(command == "Entrance")
+            {
+                labelExitTime.Visible = false;
+                labelExitTimeValue.Visible = false;
+                labelEntranceTimeValue.Text = DateTime.Now.ToString("t");
+            }
+            else
+            {
+                labelEntranceTimeValue.Text = DBAcess.get(Queries.getEntranceInfo(labelUserIDValue.Text.ToString())).Rows[0][0].ToString();
+                labelExitTimeValue.Text = DateTime.Now.ToString("t");
+            }
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            if (command == "Entrance")
+            {
+                DBAcess.put(Queries.putRecordEntrance(labelUserIDValue.Text.ToString()));
+            }
+            else
+            {
+                DBAcess.put(Queries.putRecordExit(labelUserIDValue.Text.ToString()));
+            }
+            MessageBox.Show("Record Added!");
+            buttonBack_Click(sender, e);
+        }
         //==================================
         //                                  
         // Get and set functions            
@@ -56,7 +90,7 @@ namespace SlimGym_winversion.UserControls
             {
                 if(addEntranceOrExit == null)
                 {
-                    addEntranceOrExit = new AddEntranceOrExit();
+                    addEntranceOrExit = new AddEntranceOrExit("null", "null", "null", "null");
                 }
 
                 return addEntranceOrExit;
@@ -74,5 +108,7 @@ namespace SlimGym_winversion.UserControls
             get => labelExitTimeValue;
             set { labelExitTimeValue = value; }
         }
+
+
     }
 }

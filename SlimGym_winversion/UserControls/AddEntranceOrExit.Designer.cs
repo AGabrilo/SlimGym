@@ -34,7 +34,7 @@
             this.labelUserID = new System.Windows.Forms.Label();
             this.labelSurname = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
-            this.labelTimeValue = new System.Windows.Forms.Label();
+            this.labelEntranceTimeValue = new System.Windows.Forms.Label();
             this.labelTimeEntrance = new System.Windows.Forms.Label();
             this.labelExitTimeValue = new System.Windows.Forms.Label();
             this.labelExitTime = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@
             this.labelUserIDValue.Size = new System.Drawing.Size(180, 33);
             this.labelUserIDValue.TabIndex = 7;
             this.labelUserIDValue.Text = "UserIDValue";
-            this.labelUserIDValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelUserIDValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelSurnameValue
             // 
@@ -64,7 +64,7 @@
             this.labelSurnameValue.Size = new System.Drawing.Size(207, 33);
             this.labelSurnameValue.TabIndex = 5;
             this.labelSurnameValue.Text = "SurnameValue";
-            this.labelSurnameValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSurnameValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelNameValue
             // 
@@ -76,7 +76,7 @@
             this.labelNameValue.Size = new System.Drawing.Size(167, 33);
             this.labelNameValue.TabIndex = 3;
             this.labelNameValue.Text = "NameValue";
-            this.labelNameValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelNameValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelUserID
             // 
@@ -114,17 +114,17 @@
             this.labelName.Text = "Name:";
             this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelTimeValue
+            // labelEntranceTimeValue
             // 
-            this.labelTimeValue.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelTimeValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTimeValue.ForeColor = System.Drawing.Color.White;
-            this.labelTimeValue.Location = new System.Drawing.Point(259, 285);
-            this.labelTimeValue.Name = "labelTimeValue";
-            this.labelTimeValue.Size = new System.Drawing.Size(274, 33);
-            this.labelTimeValue.TabIndex = 9;
-            this.labelTimeValue.Text = "EntranceTimeValue";
-            this.labelTimeValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelEntranceTimeValue.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelEntranceTimeValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEntranceTimeValue.ForeColor = System.Drawing.Color.White;
+            this.labelEntranceTimeValue.Location = new System.Drawing.Point(259, 285);
+            this.labelEntranceTimeValue.Name = "labelEntranceTimeValue";
+            this.labelEntranceTimeValue.Size = new System.Drawing.Size(274, 33);
+            this.labelEntranceTimeValue.TabIndex = 9;
+            this.labelEntranceTimeValue.Text = "EntranceTimeValue";
+            this.labelEntranceTimeValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelTimeEntrance
             // 
@@ -148,7 +148,7 @@
             this.labelExitTimeValue.Size = new System.Drawing.Size(208, 33);
             this.labelExitTimeValue.TabIndex = 11;
             this.labelExitTimeValue.Text = "ExitTimeValue";
-            this.labelExitTimeValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelExitTimeValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelExitTime
             // 
@@ -210,6 +210,7 @@
             this.buttonAdd.TabIndex = 1;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // AddEntranceOrExit
             // 
@@ -220,7 +221,7 @@
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelExitTimeValue);
             this.Controls.Add(this.labelExitTime);
-            this.Controls.Add(this.labelTimeValue);
+            this.Controls.Add(this.labelEntranceTimeValue);
             this.Controls.Add(this.labelTimeEntrance);
             this.Controls.Add(this.labelUserIDValue);
             this.Controls.Add(this.labelSurnameValue);
@@ -242,7 +243,7 @@
         private System.Windows.Forms.Label labelUserID;
         private System.Windows.Forms.Label labelSurname;
         private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.Label labelTimeValue;
+        private System.Windows.Forms.Label labelEntranceTimeValue;
         private System.Windows.Forms.Label labelTimeEntrance;
         private System.Windows.Forms.Label labelExitTimeValue;
         private System.Windows.Forms.Label labelExitTime;

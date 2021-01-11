@@ -35,10 +35,6 @@
             this.labelName = new System.Windows.Forms.Label();
             this.buttonBack = new SlimGym_winversion.Objects.buttonEllip();
             this.dataGridViewSearchUsers = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.name2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.entranceTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSearchUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,11 +100,6 @@
             this.dataGridViewSearchUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewSearchUsers.ColumnHeadersHeight = 33;
             this.dataGridViewSearchUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridViewSearchUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.name2,
-            this.surname,
-            this.entranceTime,
-            this.userId});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonShadow;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -144,30 +135,6 @@
             this.dataGridViewSearchUsers.Size = new System.Drawing.Size(876, 416);
             this.dataGridViewSearchUsers.TabIndex = 0;
             // 
-            // name2
-            // 
-            this.name2.HeaderText = "Name:";
-            this.name2.Name = "name2";
-            this.name2.ReadOnly = true;
-            // 
-            // surname
-            // 
-            this.surname.HeaderText = "Surname:";
-            this.surname.Name = "surname";
-            this.surname.ReadOnly = true;
-            // 
-            // entranceTime
-            // 
-            this.entranceTime.HeaderText = "Entrance Time:";
-            this.entranceTime.Name = "entranceTime";
-            this.entranceTime.ReadOnly = true;
-            // 
-            // userId
-            // 
-            this.userId.HeaderText = "User ID:";
-            this.userId.Name = "userId";
-            this.userId.ReadOnly = true;
-            // 
             // InTheGym
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,9 +154,5 @@
         private System.Windows.Forms.Label labelName;
         private Objects.buttonEllip buttonBack;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewSearchUsers;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn surname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn entranceTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userId;
     }
 }

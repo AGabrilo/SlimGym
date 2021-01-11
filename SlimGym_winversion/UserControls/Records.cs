@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SlimGym_winversion.Objects;
+using SlimGym_winversion.DB_Connection;
 
 namespace SlimGym_winversion.UserControls
 {
@@ -30,7 +31,15 @@ namespace SlimGym_winversion.UserControls
             InitializeComponent();
 
             _records = this;
+            datePickerEntrance.Value = DateTime.Now;
+            dataGridViewRecords.DataSource = DBAcess.get(Queries.getRecordsOfUsers(datePickerEntrance.Value.ToString("d")));
 
+
+        }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            dataGridViewRecords.DataSource = DBAcess.get(Queries.getRecordsOfUsers(datePickerEntrance.Value.ToString("d")));
         }
 
         //=======================================================//
@@ -54,5 +63,7 @@ namespace SlimGym_winversion.UserControls
                 return _records;
             }
         }
+
+
     }
 }

@@ -18,7 +18,7 @@ namespace SlimGym_winversion.DB_Connection
                 "name, " +
                 "surname, " +
                 "birth_date, " +
-                "personal_id " +
+                "personal_id, " +
                 "user_id " +
                 "from users " +
                 conditions;
@@ -116,5 +116,63 @@ namespace SlimGym_winversion.DB_Connection
             return query;
         }
 
+        public static string getPeoleInTheGym()
+        {
+            query = "select " +
+                "name as \"Name\", " +
+                "surname as \"Surname\", " +
+                "attendance.start_time as \"Entrance Time\", " +
+                "users.user_id as \"User ID \" " +
+                "from users " +
+                "join user_attendance on users.user_id = user_attendance.user_id " +
+                "join attendance on attendance.attendance_id = user_attendance.attendance_id " +
+                "where attendance.end_time is null";
+            return query;
+        }
+        public static string getRecordsOfUsers(string date)
+        {
+            query = "select " +
+                "name as \"Name\", " +
+                "surname as \"Surname\", " +
+                "attendance.start_time as \"Entrance Time\", " +
+                "attendance.end_time as \"Exit Time\", " +
+                "attendance.date as \"Date\", " +
+                "users.user_id as \"User ID \" " +
+                "from users " +
+                "join user_attendance on users.user_id = user_attendance.user_id " +
+                "join attendance on attendance.attendance_id = user_attendance.attendance_id " +
+                "where attendance.date = '" + date + "'::date";
+            return query;
+        }
+
+        public static string putRecordEntrance(string user_id)
+        {
+            query = "insert into attendance (start_time, date) " +
+                "values ('" + DateTime.Now.ToString("t") + "', '" + DateTime.Now.ToString("d") + "'); " +
+                "insert into user_attendance (user_id, attendance_id) " +
+                "select '" + user_id + "', max(attendance_id) from attendance;";
+            return query;
+        }
+        public static string getEntranceInfo(string user_id)
+        {
+            query = "select " +
+                "attendance.start_time " +
+                "from user_attendance " +
+                "join attendance on attendance.attendance_id = user_attendance.attendance_id " +
+                "where attendance.end_time is null and user_attendance.user_id = '" + user_id + "'";
+            return query;
+        }
+
+        public static string putRecordExit(string user_id)
+        {
+            query = "update attendance " +
+                "set end_time = '" + DateTime.Now.ToString("t") + "'" +
+                "from attendance att " +
+                "join user_attendance on user_attendance.attendance_id = att.attendance_id " +
+                "where att.end_time is null and user_attendance.user_id = '" + user_id + "'";
+            return query;
+        }
+
+        
     }
 }

@@ -101,16 +101,12 @@ namespace SlimGym_winversion.UserControls
 
                 if (triggerName == "buttonAddEntrance")
                 {
-                    callAddEntranceOrExitUserControl();
-                    AddEntranceOrExit.Instance.LabelExitTime.Visible = false;
-                    AddEntranceOrExit.Instance.LabelExitTimeValue.Visible = false;
+                    callAddEntranceOrExitUserControl("Entrance");
                 }
 
                 if (triggerName == "buttonAddExit")
                 {
-                    callAddEntranceOrExitUserControl();
-                    AddEntranceOrExit.Instance.LabelExitTime.Visible = true;
-                    AddEntranceOrExit.Instance.LabelExitTimeValue.Visible = true;
+                    callAddEntranceOrExitUserControl("Exit");
                 }
             }
         }
@@ -126,11 +122,11 @@ namespace SlimGym_winversion.UserControls
         // Call AddEntranceOrExit user control
         //                                  
         //==================================
-        private void callAddEntranceOrExitUserControl()
+        private void callAddEntranceOrExitUserControl(string command)
         {
             if (!Base.Instance.panelWindowControl.Controls.ContainsKey("AddEntranceOrExit"))                // Checks for exitsting user control
             {                                                                                               // Does not exist
-                AddEntranceOrExit AddEntranceOrExitUserControl = new AddEntranceOrExit();                   // Creates an instance
+                AddEntranceOrExit AddEntranceOrExitUserControl = new AddEntranceOrExit(command, dataGridViewSearchUsers.CurrentRow.Cells[0].Value.ToString(), dataGridViewSearchUsers.CurrentRow.Cells[1].Value.ToString(), dataGridViewSearchUsers.CurrentRow.Cells[4].Value.ToString());                   // Creates an instance
                 AddEntranceOrExitUserControl.Dock = DockStyle.Fill;                                         //
                 Base.Instance.panelWindowControl.Controls.Add(AddEntranceOrExitUserControl);                // Adds it to control
 
