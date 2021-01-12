@@ -25,11 +25,10 @@ namespace SlimGym_winversion.UserControls
         // Loading Base usercontrol
         //
         //==================================
-        public UserInfo(DataTable info)
+        public UserInfo(string personal_id)
         {                                                                                               //ovo bi tribalo bit oke,
-            InitializeComponent();                                                                      //samo prominit labele u vrijednosti
-            string personalid = info.Rows[0][3].ToString();
-            DBAcess.get(Queries.getUser(personalid));
+            InitializeComponent();                                                                    //samo prominit labele u vrijednosti
+            insertInfo(personal_id);
         }
 
         //==================================
@@ -41,6 +40,32 @@ namespace SlimGym_winversion.UserControls
         {
             Base.Instance.panelWindowControl.Controls.RemoveByKey("UserInfo");
         }
+
+        //==================================
+        //
+        // insert info function
+        //
+        //==================================
+        private void insertInfo(string personal_id)
+        {
+            DataTable userInfoTable = new DataTable();
+            userInfoTable = DBAcess.get(Queries.getUser(personal_id));
+            labelNameValue.Text = userInfoTable.Rows[0][0].ToString();
+            labelSurnameValue.Text = userInfoTable.Rows[0][1].ToString();
+            labelUserIDValue.Text = userInfoTable.Rows[0][2].ToString();
+            labelPersonalIDValue.Text = userInfoTable.Rows[0][3].ToString();
+            labelBirthDateValue.Text = userInfoTable.Rows[0][4].ToString();
+            labelGenderValue.Text = userInfoTable.Rows[0][5].ToString();
+            labelContactValue.Text = userInfoTable.Rows[0][6].ToString();
+            labelPaymentDateValue.Text = userInfoTable.Rows[0][7].ToString();
+            labelExpirationDateValue.Text = userInfoTable.Rows[0][8].ToString();
+            labelMembeshipValue.Text = userInfoTable.Rows[0][9].ToString();
+        }
+
+
+
+
+
 
         //=======================================================//
         //                                                       //

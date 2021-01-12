@@ -102,7 +102,10 @@ namespace SlimGym_winversion.DB_Connection
         public static string putUser(string name, string surname, string personalId, string gender, string birtDate, string phonenumber)
         {
             query = "insert into users (name, surname, personal_id, gender, birth_date, phone_number) " +
-                "values ('" + name + "', '" + surname + "', '" + personalId + "', '" + gender + "', '" + birtDate + "', " + phonenumber + ")";
+                "values ('" + name + "', '" + surname + "', '" + personalId + "', '" + gender + "', '" + birtDate + "', " + phonenumber + "); " +
+                "insert into user_membership (user_id, membership_id) " +
+                "SELECT MAX (user_id)" +
+                "FROM users";
             return query;
         }
 
@@ -151,17 +154,23 @@ namespace SlimGym_winversion.DB_Connection
         //get user for user info cs
         public static string getUser(string personalid)
         {
-            query = "SELECT" +
-                    "'name', surname, users.user_id, personal_id, birth_date, gender, phone_number, " +
-                    "membership.payment_date, membership.expiration_date, membership.membership_level" +
+            query = "SELECT " +
+                    "name, surname, users.user_id, personal_id, birth_date, gender, phone_number, " +
+                    "um.payment_date, um.expiration_date, membership.membership_level " +
                     "from users " +
-                    "join user_membership 'um' on 'um'.user_id = users.user_id " +
-                    "join membership on membership.membership_id = 'um'.membership_id " +
-                    "where " + "users.personal_id = " + personalid;
+                    "left join user_membership um on um.user_id = users.user_id " +
+                    "left join membership on membership.membership_id = um.membership_id " +
+                    "left join " + 
+                    "(SELECT " +
+                    "MIN( user_membership.payment_date) as p_date " + 
+                    "FROM users " +
+                    "join user_membership on user_membership.user_id=users.user_id " +
+                    ") u_m on u_m.p_date=um.payment_date " +
+                    "where users.personal_id = " + personalid;
             return query;
         }
 
-        public static string getPeoleInTheGym()
+        public static string getPeopleInTheGym()
         {
             query = "select " +
                 "name as \"Name\", " +

@@ -181,7 +181,7 @@
             this.labelGenderValue.Size = new System.Drawing.Size(186, 33);
             this.labelGenderValue.TabIndex = 8;
             this.labelGenderValue.Text = "GenderValue";
-            this.labelGenderValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelGenderValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelPaymentDateValue
             // 
@@ -193,7 +193,7 @@
             this.labelPaymentDateValue.Size = new System.Drawing.Size(204, 33);
             this.labelPaymentDateValue.TabIndex = 10;
             this.labelPaymentDateValue.Text = "PaymentDateValue";
-            this.labelPaymentDateValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelPaymentDateValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelUserIDValue
             // 
@@ -205,7 +205,7 @@
             this.labelUserIDValue.Size = new System.Drawing.Size(180, 33);
             this.labelUserIDValue.TabIndex = 6;
             this.labelUserIDValue.Text = "UserIDValue";
-            this.labelUserIDValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelUserIDValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelSurnameValue
             // 
@@ -217,7 +217,7 @@
             this.labelSurnameValue.Size = new System.Drawing.Size(207, 33);
             this.labelSurnameValue.TabIndex = 4;
             this.labelSurnameValue.Text = "SurnameValue";
-            this.labelSurnameValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSurnameValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelNameValue
             // 
@@ -229,7 +229,7 @@
             this.labelNameValue.Size = new System.Drawing.Size(167, 33);
             this.labelNameValue.TabIndex = 2;
             this.labelNameValue.Text = "NameValue";
-            this.labelNameValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelNameValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelContactValue
             // 
@@ -241,7 +241,7 @@
             this.labelContactValue.Size = new System.Drawing.Size(189, 33);
             this.labelContactValue.TabIndex = 18;
             this.labelContactValue.Text = "ContactValue";
-            this.labelContactValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelContactValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelExpirationDateValue
             // 
@@ -253,7 +253,7 @@
             this.labelExpirationDateValue.Size = new System.Drawing.Size(280, 33);
             this.labelExpirationDateValue.TabIndex = 20;
             this.labelExpirationDateValue.Text = "ExpirationDateValue";
-            this.labelExpirationDateValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelExpirationDateValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelMembeshipValue
             // 
@@ -265,7 +265,7 @@
             this.labelMembeshipValue.Size = new System.Drawing.Size(250, 33);
             this.labelMembeshipValue.TabIndex = 16;
             this.labelMembeshipValue.Text = "MembershipValue";
-            this.labelMembeshipValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelMembeshipValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelBirthDateValue
             // 
@@ -277,7 +277,7 @@
             this.labelBirthDateValue.Size = new System.Drawing.Size(210, 33);
             this.labelBirthDateValue.TabIndex = 14;
             this.labelBirthDateValue.Text = "BirthDateValue";
-            this.labelBirthDateValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelBirthDateValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelPersonalIDValue
             // 
@@ -289,7 +289,7 @@
             this.labelPersonalIDValue.Size = new System.Drawing.Size(233, 33);
             this.labelPersonalIDValue.TabIndex = 12;
             this.labelPersonalIDValue.Text = "PersonalIDValue";
-            this.labelPersonalIDValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelPersonalIDValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // buttonBack
             // 

@@ -28,7 +28,7 @@ namespace SlimGym_winversion.UserControls
         public InTheGym()
         {
             InitializeComponent();
-            dataGridViewSearchUsers.DataSource =  DBAcess.get(Queries.getPeoleInTheGym());
+            dataGridViewSearchUsers.DataSource =  DBAcess.get(Queries.getPeopleInTheGym());
         }
 
         //==================================

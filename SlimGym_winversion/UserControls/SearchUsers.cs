@@ -71,10 +71,9 @@ namespace SlimGym_winversion.UserControls
                 {
                     if (!Base.Instance.panelWindowControl.Controls.ContainsKey("UserInfo"))             // Checks for exitsting user control
                     {                                                                                   // Does not exist
-                        DataTable selectedUserInfo = new DataTable();
-                        /*NE VALJA*/
-                        selectedUserInfo.Rows.Add(dataGridViewSearchUsers.SelectedRows.ToString());
-                        UserInfo userInfoUserControl = new UserInfo(selectedUserInfo);                  // Creates an instance
+                        string personalId = dataGridViewSearchUsers.CurrentRow.Cells[3].Value.ToString();
+
+                        UserInfo userInfoUserControl = new UserInfo(personalId);                  // Creates an instance
                         userInfoUserControl.Dock = DockStyle.Fill;                                     //
                         Base.Instance.panelWindowControl.Controls.Add(userInfoUserControl);           // Adds it to control
                     }
