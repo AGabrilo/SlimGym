@@ -48,11 +48,17 @@ namespace SlimGym_winversion.UserControls
             {
                 Base.Instance.ResetButtonColors = Color.Gray;                          // To reset colors of buttons in panelButtons if it is first user control that button opens
             }
+
+            Base.Instance.panelWindowControl.Controls.RemoveByKey("SearchUsers");       // Removes user control from controls
+            if (Base.Instance.panelWindowControl.Controls.Count == 0)                  // Checks if the ListGroups is only user control in controls
+            {
+                Base.Instance.ResetButtonColors = Color.Gray;                          // To reset colors of buttons in panelButtons if it is first user control that button opens
+            }
         }
 
         private void setEntranceOrExit()
         {
-            if(command == "Entrance")
+            if(command == "buttonAddEntrance")
             {
                 labelExitTime.Visible = false;
                 labelExitTimeValue.Visible = false;
@@ -67,7 +73,7 @@ namespace SlimGym_winversion.UserControls
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            if (command == "Entrance")
+            if (command == "buttonAddEntrance")
             {
                 DBAcess.put(Queries.putRecordEntrance(labelUserIDValue.Text.ToString()));
             }
@@ -77,6 +83,7 @@ namespace SlimGym_winversion.UserControls
             }
             MessageBox.Show("Record Added!");
             buttonBack_Click(sender, e);
+
         }
         //==================================
         //                                  

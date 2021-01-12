@@ -40,6 +40,51 @@ namespace SlimGym_winversion.DB_Connection
             return query;
         }
 
+        public static string getUserToAddEntrance(string name, string surname, string personalId, string birthDate)
+        {
+            string conditions = createConditionsString(name, surname, personalId, birthDate);
+            if (conditions == null)
+                conditions = "where selection.user_id is null";
+            else
+                conditions += " and selection.user_id is null";
+            query = "select " +
+                "name, " +
+                "surname, " +
+                "birth_date, " +
+                "personal_id, " +
+                "users.user_id " +
+                "from users " +
+                "left join " +
+                "(select " +
+                "users.user_id " +
+                "from users " +
+                "join user_attendance on user_attendance.user_id = users.user_id " +
+                "join attendance on attendance.attendance_id = user_attendance.attendance_id " +
+                "where attendance.end_time is null) selection on selection.user_id = users.user_id " +
+                conditions;
+            return query;
+        }
+
+        public static string getUserToAddExit(string name, string surname, string personalId, string birthDate)
+        {
+            string conditions = createConditionsString(name, surname, personalId, birthDate);
+            if (conditions == null)
+                conditions = "where attendance.end_time is null";
+            else
+                conditions += " and attendance.end_time is null";
+            query = "select " +
+                "name, " +
+                "surname, " +
+                "birth_date, " +
+                "personal_id, " +
+                "users.user_id " +
+                "from users " +
+                "join user_attendance on user_attendance.user_id = users.user_id " +
+                "join attendance on attendance.attendance_id = user_attendance.attendance_id " +
+                conditions;
+            return query;
+        }
+
         public static string getLogin(string password, string username)
         {
             query = "select " +
@@ -173,6 +218,7 @@ namespace SlimGym_winversion.DB_Connection
             return query;
         }
 
-        
+
+
     }
 }

@@ -15,6 +15,7 @@ namespace SlimGym_winversion.UserControls
         //
         //==================================
         public string triggerName;
+        static SearchUsers _searchUsers;
 
         //==================================
         //
@@ -24,12 +25,13 @@ namespace SlimGym_winversion.UserControls
         public SearchUsers(string triggerName)
         {
             InitializeComponent();
-            dataGridViewSearchUsers.DataSource = DBAcess.get(Queries.getUsers(textBoxName.Text, textBoxSurname.Text, textBoxPersonalID.Text, textBoxBithDate.Text));
             this.triggerName = triggerName;
             if (Base.Instance.panelWindowControl.Controls.Count == 0)                    // Checks if the searchUsers is onley user control in controls
             {
                 buttonBack.Visible = false;                                             // If yes make buttonBack invisible
             }
+
+            loadDataGridView(triggerName);
         }
 
         //==================================
@@ -39,7 +41,7 @@ namespace SlimGym_winversion.UserControls
         //==================================
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            dataGridViewSearchUsers.DataSource = DBAcess.get(Queries.getUsers(textBoxName.Text, textBoxSurname.Text, textBoxPersonalID.Text, textBoxBithDate.Text));
+            loadDataGridView(triggerName);
         }
 
         //==================================
@@ -69,7 +71,7 @@ namespace SlimGym_winversion.UserControls
                 {
                     if (!Base.Instance.panelWindowControl.Controls.ContainsKey("UserInfo"))             // Checks for exitsting user control
                     {                                                                                   // Does not exist
-                        DataTable selectedUserInfo= new DataTable();
+                        DataTable selectedUserInfo = new DataTable();
                         /*NE VALJA*/
                         selectedUserInfo.Rows.Add(dataGridViewSearchUsers.SelectedRows.ToString());
                         UserInfo userInfoUserControl = new UserInfo(selectedUserInfo);                  // Creates an instance
@@ -126,11 +128,52 @@ namespace SlimGym_winversion.UserControls
         {
             if (!Base.Instance.panelWindowControl.Controls.ContainsKey("AddEntranceOrExit"))                // Checks for exitsting user control
             {                                                                                               // Does not exist
-                AddEntranceOrExit AddEntranceOrExitUserControl = new AddEntranceOrExit(command, dataGridViewSearchUsers.CurrentRow.Cells[0].Value.ToString(), dataGridViewSearchUsers.CurrentRow.Cells[1].Value.ToString(), dataGridViewSearchUsers.CurrentRow.Cells[4].Value.ToString());                   // Creates an instance
+                AddEntranceOrExit AddEntranceOrExitUserControl = new AddEntranceOrExit(triggerName, dataGridViewSearchUsers.CurrentRow.Cells[0].Value.ToString(), dataGridViewSearchUsers.CurrentRow.Cells[1].Value.ToString(), dataGridViewSearchUsers.CurrentRow.Cells[4].Value.ToString());                   // Creates an instance
                 AddEntranceOrExitUserControl.Dock = DockStyle.Fill;                                         //
                 Base.Instance.panelWindowControl.Controls.Add(AddEntranceOrExitUserControl);                // Adds it to control
 
                 Base.Instance.panelWindowControl.Controls["AddEntranceOrExit"].BringToFront();              // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)
+            }
+        }
+
+        public void loadDataGridView(string triggerName)
+        {
+            if (triggerName == "buttonUserInfo")
+            {
+                dataGridViewSearchUsers.DataSource = DBAcess.get(Queries.getUsers(textBoxName.Text, textBoxSurname.Text, textBoxPersonalID.Text, textBoxBithDate.Text));
+            }
+            else if (triggerName == "buttonSignToGroup")
+            {
+                dataGridViewSearchUsers.DataSource = DBAcess.get(Queries.getUsers(textBoxName.Text, textBoxSurname.Text, textBoxPersonalID.Text, textBoxBithDate.Text));
+            }
+            else if (triggerName == "buttonMembership")
+            {
+                dataGridViewSearchUsers.DataSource = DBAcess.get(Queries.getUsers(textBoxName.Text, textBoxSurname.Text, textBoxPersonalID.Text, textBoxBithDate.Text));
+            }
+            else if (triggerName == "buttonAddEntrance")
+            {
+                dataGridViewSearchUsers.DataSource = DBAcess.get(Queries.getUserToAddEntrance(textBoxName.Text, textBoxSurname.Text, textBoxPersonalID.Text, textBoxBithDate.Text));
+            }
+            else if (triggerName == "buttonAddExit")
+            {
+                dataGridViewSearchUsers.DataSource = DBAcess.get(Queries.getUserToAddExit(textBoxName.Text, textBoxSurname.Text, textBoxPersonalID.Text, textBoxBithDate.Text));
+            }
+        }
+
+        //==================================
+        //                                  
+        // Get and set functions            
+        //                                  
+        //==================================
+        public static SearchUsers Instance
+        {
+            get
+            {
+                if (_searchUsers == null)
+                {
+                    _searchUsers = new SearchUsers("Error");         // If _slimGym is null pointer create new instance of form
+                }
+                return _searchUsers;                   // Return pointer on form
             }
         }
     }
