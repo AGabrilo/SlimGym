@@ -1698,3 +1698,5 @@ C:\Users\agabr\Downloads\SlimGym\SlimGym.Android\obj\Debug\90\stamp\_ConvertReso
 C:\Users\agabr\Downloads\SlimGym\SlimGym.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\agabr\Downloads\SlimGym\SlimGym.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\agabr\Downloads\SlimGym\SlimGym.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\agabr\Downloads\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\crossfit2.jpg
+C:\Users\agabr\Downloads\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\spin2.jpg
