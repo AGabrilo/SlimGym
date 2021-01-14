@@ -23,7 +23,7 @@
 
             <ScrollView x:Name="first_scroll" BackgroundColor="White" IsVisible="false">
                 <StackLayout>
-
+                    
                     <TableView>
 
                         <TableRoot>
@@ -33,11 +33,10 @@
                                 <ImageCell Text="Boks" TextColor="Red" ImageSource="/images/calendar.png" Detail="13:00" DetailColor="Black" Height="50"/>
                                 <ImageCell Text="Zumba" TextColor="Red" ImageSource="/images/calendar.png" Detail="16:00." DetailColor="Black" Height="50"/>
                                 <ImageCell Text="Boks" TextColor="Red" ImageSource="/images/calendar.png" Detail="19:00" DetailColor="Black" Height="50"/>
-                         
+
                             </TableSection>
                         </TableRoot>
                     </TableView>
-
 
                 </StackLayout>
 
