@@ -19,9 +19,9 @@
 
                             <TableRoot>
                                 <TableSection>
-                                    <ImageCell Text="Trener/ica:" TextColor="#db1f28" ImageSource="/images/icons_person.png" Detail="Antea Gabrilo" DetailColor="#825c5a" Height="50"/>
-                                    <ImageCell Text="Pon, sri, pet" TextColor="#db1f28" ImageSource="/images/icons_calendar.png" Detail="20:30h - 21:30h" DetailColor="#825c5a" Height="50"/>
-                                    <ImageCell Text="Članarina" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="250 kn/mj." DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Trener/ica:" TextColor="#db1f28" ImageSource="/images/icons_person.png" Detail="{Binding trener_ime}" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="{Binding termin_dan}" TextColor="#db1f28" ImageSource="/images/icons_calendar.png" Detail="{Binding termin_sat}" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Članarina" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="{Binding iznos_cl}" DetailColor="#825c5a" Height="50"/>
 
                                 </TableSection>
                             </TableRoot>

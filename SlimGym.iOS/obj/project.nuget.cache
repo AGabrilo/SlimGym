@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E3Ku9Jyr6YHzbBfMhBBg0P7AB0M5HT9PJ9C0ImOE9qJM7SNhU89YaDLpnlZ5oLSJsJST5Zw7ESx5CvYENAvB7Q==",
+  "dgSpecHash": "xFVB+qW3FS9FlRsofyecxEP6tjbH2bjBrCEBx+2ExeCb4nsj/7QAj0R000xO285B3SQfJs3nxOopESjyHj97MQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym.iOS\\SlimGym.iOS.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Users\\Petra Dundic\\.nuget\\packages\\syncfusion.xamarin.core\\18.3.0.44\\syncfusion.xamarin.core.18.3.0.44.nupkg.sha512",
     "C:\\Users\\Petra Dundic\\.nuget\\packages\\syncfusion.xamarin.sfschedule\\18.3.0.44\\syncfusion.xamarin.sfschedule.18.3.0.44.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "C:\\Users\\Petra Dundic\\.nuget\\packages\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
   "logs": []
 }

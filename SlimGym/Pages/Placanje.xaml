@@ -8,22 +8,19 @@
                 <Label Text="Članarina"  TextColor="DarkSlateGray" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
             </Frame>
         
-            <!--<ImageCell Text="dkdkfdlfk" ImageSource="/images/icons_money.png" />-->
+            
             <Frame HeightRequest="60" CornerRadius="30" BackgroundColor="#cce3d2">
                 <Grid BackgroundColor="#cce3d2">
-                    <!--<Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>-->
+                  
                     <Image Source="/images/icons_money.png" HorizontalOptions="Start" />
-                    <Label Grid.Column="1" Text="Prosinac" FontSize="Title" HorizontalOptions="Start" VerticalOptions="Center" TextColor="DarkSlateGray"/>
-                    <Label Grid.Column="2" Text="250 kn" FontSize="Subtitle" HorizontalOptions="Start" VerticalOptions="Center" TextColor="DarkSlateGray"/>
+                    <Label Grid.Column="1" Text="{Binding mjesec_cl}" FontSize="Title" HorizontalOptions="Start" VerticalOptions="Center" TextColor="DarkSlateGray"/>
+                    <Label Grid.Column="2" Text="{Binding iznos_cl}" FontSize="Subtitle" HorizontalOptions="Start" VerticalOptions="Center" TextColor="DarkSlateGray"/>
                     
                    
 
                 </Grid>
 
-                <!--<Image Source="/images/icons_money.png" HorizontalOptions="Start" />-->
+                
             </Frame>
             <Button x:Name="Btn_history" Text="Povijest plaćanja" BackgroundColor="#16c945" TextColor="DarkSlateGray" FontAttributes="Bold" CornerRadius="20" Clicked="Btn_history_Clicked" />
             <ScrollView x:Name="history_scroll" BackgroundColor="White" IsVisible="false">

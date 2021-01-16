@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SlimGym",
+    "\\SlimGym\\Models",
+    "\\SlimGym\\Pages",
+    "\\SlimGym\\Pages\\PagesOfPrograms"
   ],
   "SelectedNode": "\\SlimGym.sln",
   "PreviewInSolutionExplorer": false
