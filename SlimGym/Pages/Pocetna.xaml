@@ -4,14 +4,87 @@
              x:Class="SlimGym.Pocetna"
              Title="Početna">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="White">
-            <Frame BackgroundColor="White" HeightRequest="110">
-                <Image Source="/images/Logo.png"/>
-            </Frame>
+        
+
+        <StackLayout BackgroundColor="White" >
+
+            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                    <Frame BackgroundColor="DarkSeaGreen" HeightRequest="100" HorizontalOptions="FillAndExpand" Padding="22" CornerRadius="0">
+                        <Image  Source="/images/Logo.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="AspectFit" Margin="0"/>
+                    </Frame>
+                </StackLayout>
+            <Label Text="Dobrodošli u aplikaciju SlimGym" FontSize="Large" TextColor="DarkSlateGray" HorizontalTextAlignment="Center"/>
+            <ScrollView Orientation="Both">
+                    <FlexLayout>
+                        <Frame WidthRequest="300"
+                   HeightRequest="400" Margin="10" BorderColor="DarkSeaGreen">
+
+                            <FlexLayout Direction="Column">
+                            <Label Text="Crossfit"
+                           Margin="0,8" FontSize="Large" TextColor="DarkSlateGray" />
+                            <Image Source="/images/crossfit2.jpg"
+                            HorizontalOptions="CenterAndExpand" Aspect="AspectFit"/>
+                            <Label FlexLayout.Grow="1" />
+                            <Button x:Name="Btn_crossfit" Text="Pogledaj više"  WidthRequest="170"  BackgroundColor="#77B777" TextColor="DarkSlateGray" FontAttributes="Bold" CornerRadius="20" Clicked="Clicked_toCrossfit" />
+                            </FlexLayout>
+                        </Frame>
+
+                        <Frame WidthRequest="300"
+                   HeightRequest="400" Margin="10" BorderColor="DarkSeaGreen">
+
+                            <FlexLayout Direction="Column">
+                                <Label Text="Boks"
+                           Margin="0,8" FontSize="Large" TextColor="DarkSlateGray" />
+                                
+                                <Image Source="/images/boks.jpg"
+                          VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="AspectFit" />
+                                <Label FlexLayout.Grow="1" />
+                            <Button x:Name="Btn_boks" Text="Pogledaj više" WidthRequest="170"  BackgroundColor="#77B777" TextColor="DarkSlateGray" FontAttributes="Bold" CornerRadius="20" Clicked="Clicked_toBoks"/>
+                            </FlexLayout>
+                        </Frame>
+
+                        <Frame WidthRequest="300"
+                   HeightRequest="400" Margin="10" BorderColor="DarkSeaGreen">
+
+                            <FlexLayout Direction="Column">
+                                <Label Text="Zumba"
+                           Margin="0,8" FontSize="Large" TextColor="DarkSlateGray" />
+                                
+                                <Image Source="/images/zumba.jpg"
+                          VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="AspectFit"/>
+                                <Label FlexLayout.Grow="1" />
+                            <Button x:Name="Btn_zumba" Text="Pogledaj više"  WidthRequest="170"  BackgroundColor="#77B777" TextColor="DarkSlateGray" FontAttributes="Bold" CornerRadius="20" Clicked="Clicked_toZumba"/>
+                            </FlexLayout>
+                        </Frame>
+                    <Frame WidthRequest="300"
+                   HeightRequest="400" Margin="10" BorderColor="DarkSeaGreen" >
+
+                        <FlexLayout Direction="Column">
+                            <Label Text="Spinning"
+                           Margin="0,8" FontSize="Large" TextColor="DarkSlateGray" />
+                            <Image Source="/images/spin2.jpg"
+                            HorizontalOptions="CenterAndExpand" Aspect="AspectFit"/>
+                            <Label FlexLayout.Grow="1" />
+                            <Button x:Name="Btn_spinning" Text="Pogledaj više" WidthRequest="170" BackgroundColor="#77B777" TextColor="DarkSlateGray" FontAttributes="Bold" CornerRadius="20" Clicked="Clicked_toSpinning" />
+                        </FlexLayout>
+                    </Frame>
+                    <Frame WidthRequest="300"
+                   HeightRequest="400" Margin="10" BorderColor="DarkSeaGreen">
+
+                        <FlexLayout Direction="Column">
+                            <Label Text="Total Body"
+                           Margin="0,8" FontSize="Large" TextColor="DarkSlateGray" />
+                            <Image Source="/images/ttlBody.jpg"
+                            HorizontalOptions="CenterAndExpand" Aspect="AspectFit"/>
+                            <Label FlexLayout.Grow="1" />
+                            <Button x:Name="Btn_totalBody" Text="Pogledaj više" WidthRequest="170" BackgroundColor="#77B777" TextColor="DarkSlateGray" FontAttributes="Bold" CornerRadius="20" Clicked="Clicked_toTotalBody"/>
+                        </FlexLayout>
+                    </Frame>
+                </FlexLayout>
+                </ScrollView>
+
+    </StackLayout>
             
-            <Label Text="Dobrodošli!" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="40" TextColor="#595b5e"  />
-            <Label Text="Mobilna aplikacija za članove SlimGym teretane." FontSize="Medium" TextColor="#595b5e" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"/>
-           
-        </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

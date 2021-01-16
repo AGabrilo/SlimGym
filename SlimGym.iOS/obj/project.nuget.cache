@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xFVB+qW3FS9FlRsofyecxEP6tjbH2bjBrCEBx+2ExeCb4nsj/7QAj0R000xO285B3SQfJs3nxOopESjyHj97MQ==",
+  "dgSpecHash": "6s0zvNBpsWfmyrJeD3XAkWQmdV6CF2TpdI7uIQgrZlRIeFPvI2xr8jtpfrlrhTvpOr8A4EMBU3KB4jo2hbyGYA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym.iOS\\SlimGym.iOS.csproj",
   "expectedPackageFiles": [
@@ -10,5 +10,25 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Users\\Petra Dundic\\.nuget\\packages\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym.iOS\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1560 to 4.6.0.1141. Reference the package directly from the project to select a different version. \r\n SlimGym.iOS -> SlimGym -> Xamarin.Forms (>= 4.8.0.1560) \r\n SlimGym.iOS -> Xamarin.Forms (>= 4.6.0.1141)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
 }

@@ -20,7 +20,7 @@ namespace SlimGym
         
         public async void Clicked_ButtonAsync(object sender, EventArgs e)
         {
-            User user = new User(Entry_username.Text, Entry_password.Text);
+            Login user = new Login(Entry_username.Text, Entry_password.Text);
             if (user.CheckInformation().Equals(true))
 
                 await Navigation.PushAsync(new MenuFeature());

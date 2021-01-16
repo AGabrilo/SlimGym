@@ -16,5 +16,12 @@ namespace SlimGym.Pages.ChangeProfileData
         {
             InitializeComponent();
         }
+        public async void ChangeU(object sender, EventArgs e)
+        {
+
+
+            await Navigation.PushAsync(new Profile());
+
+        }
     }
 }

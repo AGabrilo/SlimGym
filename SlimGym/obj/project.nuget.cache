@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nDpkMyyem1HIxrQ0DX+hmjBNCenINTUBUOnYQl6J7dt2/WGUrpBkxiEGGGe7SVth8RCCN/sNs+N7s7k++C0R7w==",
+  "dgSpecHash": "j3v8g531+adPcfY/6Xbmwou0walSmQnpb84VDGdluouRZ08rL5aQf/OCGYhtS7+mU+Wvm+/fuY5aNYHxpsE6tw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym\\SlimGym.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,14 @@
     "C:\\Users\\Petra Dundic\\.nuget\\packages\\syncfusion.xamarin.sfschedule\\18.3.0.44\\syncfusion.xamarin.sfschedule.18.3.0.44.nupkg.sha512",
     "C:\\Users\\Petra Dundic\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\Petra Dundic\\.nuget\\packages\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "C:\\Users\\Petra Dundic\\.nuget\\packages\\xamarin.forms\\4.8.0.1560\\xamarin.forms.4.8.0.1560.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Petra Dundic\\Desktop\\PI\\SlimGym\\SlimGym\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

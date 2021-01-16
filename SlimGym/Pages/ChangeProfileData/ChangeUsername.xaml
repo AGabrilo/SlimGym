@@ -28,7 +28,7 @@
 
 
                             </StackLayout>
-                            <Button x:Name="Btn_changePassw" Text="Change" BackgroundColor="#77B777" TextColor="DarkSlateGray" FontAttributes="Bold" CornerRadius="20" />
+                            <Button x:Name="Btn_changeUsername" Text="Change" BackgroundColor="#77B777" TextColor="DarkSlateGray" FontAttributes="Bold" CornerRadius="20" Clicked="ChangeU" />
 
 
                         </StackLayout>

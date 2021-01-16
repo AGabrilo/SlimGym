@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SlimGym.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -49,7 +50,7 @@ namespace SlimGym
 			{
 				Title = "Raspored",
 				Icon = "/images/calendar.png",
-				TargetType = typeof(SchedulePage)
+				TargetType = typeof(Schedule)
 			});
 			menuList.Add(new MenuFeatureMasterMenuItem()
 			{
@@ -69,7 +70,7 @@ namespace SlimGym
 			//add try-catch
 			var item = (MenuFeatureMasterMenuItem)e.SelectedItem;
 			Type page = item.TargetType;
-			Detail = new NavigationPage((Page)Activator.CreateInstance(page));
+            Detail = new NavigationPage((Page)Activator.CreateInstance(page));
 			IsPresented = false;
 		}
         void OnImageTapped(object sender, System.EventArgs e)
