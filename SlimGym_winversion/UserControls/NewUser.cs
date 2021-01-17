@@ -64,11 +64,13 @@ namespace SlimGym_winversion.UserControls
                     {
                         DBAcess.put(Queries.putEmployee(textBoxName.Text, textBoxSurname.Text, textBoxPersonalID.Text, radioButtonMale.Text, textBoxBithDate.Text, textBoxPhone.Text));
                         DBAcess.put(Queries.MakeAccount(username, password, 2));
+                        DBAcess.put(Queries.PutPersonRegistration(textBoxPersonalID.Text, username));
                     }
                     else if (radioButtonFemale.Checked)
                     {
                         DBAcess.put(Queries.putEmployee(textBoxName.Text, textBoxSurname.Text, textBoxPersonalID.Text, radioButtonFemale.Text, textBoxBithDate.Text, textBoxPhone.Text));
                         DBAcess.put(Queries.MakeAccount(username, password, 2));
+                        DBAcess.put(Queries.PutPersonRegistration((textBoxPersonalID.Text), username));
                     }
                     else
                         MessageBox.Show("Gender not selected");

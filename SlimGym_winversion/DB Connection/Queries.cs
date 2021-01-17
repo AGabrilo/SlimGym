@@ -116,6 +116,15 @@ namespace SlimGym_winversion.DB_Connection
             return query;
         }
 
+        //Dodat u person_registration(da bi povezali podatke)
+        public static string PutPersonRegistration(string personalId, string username)
+        {
+            query = "insert into person_registration(person_id, username) " +
+                "values (" + personalId + ", '" + username + "')";
+            return query;
+        }
+
+
         //napravit acc za zaposlenike/administratore
 
         public static string MakeAccount(string username, string password, int rights)
@@ -125,6 +134,7 @@ namespace SlimGym_winversion.DB_Connection
             return query;
         }
 
+       
 
         static string createConditionsString(string name, string surname, string personalId, string birthDate)
         {
