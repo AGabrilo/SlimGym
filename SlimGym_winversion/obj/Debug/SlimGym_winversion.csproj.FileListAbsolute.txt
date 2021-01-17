@@ -101,3 +101,4 @@ C:\Users\Toni\Desktop\FESB\treca godina\PROGRAMSKO INZENJERSTVO\SlimGym\SlimGym\
 C:\Users\Toni\Desktop\FESB\treca godina\PROGRAMSKO INZENJERSTVO\SlimGym\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.Records.resources
 C:\Users\Toni\Desktop\FESB\treca godina\PROGRAMSKO INZENJERSTVO\SlimGym\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.Schedule.resources
 C:\Users\Duje\Desktop\Faks\Projekti\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.AddMembership.resources
+C:\Users\Toni\Desktop\FESB\treca godina\PROGRAMSKO INZENJERSTVO\SlimGym\SlimGym\SlimGym_winversion\obj\Debug\SlimGym_winversion.UserControls.AddMembership.resources

@@ -116,6 +116,15 @@ namespace SlimGym_winversion.DB_Connection
             return query;
         }
 
+        //napravit acc za zaposlenike/administratore
+
+        public static string MakeAccount(string username, string password, int rights)
+        {
+            query = "insert into account(username, password, rights) " +
+                    "values( '" + username + "', '" + password + "', '" + rights + "')";
+            return query;
+        }
+
 
         static string createConditionsString(string name, string surname, string personalId, string birthDate)
         {
