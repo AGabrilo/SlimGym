@@ -202,7 +202,7 @@ namespace SlimGym_winversion.DB_Connection
         public static string putRecordEntrance(string user_id)
         {
             query = "insert into attendance (start_time, date) " +
-                "values ('" + DateTime.Now.ToString("t") + "', '" + DateTime.Now.ToString("d") + "'); " +
+                "values ('" + DateTime.Now.ToString("t") + "', '" + DateTime.Now.ToString("MM/dd/yyyy") + "'); " +
                 "insert into user_attendance (user_id, attendance_id) " +
                 "select '" + user_id + "', max(attendance_id) from attendance;";
             return query;
@@ -221,13 +221,28 @@ namespace SlimGym_winversion.DB_Connection
         {
             query = "update attendance " +
                 "set end_time = '" + DateTime.Now.ToString("t") + "'" +
-                "from attendance att " +
-                "join user_attendance on user_attendance.attendance_id = att.attendance_id " +
-                "where att.end_time is null and user_attendance.user_id = '" + user_id + "'";
+                "where attendance.end_time is null and attendance.attendance_id in (select attendance_id from user_attendance where user_id = " + user_id + ")";
             return query;
         }
 
+        public static string putMembershipRecord(string user_id, string membership_id)
+        {
+            query = "insert into user_membership (user_id, membership_id, payment_date, expiration_date) " +
+                "values(" + user_id + ", " + membership_id + ", '" + DateTime.Now.ToString("MM/dd/yyyy") + "', '" + DateTime.Now.AddMonths(1).ToString("MM/dd/yyyy") + "')";
+            return query;
+        }
 
+        public static string putGroupRecord(string user_id, string group_id)
+        {
+            query = "insert into attends (user_id, group_id) " +
+                "values(" + user_id + ", " + group_id + ");" +
+                "update \"group\" " +
+                "set " +
+                "members = members + 1, " +
+                "max_members = max_members - 1 " +
+                "where group_id = " + group_id;
+            return query;
+        }
 
     }
 }

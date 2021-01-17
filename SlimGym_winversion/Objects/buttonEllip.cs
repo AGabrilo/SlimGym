@@ -11,7 +11,7 @@ using System.Runtime.CompilerServices;
 
 namespace SlimGym_winversion.Objects
 {
-    class buttonEllip : Button
+    public class buttonEllip : Button
     {
         private Color _onHoverTextColor = Color.Transparent;
         private Color _offHoverTextColor = Color.Transparent;

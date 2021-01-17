@@ -32,14 +32,14 @@ namespace SlimGym_winversion.UserControls
 
             _records = this;
             datePickerEntrance.Value = DateTime.Now;
-            dataGridViewRecords.DataSource = DBAcess.get(Queries.getRecordsOfUsers(datePickerEntrance.Value.ToString("d")));
+            dataGridViewRecords.DataSource = DBAcess.get(Queries.getRecordsOfUsers(datePickerEntrance.Value.ToString("MM/dd/yyyy")));
 
 
         }
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            dataGridViewRecords.DataSource = DBAcess.get(Queries.getRecordsOfUsers(datePickerEntrance.Value.ToString("d")));
+            dataGridViewRecords.DataSource = DBAcess.get(Queries.getRecordsOfUsers(datePickerEntrance.Value.ToString("MM/dd/yyyy")));
         }
 
         //=======================================================//

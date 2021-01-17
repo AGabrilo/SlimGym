@@ -7,40 +7,47 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using SlimGym_winversion.Objects;
 using System.Windows.Forms;
+using SlimGym_winversion.DB_Connection;
 
 namespace SlimGym_winversion.Objects
 {
-    public class panellGroup : panelEllip
+    public class panelItems : panelEllip
     {
         private Label labelName = new Label();
         private Label labelDescripton = new Label();
         private buttonEllip buttonSign = new buttonEllip();
 
-        public panellGroup(int parentWidth, int index)
+        public panelItems(int parentWidth, int index, string name, string description, string user_id, int type)
         {
             setPanelStyle(parentWidth, index);
-            setLabelNameStyle(labelName);
-            setLabelDescription(labelDescripton);
+            setLabelNameStyle(labelName, name);
+            setLabelDescription(labelDescripton, description, parentWidth);
             setButtonStyle(buttonSign);
             this.Controls.Add(labelName);
             this.Controls.Add(labelDescripton);
             this.Controls.Add(buttonSign);
+            if (type == 1)
+                buttonSign.Click += (s, e) => { DBAcess.put(Queries.putGroupRecord(user_id, (index + 1).ToString())); };
+            else if (type == 2)
+                buttonSign.Click += (s, e) => { DBAcess.put(Queries.putMembershipRecord(user_id, (index + 1).ToString())); };
+
         }
 
-        private void setLabelNameStyle(Label label)
+        private void setLabelNameStyle(Label label, string name)
         {
-            label.Text = "Group name";
+            label.Text = name;
             label.ForeColor = Color.FromArgb(75,180,30);
             label.Location = new Point(20, 10);
             label.Font = new Font("Arial", 15, FontStyle.Bold);
+            label.AutoSize = true;
         }
 
-        private void setLabelDescription(Label label)
+        private void setLabelDescription(Label label, string description, int parentWidth)
         {
-            label.Text = "dasdnijasndiuh h auish uidhasiu diuhaushoiduh oh oiudhaoiush dh oiahosihdo hoi hoi aoi";
+            label.Text = description;
             label.ForeColor = Color.White;
             label.Location = new Point(30, 50);
-            label.AutoSize = true;
+            label.Size = new Size(parentWidth - 300, 80); ;
         }
 
         private void setButtonStyle(buttonEllip button)

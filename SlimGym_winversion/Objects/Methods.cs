@@ -6,6 +6,7 @@ using SlimGym_winversion.UserControls;
 using System.Collections.Generic;
 using System.Linq;
 using System.Data;
+using SlimGym_winversion.DB_Connection;
 
 namespace SlimGym_winversion.Objects
 {
@@ -18,7 +19,7 @@ namespace SlimGym_winversion.Objects
         //==================================
 
         static List<buttonEllip> buttonList = new List<buttonEllip>();
-        static List<panellGroup> panelList = new List<panellGroup>();
+        static List<panelItems> panelList = new List<panelItems>();
 
         //==================================
         //
@@ -165,11 +166,21 @@ namespace SlimGym_winversion.Objects
         //
         //==================================
 
-        public static void addPanels(panelEllip panelParent, int index)
+        public static void addPanelsGroups(panelEllip panelParent, int index, string user_id)
         {
             for (int i = 0; i < 6; i++)
             {
-                panellGroup panel = new panellGroup(panelParent.Width, i);
+                panelItems panel = new panelItems(panelParent.Width, i, "Group " + (i + 1).ToString(), "Some description......", user_id, 1);
+                panelList.Add(panel);
+                panelParent.Controls.Add(panel);
+            }
+        }
+
+        public static void addPanelsMemberships(panelEllip panelParent, int index, string user_id)
+        {
+            for (int i = 0; i < 6; i++)
+            {
+                panelItems panel = new panelItems(panelParent.Width, i, "Membership " + (i + 1).ToString(), "Some description......", user_id, 2);
                 panelList.Add(panel);
                 panelParent.Controls.Add(panel);
             }

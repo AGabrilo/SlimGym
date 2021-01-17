@@ -102,7 +102,7 @@
     <Compile Include="Objects\panelEllipSchedule.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Objects\panellGroup.cs">
+    <Compile Include="Objects\panelItems.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Objects\textBoxEllip.cs">
@@ -114,6 +114,12 @@
     </Compile>
     <Compile Include="UserControls\AddEntranceOrExit.Designer.cs">
       <DependentUpon>AddEntranceOrExit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AddMembership.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AddMembership.Designer.cs">
+      <DependentUpon>AddMembership.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\AddRecord.cs">
       <SubType>UserControl</SubType>
@@ -191,6 +197,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="UserControls\AddEntranceOrExit.resx">
       <DependentUpon>AddEntranceOrExit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AddMembership.resx">
+      <DependentUpon>AddMembership.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AddRecord.resx">
       <DependentUpon>AddRecord.cs</DependentUpon>

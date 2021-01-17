@@ -91,13 +91,21 @@ namespace SlimGym_winversion.UserControls
                     }
 
                     Base.Instance.panelWindowControl.Controls["ListGroups"].BringToFront();               // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)
-                    Methods.addPanels(ListGroups.Instance.PanelGroups, 5);
+                    Methods.addPanelsGroups(ListGroups.Instance.PanelGroups, 5, dataGridViewSearchUsers.CurrentRow.Cells[4].Value.ToString());
                 }
 
 
                 if (triggerName == "buttonMembership")
                 {
+                    if (!Base.Instance.panelWindowControl.Controls.ContainsKey("AddMembership"))             // Checks for exitsting user control
+                    {                                                                                   // Does not exist
+                        AddMembership AddMembershipUserControl = new AddMembership();                                  // Creates an instance
+                        AddMembershipUserControl.Dock = DockStyle.Fill;                                      //
+                        Base.Instance.panelWindowControl.Controls.Add(AddMembershipUserControl);             // Adds it to control
+                    }
 
+                    Base.Instance.panelWindowControl.Controls["AddMembership"].BringToFront();               // Bring userInfo to front without removing searchUsers from controls (so we can go back to it)
+                    Methods.addPanelsMemberships(AddMembership.Instance.PanelMemberships, 5, dataGridViewSearchUsers.CurrentRow.Cells[4].Value.ToString());
                 }
 
                 if (triggerName == "buttonAddEntrance")
