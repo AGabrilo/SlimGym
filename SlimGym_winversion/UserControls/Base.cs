@@ -31,7 +31,7 @@ namespace SlimGym_winversion
         {
             InitializeComponent();
             if (SlimGym.loggedUser.Rights == 1)
-                buttonGiveRights.Visible = true;
+                buttonChangeRights.Visible = true;
 
             _base = this;
             labelUsernameValue.Text = username;
@@ -114,6 +114,19 @@ namespace SlimGym_winversion
             panelWindow.Controls["AddRecord"].BringToFront();                 // Bring SearchUsers to front
         }
 
+        private void buttonGiveRights_Click(object sender, EventArgs e)
+        {
+            ChangeBackColor(buttonMembership);
+            panelWindow.Controls.Clear();                                       // Removes all user controls from controls to start fresh
+
+            if (!panelWindow.Controls.ContainsKey("SearchUsers"))               // If it does not exitst in controls add it
+            {
+                SearchUsers searchUsersUserContol = new SearchUsers(buttonChangeRights.Name.ToString());          // Create new insatnce of SearchUsers user control
+                searchUsersUserContol.Dock = DockStyle.Fill;                    // Dock it so it works in full screen
+                panelWindow.Controls.Add(searchUsersUserContol);
+            }
+            panelWindow.Controls["SearchUsers"].BringToFront();                 // Bring SearchUsers to front
+        }
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
@@ -192,5 +205,7 @@ namespace SlimGym_winversion
                 return buttonUsers.Name;
             }
         }
+
+
     }
 }

@@ -117,6 +117,18 @@ namespace SlimGym_winversion.UserControls
                 {
                     callAddEntranceOrExitUserControl("Exit");
                 }
+
+                if (triggerName == "buttonChangeRights")
+                {
+                    if (!Base.Instance.panelWindowControl.Controls.ContainsKey("GiveRights"))             // Checks for exitsting user control
+                    {                                                                                   // Does not exist
+                        GiveRights giveRightsUserControl = new GiveRights(dataGridViewSearchUsers.CurrentRow.Cells[0].Value.ToString(), dataGridViewSearchUsers.CurrentRow.Cells[1].Value.ToString(), dataGridViewSearchUsers.CurrentRow.Cells[2].Value.ToString(), dataGridViewSearchUsers.CurrentRow.Cells[3].Value.ToString());                                  // Creates an instance
+                        giveRightsUserControl.Dock = DockStyle.Fill;                                      //
+                        Base.Instance.panelWindowControl.Controls.Add(giveRightsUserControl);             // Adds it to control
+                    }
+
+                    Base.Instance.panelWindowControl.Controls["GiveRights"].BringToFront();               // Bring userInfo to front without removing searchUsers from controls (so we can go back to it) 
+                }
             }
         }
 
@@ -164,6 +176,10 @@ namespace SlimGym_winversion.UserControls
             else if (triggerName == "buttonAddExit")
             {
                 dataGridViewSearchUsers.DataSource = DBAcess.get(Queries.getUserToAddExit(textBoxName.Text, textBoxSurname.Text, textBoxPersonalID.Text, textBoxBithDate.Text));
+            }
+            else if (triggerName == "buttonChangeRights")
+            {
+                dataGridViewSearchUsers.DataSource = DBAcess.get(Queries.getEmployees(textBoxName.Text, textBoxSurname.Text, textBoxPersonalID.Text, textBoxBithDate.Text));
             }
         }
 

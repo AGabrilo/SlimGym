@@ -33,9 +33,9 @@ namespace SlimGym_winversion.DB_Connection
                 "name, " +
                 "surname, " +
                 "birth_date, " +
-                "personal_id " +
+                "personal_id, " +
                 "employee_id " +
-                "from employees " +
+                "from employee " +
                 conditions;
             return query;
         }
@@ -260,6 +260,14 @@ namespace SlimGym_winversion.DB_Connection
                 "members = members + 1, " +
                 "max_members = max_members - 1 " +
                 "where group_id = " + group_id;
+            return query;
+        }
+
+        public static string changeRights(string personal_id, int right)
+        {
+            query = "UPDATE account " +
+                    "SET rights = '" + right + "' " +
+                    "WHERE username in (select username from person_registration where person_id = '" + personal_id + "')";
             return query;
         }
 

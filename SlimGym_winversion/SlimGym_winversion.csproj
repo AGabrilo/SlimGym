@@ -127,6 +127,12 @@
     <Compile Include="UserControls\AddRecord.Designer.cs">
       <DependentUpon>AddRecord.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\GiveRights.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\GiveRights.Designer.cs">
+      <DependentUpon>GiveRights.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\InTheGym.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AddRecord.resx">
       <DependentUpon>AddRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\GiveRights.resx">
+      <DependentUpon>GiveRights.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\InTheGym.resx">
       <DependentUpon>InTheGym.cs</DependentUpon>
