@@ -19,9 +19,9 @@
 
                             <TableRoot>
                                 <TableSection>
-                                    <ImageCell Text="Trener/ica:" TextColor="#db1f28" ImageSource="/images/icons_person.png" Detail="{Binding trener_ime_spin}" DetailColor="#825c5a" Height="50"/>
-                                    <ImageCell Text="{Binding termin_dan_spin}" TextColor="#db1f28" ImageSource="/images/icons_calendar.png" Detail="{Binding termin_sat_spin}" DetailColor="#825c5a" Height="50"/>
-                                    <ImageCell Text="Članarina" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="{Binding iznos_cl_spin}" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Trener/ica:" TextColor="#db1f28" ImageSource="/images/icons_person.png" Detail="Duje Srhoj" DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Uto, čet, sub" TextColor="#db1f28" ImageSource="/images/icons_calendar.png" Detail="18:30h - 19:30h " DetailColor="#825c5a" Height="50"/>
+                                    <ImageCell Text="Članarina" TextColor="#db1f28" ImageSource="/images/icons_money.png" Detail="250 kn/mj." DetailColor="#825c5a" Height="50"/>
 
                                 </TableSection>
                             </TableRoot>

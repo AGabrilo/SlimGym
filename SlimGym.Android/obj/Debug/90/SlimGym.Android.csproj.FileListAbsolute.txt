@@ -1716,3 +1716,5 @@ C:\Users\agabr\Downloads\SlimGym\SlimGym.Android\obj\Debug\90\stamp\_ResolveLibr
 C:\Users\agabr\Downloads\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\crossfit2.jpg
 C:\Users\agabr\Downloads\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\spin2.jpg
 >>>>>>> c1d154ca50625485f43033776e46744e091bdeb9
+C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\crossfit2.jpg
+C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym.Android\obj\Debug\90\res\drawable\spin2.jpg

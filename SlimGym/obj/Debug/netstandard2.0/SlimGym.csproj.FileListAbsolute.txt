@@ -32,7 +32,6 @@ C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\SlimGy
 C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\MenuFeature.xaml.g.cs
-C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\AboutUs.xaml.g.cs
 C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\ChangeProfileData\ChangePassword.xaml.g.cs
 C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\ChangeProfileData\ChangeUsername.xaml.g.cs
 C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\PagesOfPrograms\Boks.xaml.g.cs
@@ -44,7 +43,6 @@ C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\
 C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Pocetna.xaml.g.cs
 C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Profile.xaml.g.cs
 C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Programs.xaml.g.cs
-C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\SchedulePage.xaml.g.cs
 C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\SignUp.xaml.g.cs
 C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\SlimGym.AssemblyInfoInputs.cache
 C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\SlimGym.AssemblyInfo.cs
@@ -81,3 +79,4 @@ C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\SlimGym.dll
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\ref\SlimGym.dll
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\SlimGym.pdb
 C:\Users\agabr\Downloads\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Schedule.xaml.g.cs
+C:\Users\Petra Dundic\Desktop\PI\SlimGym\SlimGym\obj\Debug\netstandard2.0\Pages\Schedule.xaml.g.cs
